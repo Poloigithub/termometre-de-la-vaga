@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-01T07:23Z",
+ "generado": "2026-11-01T07:26Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -115,7 +115,8 @@
    480,
    485,
    490,
-   495
+   495,
+   500
   ],
   "mw": [
    21837.0,
@@ -217,10 +218,11 @@
    20115.0,
    20150.0,
    20297.0,
-   20425.0
+   20425.0,
+   20579.0
   ],
-  "ultimo_minuto": 495,
-  "ultimo_mw": 20425.0
+  "ultimo_minuto": 500,
+  "ultimo_mw": 20579.0
  },
  "electricidad": {
   "resumen": {
@@ -1131,14 +1133,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-01",
-   "ultima_correcta": "2026-11-01T07:23Z",
-   "ultimo_intento": "2026-11-01T07:23Z"
+   "ultima_correcta": "2026-11-01T07:26Z",
+   "ultimo_intento": "2026-11-01T07:26Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-01T07:23Z",
-   "ultimo_intento": "2026-11-01T07:23Z"
+   "ultima_correcta": "2026-11-01T07:26Z",
+   "ultimo_intento": "2026-11-01T07:26Z"
   }
  }
 }
