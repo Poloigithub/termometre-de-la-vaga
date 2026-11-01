@@ -1,0 +1,73 @@
+name: Actualizar datos y web
+
+on:
+  schedule:
+    # En UTC y con posibles retrasos: el procesado no depende de cuándo arranque.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["docs/**", "scripts/**", "config.yaml", ".github/workflows/**"]
+
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Comprobar el cálculo
+        run: pytest -q
+
+      - name: Descargar y calcular
+        id: datos
+        continue-on-error: true
+        env:
+          ESIOS_TOKEN: ${{ secrets.ESIOS_TOKEN }}
+        run: python scripts/actualizar.py
+
+      - name: Guardar en el historial público
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+            exit 0
+          fi
+          git commit -m "Datos $(date -u +%Y-%m-%dT%H:%MZ)"
+          for intento in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 10
+          done
+          exit 1
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: despliegue
+        uses: actions/deploy-pages@v4
+
+      - name: Avisar si falló el cálculo
+        if: steps.datos.outcome == 'failure'
+        run: exit 1

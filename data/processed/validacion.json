@@ -1,0 +1,19 @@
+{
+ "festivo": "2026-10-12",
+ "electricidad": {
+  "desviacion_pct": -18.0,
+  "margen_inf_pct": -8.2,
+  "margen_sup_pct": 11.1,
+  "horas": 14,
+  "horas_fuera_banda": 14,
+  "veredicto": "por_debajo"
+ },
+ "no2_urbano": {
+  "desviacion_pct": -46.8,
+  "margen_inf_pct": -68.1,
+  "margen_sup_pct": 257.2,
+  "horas": 12,
+  "horas_fuera_banda": 8,
+  "veredicto": "sin_diferencia"
+ }
+}

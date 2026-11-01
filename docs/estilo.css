@@ -1,0 +1,89 @@
+:root {
+  color-scheme: light;
+  --fondo: #fcfcfb;
+  --tinta: #1f1f1f;
+  --tinta-2: #55554f;
+  --linea: #e4e3de;
+  --banda: #e2e1dc;
+  --rojo: #c8102e;
+  --rojo-suave: #fbeef0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 56px; }
+
+h1 { margin: 0; font-size: 2rem; line-height: 1.15; letter-spacing: -0.01em; }
+h2 { margin: 0 0 8px; font-size: 1.4rem; line-height: 1.25; }
+h2 span { font-size: 0.8rem; font-weight: 500; color: var(--tinta-2); white-space: nowrap; }
+h3 { margin: 24px 0 4px; font-size: 1.02rem; }
+p { margin: 0 0 12px; }
+a { color: var(--tinta); text-underline-offset: 3px; }
+a:hover { color: var(--rojo); }
+
+section { margin-top: 44px; }
+
+.entradilla { margin: 8px 0 0; color: var(--tinta-2); }
+
+#idioma {
+  float: right; margin-left: 12px; padding: 6px 12px;
+  border: 1px solid var(--linea); border-radius: 6px;
+  background: none; color: var(--tinta); font: inherit; font-size: 0.85rem; cursor: pointer;
+}
+
+.titular { margin-top: 24px; padding-top: 16px; border-top: 3px solid var(--rojo); }
+.etiqueta { margin: 0; font-size: 0.95rem; font-weight: 600; }
+.numero {
+  margin: 4px 0 0; font-size: clamp(3rem, 15vw, 4.75rem); font-weight: 700; line-height: 1.05;
+  letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+}
+.numero.pendiente { font-size: clamp(2rem, 9vw, 2.75rem); font-weight: 600; }
+.veredicto { margin: 8px 0 0; font-size: 1.15rem; font-weight: 600; }
+.margen { margin: 4px 0 0; color: var(--tinta-2); font-size: 0.95rem; }
+.indicio { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--linea); color: var(--tinta-2); font-size: 0.95rem; }
+
+.resultado { font-weight: 600; }
+
+.leyenda, .meteo, .avisos, .enlaces, .estado { margin: 0; padding: 0; list-style: none; }
+
+.leyenda { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 16px; font-size: 0.85rem; color: var(--tinta-2); }
+.leyenda li { display: flex; align-items: center; gap: 6px; }
+.muestra { width: 24px; height: 0; border-top: 2px solid var(--tinta); flex: none; }
+.muestra.huelga { border-color: var(--rojo); border-top-width: 3px; }
+.muestra.referencia { border-top-style: dashed; }
+.muestra.banda { height: 12px; border: 0; background: var(--banda); }
+
+.grafico { position: relative; height: 280px; margin-top: 8px; }
+
+.meteo { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 8px; font-size: 0.82rem; color: var(--tinta-2); }
+
+.avisos li, .aviso {
+  margin-top: 12px; padding: 8px 12px; border-left: 3px solid var(--rojo);
+  background: var(--rojo-suave); font-size: 0.92rem;
+}
+
+.nota { margin-top: 12px; color: var(--tinta-2); font-size: 0.9rem; }
+.dias { color: var(--tinta-2); font-size: 0.95rem; }
+
+details { margin-top: 12px; font-size: 0.9rem; }
+summary { padding: 6px 0; cursor: pointer; }
+
+.tabla-marco { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { padding: 4px 8px; border-bottom: 1px solid var(--linea); text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 600; }
+
+.enlaces li { padding: 4px 0; }
+
+.estado li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 16px; padding: 6px 0; border-bottom: 1px solid var(--linea); font-size: 0.92rem; }
+.estado .fallo { color: var(--rojo); font-weight: 600; }

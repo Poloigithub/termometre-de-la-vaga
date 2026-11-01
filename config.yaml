@@ -1,0 +1,57 @@
+# Parámetros del Termòmetre de la vaga. Los scripts no llevan fechas incrustadas.
+
+zona_horaria: Europe/Madrid
+dia_huelga: 2026-11-11
+
+# Miércoles laborables normales. Los futuros se incorporan cuando existan.
+dias_referencia:
+  - 2026-10-21
+  - 2026-10-28
+  - 2026-11-04
+  - 2026-11-18
+  - 2026-11-25
+  - 2025-11-12   # mismo miércoles del año anterior, control estacional
+
+# Prueba de sensibilidad: un festivo entre semana frente a días normales.
+validacion:
+  festivo: 2026-10-12
+  referencias: [2026-10-05, 2026-10-19, 2026-10-26]
+
+# Margen empírico: cuánto se desvía un miércoles normal de las semanas previas.
+# Se mide con días ya pasados y se fija antes de la huelga.
+calibracion:
+  periodos:
+    - [2025-09-03, 2025-11-26]
+    - [2026-09-02, 2026-10-28]
+  dias_previos: 3
+  meses_generalitat: ["202509", "202510", "202511"]
+
+franja_resumen: {inicio: 7, fin: 21}        # [inicio, fin), hora local
+horas_punta: [[7, 10], [17, 20]]
+minimo_dias_referencia: 2                   # con menos no hay banda ni veredicto
+muestras_minimas_hora: 10                   # de 12 muestras de 5 minutos
+
+electricidad:
+  indicador_esios: 1293                     # Demanda real Peninsular
+
+no2:
+  # Con referencias casi nulas el porcentaje no significa nada: la red mide en
+  # pasos de 1 µg/m³ y 1 frente a 2 sería un +100 %.
+  referencia_minima: 5                      # µg/m³
+  estaciones:
+    "12040010": {nombre: "Castelló - Grau", grupo: urbana}
+    "12040015": {nombre: "Castelló - Patronat d'Esports", grupo: urbana}
+    "12040020": {nombre: "Castelló - CEIP La Marina", grupo: urbana}
+    "12009007": {nombre: "Almassora - CP Ochando", grupo: contraste}
+    "12028001": {nombre: "Benicàssim", grupo: contraste}
+    "12032001": {nombre: "Borriana", grupo: contraste}
+    "12005005": {nombre: "L'Alcora", grupo: contraste}
+
+meteo:
+  puntos:
+    castello: {latitud: 39.986, longitud: -0.04}
+    valencia: {latitud: 39.47, longitud: -0.377}
+  aviso_temperatura: 3.0                    # °C de diferencia con la referencia
+  aviso_lluvia: 1.0                         # mm en la franja
+  aviso_viento_relativo: 0.4                # 40 % de diferencia...
+  aviso_viento_absoluto: 4.0                # ...y al menos 4 km/h
