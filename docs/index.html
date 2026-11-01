@@ -30,8 +30,6 @@
     <p id="titular-numero" class="numero">—</p>
     <p id="titular-veredicto" class="veredicto"></p>
     <p id="titular-margen" class="margen"></p>
-    <div id="marco-hoy" class="grafico" hidden><canvas id="grafico-hoy" role="img" aria-label="Demanda eléctrica peninsular de hoy, cada 5 minutos"></canvas></div>
-    <p id="nota-hoy" class="nota" hidden data-t="nota_hoy">Esta curva es solo el dato de hoy, sin comparar con ningún otro día. El 11 de noviembre esta portada medirá la huelga.</p>
   </section>
 
   <section aria-labelledby="h-electricidad">
@@ -39,6 +37,7 @@
     <p data-t="electricidad_ambito">Es la demanda de toda la España peninsular.</p>
     <ul class="leyenda" id="leyenda-electricidad"></ul>
     <div class="grafico"><canvas id="grafico-electricidad" role="img" aria-label="Demanda eléctrica por hora: 11N, referencia y banda de normalidad"></canvas></div>
+    <p id="nota-hoy" class="nota" hidden data-t="nota_hoy">La línea verde es el día de hoy. La banda se calcula con miércoles, así que un fin de semana o un festivo quedan por debajo sin que eso signifique nada. El 11 de noviembre esta línea dará paso a la de la huelga.</p>
     <ul id="meteo-electricidad" class="meteo"></ul>
     <ul id="avisos-electricidad" class="avisos"></ul>
     <p class="nota" data-t="nota_ceramica">La industria cerámica tiene hornos en continuo que no se apagan aunque la plantilla haga huelga, así que este indicador infravalora la participación.</p>

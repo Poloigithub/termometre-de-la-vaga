@@ -55,6 +55,7 @@ section { margin-top: 44px; }
 .leyenda li { display: flex; align-items: center; gap: 6px; }
 .muestra { width: 24px; height: 0; border-top: 2px solid var(--tinta); flex: none; }
 .muestra.huelga { border-color: var(--rojo); border-top-width: 3px; }
+.muestra.hoy { border-color: #2e7d32; border-top-width: 3px; }
 .muestra.referencia { border-top-style: dashed; }
 .muestra.banda { height: 12px; border: 0; background: var(--banda); }
 

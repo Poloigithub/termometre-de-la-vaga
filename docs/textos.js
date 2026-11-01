@@ -12,6 +12,7 @@ window.TEXTOS = {
     parcial: "Dato parcial: {h} de {t} horas publicadas.",
     hoy_etiqueta: "Demanda eléctrica peninsular, {d}",
     hoy_ultimo: "Último dato: {h}. Se actualiza cada hora.",
+    leyenda_hoy: "Hoy",
     leyenda_huelga: "11N",
     leyenda_referencia: "Referencia (mediana)",
     leyenda_banda: "Banda de normalidad (mín–máx)",

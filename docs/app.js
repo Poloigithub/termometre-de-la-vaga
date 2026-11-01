@@ -3,6 +3,7 @@
 const ROJO = "#c8102e";
 const TINTA = "#1f1f1f";
 const TINTA_2 = "#55554f";
+const VERDE = "#2e7d32";
 const BANDA = "#e2e1dc";
 const LINEA = "#e4e3de";
 const HORAS = Array.from({ length: 24 }, (_, h) => h);
@@ -68,44 +69,6 @@ function pintarHoy(hoy) {
   num.classList.remove("pendiente");
   poner("titular-veredicto", texto("hoy_ultimo", { h: hora(hoy.ultimo_minuto) }));
   poner("titular-margen", "");
-  document.getElementById("marco-hoy").hidden = false;
-  document.getElementById("nota-hoy").hidden = false;
-  graficos["grafico-hoy"]?.destroy();
-  if (!window.Chart) return;
-  const eje = { border: { display: false }, ticks: { color: TINTA_2, font: { size: 12 }, padding: 6 } };
-  graficos["grafico-hoy"] = new Chart(document.getElementById("grafico-hoy"), {
-    type: "line",
-    data: {
-      datasets: [{
-        data: hoy.minutos.map((m, i) => ({ x: m, y: hoy.mw[i] / 1000 })),
-        borderColor: ROJO, backgroundColor: ROJO, borderWidth: 2, pointRadius: 0, pointHoverRadius: 5,
-      }],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      animation: false,
-      interaction: { mode: "nearest", axis: "x", intersect: false },
-      scales: {
-        x: {
-          ...eje, type: "linear", min: 0, max: 1440, grid: { display: false },
-          ticks: { ...eje.ticks, stepSize: 180, callback: (v) => `${v / 60} h` },
-        },
-        y: { ...eje, grid: { color: LINEA, drawTicks: false }, title: { display: true, text: texto("unidad_gw"), color: TINTA_2, font: { size: 12 } } },
-      },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: TINTA,
-          displayColors: false,
-          callbacks: {
-            title: (e) => hora(e[0].parsed.x),
-            label: (c) => `${numero(c.parsed.y)} ${texto("unidad_gw")}`,
-          },
-        },
-      },
-    },
-  });
 }
 
 function pintarTitular(datos) {
@@ -113,8 +76,6 @@ function pintarTitular(datos) {
     pintarHoy(datos.hoy);
     return;
   }
-  document.getElementById("marco-hoy").hidden = true;
-  document.getElementById("nota-hoy").hidden = true;
   const r = datos.electricidad.resumen;
   const c = datos.calibracion?.electricidad;
   const num = document.getElementById("titular-numero");
@@ -130,10 +91,22 @@ function pintarTitular(datos) {
   poner("titular-margen", inf == null ? "" : texto("margen", { inf: pct(inf), sup: pct(sup) }));
 }
 
-function pintarLeyenda(id, hayHuelga) {
+function hoyPorHoras(hoy) {
+  // El gráfico va por horas; la última puede estar a medias hasta el siguiente dato.
+  const suma = HORAS.map(() => 0);
+  const muestras = HORAS.map(() => 0);
+  hoy.minutos.forEach((m, i) => {
+    const h = Math.floor(m / 60);
+    suma[h] += hoy.mw[i];
+    muestras[h] += 1;
+  });
+  return HORAS.map((h) => (muestras[h] ? suma[h] / muestras[h] : null));
+}
+
+function pintarLeyenda(id, hayHuelga, hayHoy) {
   const ul = document.getElementById(id);
   const piezas = [
-    ["huelga", hayHuelga ? "leyenda_huelga" : "leyenda_sin_huelga"],
+    hayHoy ? ["hoy", "leyenda_hoy"] : ["huelga", hayHuelga ? "leyenda_huelga" : "leyenda_sin_huelga"],
     ["referencia", "leyenda_referencia"],
     ["banda", "leyenda_banda"],
   ];
@@ -150,7 +123,7 @@ function escalar(serie, factor) {
   return serie.map((v) => (v === null ? null : v * factor));
 }
 
-function pintarGrafico(id, perfil, factor, unidad, decimales) {
+function pintarGrafico(id, perfil, factor, unidad, decimales, hoy = null) {
   graficos[id]?.destroy();
   if (!window.Chart) return;  // sin la librería quedan las tablas y los resúmenes
   const eje = {
@@ -168,6 +141,7 @@ function pintarGrafico(id, perfil, factor, unidad, decimales) {
         { data: escalar(perfil.banda_max, factor), order: 3, borderWidth: 0, pointRadius: 0, pointHitRadius: 0, backgroundColor: BANDA, fill: "-1" },
         { data: escalar(perfil.referencia, factor), order: 2, borderColor: TINTA, borderWidth: 2, borderDash: [6, 4], pointRadius: 0, tension: 0.2 },
         { data: escalar(perfil.valor, factor), order: 1, borderColor: ROJO, backgroundColor: ROJO, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 },
+        ...(hoy ? [{ data: escalar(hoy, factor), order: 0, borderColor: VERDE, backgroundColor: VERDE, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 }] : []),
       ],
     },
     options: {
@@ -189,7 +163,7 @@ function pintarGrafico(id, perfil, factor, unidad, decimales) {
           callbacks: {
             title: (e) => `${e[0].label} h`,
             label: (c) => {
-              const nombres = [texto("tabla_min"), texto("tabla_max"), texto("tabla_referencia"), texto("tabla_huelga")];
+              const nombres = [texto("tabla_min"), texto("tabla_max"), texto("tabla_referencia"), texto("tabla_huelga"), texto("leyenda_hoy")];
               return `${nombres[c.datasetIndex]}: ${numero(c.parsed.y, decimales)} ${unidad}`;
             },
           },
@@ -280,8 +254,10 @@ function pintar(datos) {
     () => pintarTitular(datos),
     () => {
       const p = datos.electricidad.perfil;
-      pintarLeyenda("leyenda-electricidad", p.valor.some((v) => v !== null));
-      pintarGrafico("grafico-electricidad", p, 0.001, texto("unidad_gw"), 1);
+      const hoy = datos.hoy ? hoyPorHoras(datos.hoy) : null;
+      document.getElementById("nota-hoy").hidden = !hoy;
+      pintarLeyenda("leyenda-electricidad", p.valor.some((v) => v !== null), Boolean(hoy));
+      pintarGrafico("grafico-electricidad", p, 0.001, texto("unidad_gw"), 1, hoy);
       pintarTabla("tabla-electricidad", p, 0.001, 1);
     },
     () => pintarMeteo(datos),
