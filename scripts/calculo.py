@@ -7,6 +7,16 @@ POR_DEBAJO = "por_debajo"
 POR_ENCIMA = "por_encima"
 
 
+def curva_del_dia(serie):
+    """Serie de 5 minutos a listas: minuto del día y MW, con el último dato aparte."""
+    return {
+        "minutos": [t.hour * 60 + t.minute for t in serie.index],
+        "mw": [round(float(v), 1) for v in serie.values],
+        "ultimo_minuto": serie.index[-1].hour * 60 + serie.index[-1].minute,
+        "ultimo_mw": round(float(serie.iloc[-1]), 1),
+    }
+
+
 def dentro_de_banda(p):
     """True, False o None si esa hora no tiene desviación."""
     dentro = (p["desviacion_pct"] >= p["banda_inf_pct"]) & (p["desviacion_pct"] <= p["banda_sup_pct"])

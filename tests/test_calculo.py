@@ -5,7 +5,9 @@ import pandas as pd
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-from calculo import POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, media_estaciones, perfil_horario, resumen_franja  # noqa: E402
+from calculo import (  # noqa: E402
+    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, media_estaciones, perfil_horario, resumen_franja,
+)
 from comun import anotar, etiqueta_a_civil  # noqa: E402
 
 REFS = ["r1", "r2", "r3"]
@@ -100,6 +102,13 @@ def test_estacion_sin_dato_no_mueve_la_media():
     assert m.loc[8, "desviacion_pct"] == pytest.approx(-20)
     assert m.loc[8, "estaciones"] == 1
     assert m.loc[9, "estaciones"] == 2
+
+
+def test_curva_del_dia_en_minutos():
+    serie = pd.Series([20000.0, 20500.0], index=pd.to_datetime(["2026-11-01 00:00", "2026-11-01 07:25"]))
+    c = curva_del_dia(serie)
+    assert c["minutos"] == [0, 445]
+    assert (c["ultimo_minuto"], c["ultimo_mw"]) == (445, 20500.0)
 
 
 def test_hora_civil_en_invierno_y_en_verano():

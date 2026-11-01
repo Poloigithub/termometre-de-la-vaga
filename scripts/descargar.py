@@ -7,7 +7,7 @@ import requests
 
 from comun import (
     LOG, anotar, cargar_config, dias_comparados, dias_disponibles, dias_medidos, escribir_estado,
-    guardar_raw, leer_demanda, leer_estado, pedir, registrar, sello, ultimo_raw,
+    guardar_raw, hoy_local, leer_demanda, leer_estado, pedir, registrar, sello, ultimo_raw,
 )
 
 VISOR = "https://demanda.ree.es/WSvisionaMovilesPeninsulaRest/resources/demandaGeneracionPeninsula"
@@ -35,7 +35,8 @@ def demanda_descargada(dia):
 
 
 def descargar_demanda(cfg, estado, marca):
-    dias = dias_disponibles(dias_medidos(cfg))
+    # Hoy siempre se descarga: la portada muestra su curva hasta el día de huelga.
+    dias = dias_disponibles(sorted({*dias_medidos(cfg), hoy_local()}))
     pendientes = [d for d in dias if not (dia_cerrado(d) and demanda_descargada(d))]
     fallos = []
     for dia in pendientes:

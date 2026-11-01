@@ -1,8 +1,9 @@
 """Utilidades compartidas: configuración, descargas fiables, estado y hora civil."""
 import json
 import time
-from datetime import date, datetime, timezone
+from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -52,10 +53,14 @@ def dias_medidos(cfg):
     return sorted({*dias_comparados(cfg), *dias_validacion(cfg), *dias_calibracion(cfg)})
 
 
+def hoy_local():
+    return datetime.now(ZoneInfo(TZ)).strftime("%Y-%m-%d")
+
+
 def dias_disponibles(dias):
     """Solo los días que ya han empezado."""
-    hoy = datetime.now(timezone.utc).astimezone().date()
-    return [d for d in dias if date.fromisoformat(d) <= hoy]
+    hoy = hoy_local()
+    return [d for d in dias if d <= hoy]
 
 
 def sello():

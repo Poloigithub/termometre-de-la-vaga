@@ -54,7 +54,67 @@ function mediana(valores) {
   return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
 }
 
+function hora(minutos) {
+  const m = String(minutos % 60).padStart(2, "0");
+  return `${String(Math.floor(minutos / 60)).padStart(2, "0")}:${m}`;
+}
+
+function pintarHoy(hoy) {
+  const opciones = { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" };
+  const dia = new Date(hoy.fecha).toLocaleDateString(idioma === "va" ? "ca-ES" : "es-ES", opciones);
+  poner("titular-etiqueta", texto("hoy_etiqueta", { d: dia }));
+  const num = document.getElementById("titular-numero");
+  num.textContent = `${numero(hoy.ultimo_mw / 1000)} ${texto("unidad_gw")}`;
+  num.classList.remove("pendiente");
+  poner("titular-veredicto", texto("hoy_ultimo", { h: hora(hoy.ultimo_minuto) }));
+  poner("titular-margen", "");
+  document.getElementById("marco-hoy").hidden = false;
+  document.getElementById("nota-hoy").hidden = false;
+  graficos["grafico-hoy"]?.destroy();
+  if (!window.Chart) return;
+  const eje = { border: { display: false }, ticks: { color: TINTA_2, font: { size: 12 }, padding: 6 } };
+  graficos["grafico-hoy"] = new Chart(document.getElementById("grafico-hoy"), {
+    type: "line",
+    data: {
+      datasets: [{
+        data: hoy.minutos.map((m, i) => ({ x: m, y: hoy.mw[i] / 1000 })),
+        borderColor: ROJO, backgroundColor: ROJO, borderWidth: 2, pointRadius: 0, pointHoverRadius: 5,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      interaction: { mode: "nearest", axis: "x", intersect: false },
+      scales: {
+        x: {
+          ...eje, type: "linear", min: 0, max: 1440, grid: { display: false },
+          ticks: { ...eje.ticks, stepSize: 180, callback: (v) => `${v / 60} h` },
+        },
+        y: { ...eje, grid: { color: LINEA, drawTicks: false }, title: { display: true, text: texto("unidad_gw"), color: TINTA_2, font: { size: 12 } } },
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: TINTA,
+          displayColors: false,
+          callbacks: {
+            title: (e) => hora(e[0].parsed.x),
+            label: (c) => `${numero(c.parsed.y)} ${texto("unidad_gw")}`,
+          },
+        },
+      },
+    },
+  });
+}
+
 function pintarTitular(datos) {
+  if (datos.hoy) {
+    pintarHoy(datos.hoy);
+    return;
+  }
+  document.getElementById("marco-hoy").hidden = true;
+  document.getElementById("nota-hoy").hidden = true;
   const r = datos.electricidad.resumen;
   const c = datos.calibracion?.electricidad;
   const num = document.getElementById("titular-numero");

@@ -6,8 +6,8 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from calculo import media_estaciones, perfil_horario, resumen_franja
-from comun import ESTADO, PROCESADO, RAIZ, cargar_config
+from calculo import curva_del_dia, media_estaciones, perfil_horario, resumen_franja
+from comun import ESTADO, PROCESADO, RAIZ, cargar_config, hoy_local, leer_demanda, ultimo_raw
 
 MAPA_PUNTA = "horas_punta"
 WEB_DATOS = RAIZ / "docs" / "data"
@@ -125,6 +125,18 @@ def calcular_meteo(cfg):
     return salida
 
 
+def calcular_hoy(cfg):
+    """Curva de hoy para la portada. El día de huelga la portada pasa a medirla."""
+    hoy = hoy_local()
+    ruta = ultimo_raw("electricidad", f"*_{hoy}_*")
+    if hoy >= cfg["dia_huelga"] or ruta is None:
+        return None
+    serie = leer_demanda(ruta, hoy)
+    if serie.empty:
+        return None
+    return {"fecha": hoy, **curva_del_dia(serie)}
+
+
 def publicar(resumen):
     """GitHub Pages solo publica docs/. El NO₂ se sigue recogiendo, pero no se publica."""
     shutil.rmtree(WEB_DATOS, ignore_errors=True)
@@ -152,6 +164,7 @@ def main():
         "dia_huelga": cfg["dia_huelga"],
         "dias_referencia": cfg["dias_referencia"],
         "franja": cfg["franja_resumen"],
+        "hoy": calcular_hoy(cfg),
         "electricidad": electricidad,
         "no2": calcular_no2(cfg, calibracion),
         "calibracion": calibracion,
