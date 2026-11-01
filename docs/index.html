@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Termòmetre de la vaga</title>
-<meta name="description" content="La huelga general del 11 de noviembre de 2026, medida con datos públicos de demanda eléctrica y calidad del aire. Metodología y datos abiertos.">
+<meta name="description" content="La huelga general del 11 de noviembre de 2026, medida con datos públicos de demanda eléctrica. Metodología y datos abiertos.">
 <meta property="og:title" content="Termòmetre de la vaga">
 <meta property="og:description" content="La huelga general del 11N medida con datos públicos. Método fijado antes de la huelga, datos abiertos y reproducibles.">
 <meta property="og:type" content="website">
@@ -30,12 +30,11 @@
     <p id="titular-numero" class="numero">—</p>
     <p id="titular-veredicto" class="veredicto"></p>
     <p id="titular-margen" class="margen"></p>
-    <p id="titular-no2" class="indicio"></p>
   </section>
 
   <section aria-labelledby="h-electricidad">
     <h2 id="h-electricidad" data-t="h_electricidad">Electricidad</h2>
-    <p data-t="electricidad_ambito">Es la demanda de toda la España peninsular, no de la Comunitat Valenciana: Red Eléctrica no publica la demanda diaria ni horaria por comunidad.</p>
+    <p data-t="electricidad_ambito">Es la demanda de toda la España peninsular.</p>
     <ul class="leyenda" id="leyenda-electricidad"></ul>
     <div class="grafico"><canvas id="grafico-electricidad" role="img" aria-label="Demanda eléctrica por hora: 11N, referencia y banda de normalidad"></canvas></div>
     <ul id="meteo-electricidad" class="meteo"></ul>
@@ -44,24 +43,6 @@
     <details>
       <summary data-t="ver_tabla">Ver los datos en tabla</summary>
       <div class="tabla-marco"><table id="tabla-electricidad"></table></div>
-    </details>
-  </section>
-
-  <section aria-labelledby="h-no2">
-    <h2 id="h-no2" data-t="h_no2">Calidad del aire en Castelló <span>indicio secundario</span></h2>
-    <p data-t="no2_motivo">El dióxido de nitrógeno (NO₂) sale sobre todo del tráfico, pero en Castelló depende aún más del viento y la lluvia. En nuestra prueba, ni un festivo nacional se distinguió de un día normal. Por eso aquí no hay titular: es un dato de contexto, que además se publica con horas o días de retraso.</p>
-    <p id="no2-resultado" class="resultado"></p>
-    <ul class="leyenda" id="leyenda-no2"></ul>
-    <div class="grafico"><canvas id="grafico-no2" role="img" aria-label="NO₂ por hora en Castelló: 11N, referencia y banda de normalidad"></canvas></div>
-    <ul id="meteo-no2" class="meteo"></ul>
-    <ul id="avisos-no2" class="avisos"></ul>
-    <details>
-      <summary data-t="ver_estaciones">Ver por estaciones</summary>
-      <div class="tabla-marco"><table id="tabla-estaciones"></table></div>
-    </details>
-    <details>
-      <summary data-t="ver_tabla">Ver los datos en tabla</summary>
-      <div class="tabla-marco"><table id="tabla-no2"></table></div>
     </details>
   </section>
 
@@ -78,12 +59,11 @@
     <p data-t="m4">Solo cuando el día se sale de la banda y además del margen de un día normal. Ese margen lo medimos antes de la huelga: comparamos muchos miércoles normales con las tres semanas anteriores y anotamos cuánto se desviaron.</p>
     <p id="margenes" class="dias"></p>
     <p data-t="m4b">Si el día cae dentro, decimos que no hay diferencia apreciable, aunque el porcentaje salga negativo. Y lo probamos: el festivo del 12 de octubre se sale claramente en electricidad.</p>
-    <h3 data-t="m5_t">Límites de cada indicador</h3>
-    <p data-t="m5"><strong>Electricidad:</strong> cubre toda la península, no Castelló ni la Comunitat Valenciana. No ve los servicios ni el teletrabajo, y una caída pequeña no se distingue de un miércoles normal. También depende del tiempo y de la temporada; por eso mostramos la temperatura.</p>
-    <p data-t="m5b"><strong>NO₂:</strong> depende mucho del viento y la lluvia, y solo una de las tres estaciones urbanas es de tráfico. Los datos son provisionales. Sirve como contexto, no como medida de participación.</p>
-    <p data-t="m5c">Ninguno de los dos mide cuánta gente hizo huelga: miden la huella de la actividad.</p>
+    <h3 data-t="m5_t">Límites</h3>
+    <p data-t="m5">Cubre toda la península, no Castelló ni la Comunitat Valenciana. No ve los servicios ni el teletrabajo, y una caída pequeña no se distingue de un miércoles normal. También depende del tiempo y de la temporada; por eso mostramos la temperatura.</p>
+    <p data-t="m5c">No mide cuánta gente hizo huelga: mide la huella de la actividad.</p>
     <h3 data-t="m6_t">Fuentes</h3>
-    <p data-t="m6">Demanda real peninsular de Red Eléctrica (visor de demanda y ESIOS). NO₂ de la Red Valenciana de Vigilancia y Control de la Contaminación Atmosférica de la Generalitat Valenciana, también a través de la Agencia Europea de Medio Ambiente. Meteorología de Open-Meteo.</p>
+    <p data-t="m6">Demanda real peninsular de Red Eléctrica (visor de demanda y ESIOS). Meteorología de Open-Meteo.</p>
     <p data-t="m6b">No usamos la serie horaria de la web de datos de Red Eléctrica (REData) porque llega con dos días de retraso y difiere de la anterior en las horas de sol. La misma serie se usa para todos los días.</p>
   </section>
 
@@ -92,10 +72,8 @@
     <p data-t="datos_intro">Todo se puede descargar y recalcular. Cada descarga queda guardada con su fecha en el historial público del repositorio.</p>
     <ul class="enlaces">
       <li><a href="data/electricidad_horaria.csv" data-t="d_elec">Demanda eléctrica por hora (CSV)</a></li>
-      <li><a href="data/no2_horario.csv" data-t="d_no2">NO₂ por estación y hora (CSV)</a></li>
       <li><a href="data/meteo_horaria.csv" data-t="d_meteo">Meteorología por hora (CSV)</a></li>
-      <li><a href="data/perfil_electricidad.csv" data-t="d_perfil_e">Cálculo hora a hora, electricidad (CSV)</a></li>
-      <li><a href="data/perfil_no2_estaciones.csv" data-t="d_perfil_n">Cálculo hora a hora, NO₂ por estación (CSV)</a></li>
+      <li><a href="data/perfil_electricidad.csv" data-t="d_perfil_e">Cálculo hora a hora (CSV)</a></li>
       <li><a href="data/calibracion.json" data-t="d_calib">Calibración del margen (JSON)</a></li>
       <li><a href="https://github.com/Poloigithub/termometre-de-la-vaga/tree/main/data/raw" data-t="d_raw">Respuestas originales de cada fuente</a></li>
       <li><a href="https://github.com/Poloigithub/termometre-de-la-vaga" data-t="d_repo">Repositorio y código</a></li>

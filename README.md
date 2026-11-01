@@ -1,6 +1,8 @@
 # Termòmetre de la vaga
 
-Mide la huella de la huelga general del 11 de noviembre de 2026 con datos públicos: la demanda eléctrica peninsular como indicador principal y el NO₂ de Castelló como indicio secundario. Cada dato se compara con miércoles normales a la misma hora.
+Mide la huella de la huelga general del 11 de noviembre de 2026 con datos públicos de demanda eléctrica peninsular. Cada dato se compara con miércoles normales a la misma hora.
+
+El NO₂ de Castelló se sigue descargando y calculando en `data/`, pero no se publica en la web: la validación mostró que no distingue ni un festivo de un día normal (ver [FUENTES.md](FUENTES.md)).
 
 La web está en `docs/`. El detalle de las fuentes y de cómo se ha validado el método está en [FUENTES.md](FUENTES.md).
 
@@ -37,7 +39,7 @@ pytest
 | `data/processed/` | Series limpias y cálculos. Se puede borrar y regenerar desde `data/raw/` |
 | `data/log/` | Errores de descarga (`descargas.log`) y cuándo cambia cada fuente de aire (`cadencia.csv`) |
 | `data/estado.json` | Última descarga correcta de cada fuente |
-| `docs/` | Web estática. `docs/data/` es la copia de los datos que se publica |
+| `docs/` | Web estática. `docs/data/` es la copia de los datos que se publica, sin el NO₂ |
 | `scripts/descargar.py` | Descarga las fuentes |
 | `scripts/procesar.py` | Limpia los datos y los pasa a hora civil |
 | `scripts/calibrar.py` | Mide cuánto se desvía un miércoles normal |

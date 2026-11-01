@@ -68,11 +68,6 @@ function pintarTitular(datos) {
   const inf = hay ? r.margen_inf_pct : c?.minimo;
   const sup = hay ? r.margen_sup_pct : c?.maximo;
   poner("titular-margen", inf == null ? "" : texto("margen", { inf: pct(inf), sup: pct(sup) }));
-
-  const n = datos.no2.resumen;
-  poner("titular-no2", n.desviacion_pct === null
-    ? texto("no2_pendiente")
-    : texto("no2_valor", { v: pct(n.desviacion_pct), texto: texto(`no2_${n.veredicto}`) }));
 }
 
 function pintarLeyenda(id, hayHuelga) {
@@ -166,34 +161,6 @@ function pintarTabla(id, perfil, factor, decimales) {
   tabla.replaceChildren(cabecera, ...filas);
 }
 
-function pintarNo2(datos) {
-  const n = datos.no2;
-  const r = n.resumen;
-  const c = datos.calibracion?.no2_urbano;
-  if (r.desviacion_pct === null) {
-    poner("no2-resultado", texto("no2_sin_resultado"));
-  } else {
-    const inf = c?.minimo ?? r.margen_inf_pct;
-    const sup = c?.maximo ?? r.margen_sup_pct;
-    let t = texto("no2_resultado", { v: pct(r.desviacion_pct), inf: pct(inf), sup: pct(sup) });
-    const punta = r.horas_punta;
-    if (punta?.desviacion_pct != null) t += ` ${texto("no2_punta", { v: pct(punta.desviacion_pct) })}`;
-    poner("no2-resultado", t);
-  }
-
-  const tabla = document.getElementById("tabla-estaciones");
-  const cabecera = document.createElement("tr");
-  ["est_nombre", "est_grupo", "est_desv"].forEach((k) => celda(cabecera, texto(k), "th"));
-  const filas = Object.values(n.estaciones).map((e) => {
-    const f = document.createElement("tr");
-    celda(f, e.nombre);
-    celda(f, texto(`est_${e.grupo}`));
-    celda(f, e.resumen.desviacion_pct === null ? "—" : pct(e.resumen.desviacion_pct));
-    return f;
-  });
-  tabla.replaceChildren(cabecera, ...filas);
-}
-
 function pintarMeteo(datos) {
   const dia = datos.dia_huelga;
   const fila = (punto, variable, decimales, clave, extra = {}) => {
@@ -206,17 +173,8 @@ function pintarMeteo(datos) {
   lista("meteo-electricidad", ["castello", "valencia"]
     .map((p) => fila(p, "temperatura_c", 1, "meteo_temp", { p: texto(`punto_${p}`) }))
     .filter(Boolean));
-  lista("meteo-no2", [
-    fila("castello", "viento_kmh", 1, "meteo_viento"),
-    fila("castello", "lluvia_mm", 1, "meteo_lluvia"),
-  ].filter(Boolean));
-
-  const avisos = datos.meteo.avisos;
-  lista("avisos-electricidad", avisos.filter((a) => a.tipo === "temperatura").map((a) =>
+  lista("avisos-electricidad", datos.meteo.avisos.filter((a) => a.tipo === "temperatura").map((a) =>
     texto("aviso_temperatura", { d: numero(a.diferencia_c), p: texto(`punto_${a.punto}`) })));
-  lista("avisos-no2", avisos.filter((a) => a.tipo !== "temperatura").map((a) => (a.tipo === "viento"
-    ? texto("aviso_viento", { d: numero(a.diferencia_kmh) })
-    : texto("aviso_lluvia", { l: numero(a.lluvia_mm) }))));
 }
 
 function pintarMetodologia(datos) {
@@ -230,13 +188,13 @@ function pintarMetodologia(datos) {
   }).join(" · "));
   const c = datos.calibracion;
   if (!c) return;
-  const linea = (clave, m) => texto(clave, { inf: pct(m.minimo), sup: pct(m.maximo), n: m.dias });
-  poner("margenes", `${linea("margen_elec", c.electricidad)} ${linea("margen_no2", c.no2_urbano)}`);
+  const m = c.electricidad;
+  poner("margenes", texto("margen_elec", { inf: pct(m.minimo), sup: pct(m.maximo), n: m.dias }));
 }
 
 function pintarEstado(datos) {
   const ul = document.getElementById("estado");
-  ul.replaceChildren(...["visor_ree", "agencia_europea", "gva_ultimos", "open_meteo"].map((fuente) => {
+  ul.replaceChildren(...["visor_ree", "open_meteo"].map((fuente) => {
     const e = datos.estado[fuente] ?? {};
     const li = document.createElement("li");
     const nombre = document.createElement("span");
@@ -265,13 +223,6 @@ function pintar(datos) {
       pintarLeyenda("leyenda-electricidad", p.valor.some((v) => v !== null));
       pintarGrafico("grafico-electricidad", p, 0.001, texto("unidad_gw"), 1);
       pintarTabla("tabla-electricidad", p, 0.001, 1);
-    },
-    () => {
-      const p = datos.no2.perfil;
-      pintarLeyenda("leyenda-no2", p.valor.some((v) => v !== null));
-      pintarGrafico("grafico-no2", p, 1, texto("unidad_no2"), 0);
-      pintarTabla("tabla-no2", p, 1, 1);
-      pintarNo2(datos);
     },
     () => pintarMeteo(datos),
     () => pintarMetodologia(datos),

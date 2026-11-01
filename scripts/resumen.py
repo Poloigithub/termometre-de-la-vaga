@@ -11,6 +11,7 @@ from comun import ESTADO, PROCESADO, RAIZ, cargar_config
 
 MAPA_PUNTA = "horas_punta"
 WEB_DATOS = RAIZ / "docs" / "data"
+FUENTES_WEB = ("visor_ree", "esios", "open_meteo")
 
 
 def tabla_de(d, valor):
@@ -124,6 +125,23 @@ def calcular_meteo(cfg):
     return salida
 
 
+def publicar(resumen):
+    """GitHub Pages solo publica docs/. El NO₂ se sigue recogiendo, pero no se publica."""
+    shutil.rmtree(WEB_DATOS, ignore_errors=True)
+    WEB_DATOS.mkdir(parents=True)
+    for nombre in ("electricidad_horaria.csv", "meteo_horaria.csv", "perfil_electricidad.csv"):
+        shutil.copy2(PROCESADO / nombre, WEB_DATOS / nombre)
+    web = {k: v for k, v in resumen.items() if k != "no2"}
+    web["estado"] = {k: v for k, v in resumen["estado"].items() if k in FUENTES_WEB}
+    calibracion = {k: v for k, v in (resumen["calibracion"] or {}).items() if "no2" not in k}
+    calibracion["dias"] = [
+        {k: v for k, v in d.items() if "no2" not in k} for d in calibracion.get("dias", [])
+    ]
+    web["calibracion"] = calibracion
+    (WEB_DATOS / "resumen.json").write_text(json.dumps(web, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+    (WEB_DATOS / "calibracion.json").write_text(json.dumps(calibracion, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+
+
 def main():
     cfg = cargar_config()
     ruta = PROCESADO / "calibracion.json"
@@ -141,10 +159,7 @@ def main():
         "estado": json.loads(ESTADO.read_text(encoding="utf8")) if ESTADO.exists() else {},
     }
     (PROCESADO / "resumen.json").write_text(json.dumps(resumen, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
-    # GitHub Pages solo publica docs/: la web y los enlaces de descarga leen esta copia.
-    WEB_DATOS.mkdir(parents=True, exist_ok=True)
-    for fichero in [*PROCESADO.glob("*.csv"), *PROCESADO.glob("*.json")]:
-        shutil.copy2(fichero, WEB_DATOS / fichero.name)
+    publicar(resumen)
 
 
 if __name__ == "__main__":

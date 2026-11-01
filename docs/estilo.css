@@ -24,7 +24,6 @@ main { max-width: 720px; margin: 0 auto; padding: 24px 16px 56px; }
 
 h1 { margin: 0; font-size: 2rem; line-height: 1.15; letter-spacing: -0.01em; }
 h2 { margin: 0 0 8px; font-size: 1.4rem; line-height: 1.25; }
-h2 span { font-size: 0.8rem; font-weight: 500; color: var(--tinta-2); white-space: nowrap; }
 h3 { margin: 24px 0 4px; font-size: 1.02rem; }
 p { margin: 0 0 12px; }
 a { color: var(--tinta); text-underline-offset: 3px; }
@@ -49,9 +48,6 @@ section { margin-top: 44px; }
 .numero.pendiente { font-size: clamp(2rem, 9vw, 2.75rem); font-weight: 600; }
 .veredicto { margin: 8px 0 0; font-size: 1.15rem; font-weight: 600; }
 .margen { margin: 4px 0 0; color: var(--tinta-2); font-size: 0.95rem; }
-.indicio { margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--linea); color: var(--tinta-2); font-size: 0.95rem; }
-
-.resultado { font-weight: 600; }
 
 .leyenda, .meteo, .avisos, .enlaces, .estado { margin: 0; padding: 0; list-style: none; }
 
