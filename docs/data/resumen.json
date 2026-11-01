@@ -922,14 +922,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-01",
-   "ultima_correcta": "2026-11-01T07:09Z",
-   "ultimo_intento": "2026-11-01T07:09Z"
+   "ultima_correcta": "2026-11-01T07:13Z",
+   "ultimo_intento": "2026-11-01T07:13Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 0,
-   "ultima_correcta": "2026-11-01T07:09Z",
-   "ultimo_intento": "2026-11-01T07:09Z"
+   "ultima_correcta": "2026-11-01T07:13Z",
+   "ultimo_intento": "2026-11-01T07:13Z"
   }
  }
 }
