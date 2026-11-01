@@ -3,7 +3,7 @@ name: Actualizar datos y web
 on:
   schedule:
     # En UTC y con posibles retrasos: el procesado no depende de cuándo arranque.
-    - cron: "17 * * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
