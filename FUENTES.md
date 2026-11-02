@@ -20,6 +20,8 @@ Las respuestas originales quedan en `data/raw/fase1/`.
 
 ## NO₂
 
+**No se publica en la web.** La validación mostró que no distingue un festivo de un día normal. Se sigue descargando y calculando en `data/`.
+
 | Fuente | Contenido | Retraso | Estado |
 |---|---|---|---|
 | Generalitat, `med-cont-atmos-mh-v2-2026` (últimos 2000 registros) | Provisional; cubre unas 3 horas de toda la red | Lo último era del 30/10 a las 23:00 el 01/11 por la mañana | Se ha visto un solo estado; cadencia real sin medir |
