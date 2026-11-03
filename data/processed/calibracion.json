@@ -95,14 +95,14 @@
    "dia": "2026-10-14",
    "electricidad": -2.3,
    "electricidad_punta": -2.0,
-   "no2_urbano": 100.9,
+   "no2_urbano": 100.5,
    "no2_urbano_punta": 76.9
   },
   {
    "dia": "2026-10-21",
    "electricidad": -3.8,
    "electricidad_punta": -3.2,
-   "no2_urbano": 21.1,
+   "no2_urbano": 21.9,
    "no2_urbano_punta": 2.8
   },
   {
