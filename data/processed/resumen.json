@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T06:01Z",
+ "generado": "2026-11-04T06:37Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -99,7 +99,14 @@
    400,
    405,
    410,
-   415
+   415,
+   420,
+   425,
+   430,
+   435,
+   440,
+   445,
+   450
   ],
   "mw": [
    24419.0,
@@ -185,10 +192,17 @@
    25980.0,
    26387.0,
    26580.0,
-   26732.0
+   26732.0,
+   26835.0,
+   27571.0,
+   28108.0,
+   28359.0,
+   28537.0,
+   28991.0,
+   29342.0
   ],
-  "ultimo_minuto": 415,
-  "ultimo_mw": 26732.0
+  "ultimo_minuto": 450,
+  "ultimo_mw": 29342.0
  },
  "electricidad": {
   "resumen": {
@@ -3037,8 +3051,8 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-04T06:01Z",
-   "ultimo_intento": "2026-11-04T06:01Z"
+   "ultima_correcta": "2026-11-04T06:37Z",
+   "ultimo_intento": "2026-11-04T06:37Z"
   },
   "eea_modificado": {
    "12005005": "Wed, 04 Nov 2026 05:56:22 GMT",
@@ -3057,20 +3071,20 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-03T11:11:09.215809",
-   "ultima_correcta": "2026-11-04T06:01Z",
-   "ultimo_intento": "2026-11-04T06:01Z"
+   "ultima_correcta": "2026-11-04T06:37Z",
+   "ultimo_intento": "2026-11-04T06:37Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-04",
-   "ultima_correcta": "2026-11-04T06:01Z",
-   "ultimo_intento": "2026-11-04T06:01Z"
+   "ultima_correcta": "2026-11-04T06:37Z",
+   "ultimo_intento": "2026-11-04T06:37Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-04T06:01Z",
-   "ultimo_intento": "2026-11-04T06:01Z"
+   "ultima_correcta": "2026-11-04T06:37Z",
+   "ultimo_intento": "2026-11-04T06:37Z"
   }
  }
 }
