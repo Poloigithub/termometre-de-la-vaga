@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T08:01Z",
+ "generado": "2026-11-04T09:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -2405,7 +2405,7 @@
       "lluvia_mm": 0.0
      },
      "2026-11-04": {
-      "temperatura_c": 11.8,
+      "temperatura_c": 12.2,
       "viento_kmh": 7.3,
       "lluvia_mm": 0.0
      }
@@ -2663,7 +2663,7 @@
        11.4,
        11.5,
        12.5,
-       null,
+       13.4,
        null,
        null,
        null,
@@ -2689,7 +2689,7 @@
        6.6,
        7.6,
        7.7,
-       null,
+       7.4,
        null,
        null,
        null,
@@ -2715,7 +2715,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -2752,8 +2752,8 @@
      },
      "2026-11-04": {
       "temperatura_c": 12.9,
-      "viento_kmh": 5.2,
-      "lluvia_mm": 0.1
+      "viento_kmh": 5.1,
+      "lluvia_mm": 0.2
      }
     },
     "horario": {
@@ -3009,7 +3009,7 @@
        13.0,
        12.8,
        12.8,
-       null,
+       13.0,
        null,
        null,
        null,
@@ -3035,7 +3035,7 @@
        5.9,
        5.5,
        4.1,
-       null,
+       4.8,
        null,
        null,
        null,
@@ -3061,7 +3061,7 @@
        0.0,
        0.0,
        0.1,
-       null,
+       0.1,
        null,
        null,
        null,
@@ -3085,8 +3085,8 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-04T08:01Z",
-   "ultimo_intento": "2026-11-04T08:01Z"
+   "ultima_correcta": "2026-11-04T09:01Z",
+   "ultimo_intento": "2026-11-04T09:01Z"
   },
   "eea_modificado": {
    "12005005": "Wed, 04 Nov 2026 07:58:18 GMT",
@@ -3105,20 +3105,20 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-03T11:11:09.215809",
-   "ultima_correcta": "2026-11-04T08:01Z",
-   "ultimo_intento": "2026-11-04T08:01Z"
+   "ultima_correcta": "2026-11-04T09:01Z",
+   "ultimo_intento": "2026-11-04T09:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-04",
-   "ultima_correcta": "2026-11-04T08:01Z",
-   "ultimo_intento": "2026-11-04T08:01Z"
+   "ultima_correcta": "2026-11-04T09:01Z",
+   "ultimo_intento": "2026-11-04T09:01Z"
   },
   "visor_ree": {
-   "error": null,
+   "error": "Sin datos de 2026-11-04",
    "pendientes": 1,
    "ultima_correcta": "2026-11-04T08:01Z",
-   "ultimo_intento": "2026-11-04T08:01Z"
+   "ultimo_intento": "2026-11-04T09:01Z"
   }
  }
 }
