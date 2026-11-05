@@ -11,7 +11,7 @@ window.TEXTOS = {
     margen: "Margen de un día normal: {inf} a {sup}",
     parcial: "Dato parcial: {h} de {t} horas publicadas.",
     hoy_etiqueta: "Demanda eléctrica peninsular, {d}",
-    hoy_ultimo: "Último dato: {h}.",
+    hoy_ultimo: "Último dato: {h}. Se actualiza cada hora.",
     leyenda_hoy: "Hoy",
     leyenda_huelga: "11N",
     leyenda_prevista: "Prevista de Red Eléctrica",
