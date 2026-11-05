@@ -164,6 +164,18 @@ def leer_demanda(ruta, dia):
         d = pd.DataFrame(json.loads(texto)["indicator"]["values"], columns=["datetime", "value"])
         t = pd.to_datetime(d["datetime"], utc=True).dt.tz_convert(TZ).dt.tz_localize(None)
         v = pd.to_numeric(d["value"], errors="coerce")
+    return _del_dia(t, v, dia)
+
+
+def leer_prevista(ruta, dia):
+    """Demanda prevista por REE, de 5 en 5 minutos, en MW y hora local."""
+    texto = ruta.read_text(encoding="utf8")
+    filas = json.loads(texto[texto.index("(") + 1 : texto.rindex(")")])["valoresPrevistaProgramada"]
+    d = pd.DataFrame(filas, columns=["ts", "pre"])
+    return _del_dia(pd.to_datetime(d["ts"], errors="coerce"), pd.to_numeric(d["pre"], errors="coerce"), dia)
+
+
+def _del_dia(t, v, dia):
     s = pd.Series(v.values, index=pd.DatetimeIndex(t))
     s = s[s.index.notna() & (s > 0)]
     return s[s.index.strftime("%Y-%m-%d") == dia].sort_index()

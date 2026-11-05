@@ -11,6 +11,7 @@ from comun import (
 )
 
 VISOR = "https://demanda.ree.es/WSvisionaMovilesPeninsulaRest/resources/demandaGeneracionPeninsula"
+VISOR_PREVISTA = "https://demanda.ree.es/WSvisionaMovilesPeninsulaRest/resources/prevProgPeninsula"
 ESIOS = "https://api.esios.ree.es/indicators"
 GVA = "https://dadesobertes.gva.es"
 GVA_ULTIMOS = "20e3d8ff-ee72-47fe-95c6-c36a134648a5"
@@ -66,6 +67,22 @@ def descargar_demanda(cfg, estado, marca):
             registrar(f"esios {dia}: {e}")
             fallos_esios.append(dia)
     anotar(estado, "esios", not fallos_esios, error=f"Sin datos de {', '.join(fallos_esios)}")
+
+
+def descargar_prevista(cfg, estado, marca):
+    # Solo de hoy y del día de huelga: el visor no la da de días futuros.
+    hoy = hoy_local()
+    dias = [d for d in sorted({hoy, cfg["dia_huelga"]}) if d <= hoy]
+    pendientes = [d for d in dias if not (dia_cerrado(d) and ultimo_raw("prevista", f"*_{d}_*"))]
+    fallos = []
+    for dia in pendientes:
+        try:
+            r = pedir(f"{VISOR_PREVISTA}?curva=DEMANDAAU&fecha={dia}", valido=lambda x: b'"pre"' in x.content)
+            guardar_raw("prevista", f"prevista_{dia}_{marca}.jsonp", r.content)
+        except RuntimeError as e:
+            registrar(f"prevista {dia}: {e}")
+            fallos.append(dia)
+    anotar(estado, "prevista_ree", not fallos, error=f"Sin datos de {', '.join(fallos)}")
 
 
 def apuntar_cadencia(marca, fuente, ultima_modificacion):
@@ -166,6 +183,7 @@ def main():
     marca = sello()
     pasos = [
         ("visor_ree", lambda: descargar_demanda(cfg, estado, marca)),
+        ("prevista_ree", lambda: descargar_prevista(cfg, estado, marca)),
         ("agencia_europea", lambda: descargar_eea(cfg, estado, marca)),
         ("gva_ultimos", lambda: descargar_gva_ultimos(estado, marca)),
         ("gva_historico", lambda: descargar_gva_2025(cfg, estado, marca)),

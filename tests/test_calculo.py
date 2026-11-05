@@ -6,7 +6,8 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from calculo import (  # noqa: E402
-    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, media_estaciones, perfil_horario, resumen_franja,
+    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, media_estaciones, perfil_horario, por_horas,
+    resumen_franja,
 )
 from comun import anotar, etiqueta_a_civil  # noqa: E402
 
@@ -125,3 +126,11 @@ def test_una_fuente_correcta_no_guarda_el_mensaje_de_error():
     assert estado["fuente"]["error"] == "caida"
     anotar(estado, "fuente", True, error="Sin datos de ")
     assert estado["fuente"]["error"] is None
+
+
+def test_por_horas_media_y_huecos():
+    t = pd.date_range("2026-11-05 00:00", periods=24, freq="5min")  # solo 0 h y 1 h
+    serie = pd.Series([100.0] * 12 + [200.0] * 12, index=t)
+    h = por_horas(serie)
+    assert h[0] == 100.0 and h[1] == 200.0
+    assert len(h) == 24 and h[2] is None

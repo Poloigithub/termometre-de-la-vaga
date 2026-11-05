@@ -14,6 +14,8 @@ window.TEXTOS = {
     hoy_ultimo: "Último dato: {h}.",
     leyenda_hoy: "Hoy",
     leyenda_huelga: "11N",
+    leyenda_prevista: "Prevista de Red Eléctrica",
+    tabla_prevista: "Prevista REE",
     leyenda_referencia: "Referencia (mediana)",
     leyenda_banda: "Banda de normalidad (mín–máx)",
     leyenda_sin_huelga: "11N (aún sin datos)",

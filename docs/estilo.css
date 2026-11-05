@@ -57,6 +57,7 @@ section { margin-top: 44px; }
 .muestra.huelga { border-color: var(--rojo); border-top-width: 3px; }
 .muestra.hoy { border-color: #2e7d32; border-top-width: 3px; }
 .muestra.referencia { border-top-style: dashed; }
+.muestra.prevista { border-top-width: 2px; border-top-style: dotted; }
 .muestra.banda { height: 12px; border: 0; background: var(--banda); }
 
 .grafico { position: relative; height: 280px; margin-top: 8px; }

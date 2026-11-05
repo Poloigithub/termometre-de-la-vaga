@@ -6,8 +6,8 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from calculo import curva_del_dia, media_estaciones, perfil_horario, resumen_franja
-from comun import ESTADO, PROCESADO, RAIZ, cargar_config, hoy_local, leer_demanda, ultimo_raw
+from calculo import curva_del_dia, media_estaciones, perfil_horario, por_horas, resumen_franja
+from comun import ESTADO, PROCESADO, RAIZ, cargar_config, hoy_local, leer_demanda, leer_prevista, ultimo_raw
 
 MAPA_PUNTA = "horas_punta"
 WEB_DATOS = RAIZ / "docs" / "data"
@@ -137,6 +137,17 @@ def calcular_hoy(cfg):
     return {"fecha": hoy, **curva_del_dia(serie)}
 
 
+def calcular_prevista(cfg):
+    """Prevista de REE del día que enseña el gráfico: hoy, y el de huelga a partir del 11N.
+    Solo es contexto: REE ya prevé los festivos, así que no sirve de referencia."""
+    dia = min(hoy_local(), cfg["dia_huelga"])
+    ruta = ultimo_raw("prevista", f"*_{dia}_*")
+    if ruta is None:
+        return None
+    serie = leer_prevista(ruta, dia)
+    return {"fecha": dia, "mw": por_horas(serie)} if not serie.empty else None
+
+
 def publicar(resumen):
     """GitHub Pages solo publica docs/. El NO₂ se sigue recogiendo, pero no se publica."""
     shutil.rmtree(WEB_DATOS, ignore_errors=True)
@@ -165,6 +176,7 @@ def main():
         "dias_referencia": cfg["dias_referencia"],
         "franja": cfg["franja_resumen"],
         "hoy": calcular_hoy(cfg),
+        "prevista": calcular_prevista(cfg),
         "electricidad": electricidad,
         "no2": calcular_no2(cfg, calibracion),
         "calibracion": calibracion,

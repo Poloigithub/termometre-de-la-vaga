@@ -103,10 +103,11 @@ function hoyPorHoras(hoy) {
   return HORAS.map((h) => (muestras[h] ? suma[h] / muestras[h] : null));
 }
 
-function pintarLeyenda(id, hayHuelga, hayHoy) {
+function pintarLeyenda(id, hayHuelga, hayHoy, hayPrevista) {
   const ul = document.getElementById(id);
   const piezas = [
     hayHoy ? ["hoy", "leyenda_hoy"] : ["huelga", hayHuelga ? "leyenda_huelga" : "leyenda_sin_huelga"],
+    ...(hayPrevista ? [[`prevista ${hayHoy ? "hoy" : "huelga"}`, "leyenda_prevista"]] : []),
     ["referencia", "leyenda_referencia"],
     ["banda", "leyenda_banda"],
   ];
@@ -123,7 +124,9 @@ function escalar(serie, factor) {
   return serie.map((v) => (v === null ? null : v * factor));
 }
 
-function pintarGrafico(id, perfil, factor, unidad, decimales, hoy = null) {
+function pintarGrafico(id, perfil, factor, unidad, decimales, hoy = null, prevista = null) {
+  // La prevista lleva el color del día que acompaña, en punteado.
+  const colorPrevista = hoy ? VERDE : ROJO;
   graficos[id]?.destroy();
   if (!window.Chart) return;  // sin la librería quedan las tablas y los resúmenes
   const eje = {
@@ -137,11 +140,12 @@ function pintarGrafico(id, perfil, factor, unidad, decimales, hoy = null) {
       labels: HORAS,
       datasets: [
         // En Chart.js el `order` más bajo queda encima: la banda va al fondo.
-        { data: escalar(perfil.banda_min, factor), order: 4, borderWidth: 0, pointRadius: 0, pointHitRadius: 0, fill: false },
-        { data: escalar(perfil.banda_max, factor), order: 3, borderWidth: 0, pointRadius: 0, pointHitRadius: 0, backgroundColor: BANDA, fill: "-1" },
-        { data: escalar(perfil.referencia, factor), order: 2, borderColor: TINTA, borderWidth: 2, borderDash: [6, 4], pointRadius: 0, tension: 0.2 },
-        { data: escalar(perfil.valor, factor), order: 1, borderColor: ROJO, backgroundColor: ROJO, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 },
-        ...(hoy ? [{ data: escalar(hoy, factor), order: 0, borderColor: VERDE, backgroundColor: VERDE, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 }] : []),
+        { label: texto("tabla_min"), data: escalar(perfil.banda_min, factor), order: 5, borderWidth: 0, pointRadius: 0, pointHitRadius: 0, fill: false },
+        { label: texto("tabla_max"), data: escalar(perfil.banda_max, factor), order: 4, borderWidth: 0, pointRadius: 0, pointHitRadius: 0, backgroundColor: BANDA, fill: "-1" },
+        { label: texto("tabla_referencia"), data: escalar(perfil.referencia, factor), order: 3, borderColor: TINTA, borderWidth: 2, borderDash: [6, 4], pointRadius: 0, tension: 0.2 },
+        ...(prevista ? [{ label: texto("tabla_prevista"), data: escalar(prevista, factor), order: 2, borderColor: colorPrevista, backgroundColor: colorPrevista, borderWidth: 2, borderDash: [2, 3], pointRadius: 0, pointHoverRadius: 4, tension: 0.2 }] : []),
+        { label: texto("tabla_huelga"), data: escalar(perfil.valor, factor), order: 1, borderColor: ROJO, backgroundColor: ROJO, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 },
+        ...(hoy ? [{ label: texto("leyenda_hoy"), data: escalar(hoy, factor), order: 0, borderColor: VERDE, backgroundColor: VERDE, borderWidth: 3, pointRadius: 0, pointHoverRadius: 5, tension: 0.2 }] : []),
       ],
     },
     options: {
@@ -157,15 +161,12 @@ function pintarGrafico(id, perfil, factor, unidad, decimales, hoy = null) {
         legend: { display: false },
         filler: { drawTime: "beforeDatasetsDraw" },
         tooltip: {
-          itemSort: (a, b) => b.datasetIndex - a.datasetIndex,
+          itemSort: (a, b) => a.dataset.order - b.dataset.order,
           backgroundColor: TINTA,
           displayColors: false,
           callbacks: {
             title: (e) => `${e[0].label} h`,
-            label: (c) => {
-              const nombres = [texto("tabla_min"), texto("tabla_max"), texto("tabla_referencia"), texto("tabla_huelga"), texto("leyenda_hoy")];
-              return `${nombres[c.datasetIndex]}: ${numero(c.parsed.y, decimales)} ${unidad}`;
-            },
+            label: (c) => `${c.dataset.label}: ${numero(c.parsed.y, decimales)} ${unidad}`,
           },
         },
       },
@@ -255,9 +256,11 @@ function pintar(datos) {
     () => {
       const p = datos.electricidad.perfil;
       const hoy = datos.hoy ? hoyPorHoras(datos.hoy) : null;
+      const prevista = datos.prevista?.mw ?? null;
       document.getElementById("nota-hoy").hidden = !hoy;
-      pintarLeyenda("leyenda-electricidad", p.valor.some((v) => v !== null), Boolean(hoy));
-      pintarGrafico("grafico-electricidad", p, 0.001, texto("unidad_gw"), 1, hoy);
+      document.getElementById("nota-prevista").hidden = !prevista;
+      pintarLeyenda("leyenda-electricidad", p.valor.some((v) => v !== null), Boolean(hoy), Boolean(prevista));
+      pintarGrafico("grafico-electricidad", p, 0.001, texto("unidad_gw"), 1, hoy, prevista);
       pintarTabla("tabla-electricidad", p, 0.001, 1);
     },
     () => pintarMeteo(datos),

@@ -17,6 +17,12 @@ def curva_del_dia(serie):
     }
 
 
+def por_horas(serie):
+    """Media de cada hora (0-23) de una serie de 5 minutos; None si la hora no tiene datos."""
+    medias = serie.groupby(serie.index.hour).mean().reindex(range(24))
+    return [None if pd.isna(v) else round(float(v), 1) for v in medias]
+
+
 def dentro_de_banda(p):
     """True, False o None si esa hora no tiene desviación."""
     dentro = (p["desviacion_pct"] >= p["banda_inf_pct"]) & (p["desviacion_pct"] <= p["banda_sup_pct"])
