@@ -93,8 +93,8 @@ fecha,hora,punto,temperatura_c,viento_kmh,lluvia_mm
 2026-11-04,19,castello,13.8,4.5,0.0
 2026-11-04,20,castello,13.1,5.6,0.0
 2026-11-04,21,castello,12.6,6.9,0.0
-2026-11-04,22,castello,12.6,8.0,0.0
-2026-11-04,23,castello,13.1,6.8,0.0
+2026-11-04,22,castello,12.8,8.0,0.0
+2026-11-04,23,castello,13.1,7.7,0.0
 2025-11-12,0,valencia,13.0,7.3,0.0
 2025-11-12,1,valencia,11.7,5.4,0.0
 2025-11-12,2,valencia,11.1,5.9,0.0
@@ -189,5 +189,5 @@ fecha,hora,punto,temperatura_c,viento_kmh,lluvia_mm
 2026-11-04,19,valencia,15.2,7.4,0.0
 2026-11-04,20,valencia,14.7,4.2,0.0
 2026-11-04,21,valencia,14.1,7.0,0.0
-2026-11-04,22,valencia,13.8,5.2,0.0
-2026-11-04,23,valencia,13.8,4.1,0.0
+2026-11-04,22,valencia,13.9,5.2,0.0
+2026-11-04,23,valencia,13.6,4.7,0.0
