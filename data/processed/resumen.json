@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-07T20:01Z",
+ "generado": "2026-11-07T20:17Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -267,7 +267,10 @@
    1240,
    1245,
    1250,
-   1255
+   1255,
+   1260,
+   1265,
+   1270
   ],
   "mw": [
    25229.0,
@@ -521,10 +524,13 @@
    28651.0,
    28780.0,
    28380.0,
-   28348.0
+   28348.0,
+   28390.0,
+   28719.0,
+   28708.0
   ],
-  "ultimo_minuto": 1255,
-  "ultimo_mw": 28348.0
+  "ultimo_minuto": 1270,
+  "ultimo_mw": 28708.0
  },
  "prevista": {
   "fecha": "2026-11-07",
@@ -3402,17 +3408,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-07T20:01Z",
-   "ultimo_intento": "2026-11-07T20:01Z"
+   "ultima_correcta": "2026-11-07T20:17Z",
+   "ultimo_intento": "2026-11-07T20:17Z"
   },
   "eea_modificado": {
-   "12005005": "Sat, 07 Nov 2026 18:05:55 GMT",
-   "12009007": "Sat, 07 Nov 2026 18:06:00 GMT",
-   "12028001": "Sat, 07 Nov 2026 18:06:05 GMT",
-   "12032001": "Sat, 07 Nov 2026 18:06:11 GMT",
-   "12040010": "Sat, 07 Nov 2026 18:06:22 GMT",
-   "12040015": "Sat, 07 Nov 2026 18:06:29 GMT",
-   "12040020": "Sat, 07 Nov 2026 18:06:35 GMT"
+   "12005005": "Sat, 07 Nov 2026 20:11:55 GMT",
+   "12009007": "Sat, 07 Nov 2026 20:12:00 GMT",
+   "12028001": "Sat, 07 Nov 2026 20:12:05 GMT",
+   "12032001": "Sat, 07 Nov 2026 20:12:10 GMT",
+   "12040010": "Sat, 07 Nov 2026 20:12:20 GMT",
+   "12040015": "Sat, 07 Nov 2026 20:12:26 GMT",
+   "12040020": "Sat, 07 Nov 2026 20:12:31 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3422,25 +3428,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-07T12:24:21.267765",
-   "ultima_correcta": "2026-11-07T20:01Z",
-   "ultimo_intento": "2026-11-07T20:01Z"
+   "ultima_correcta": "2026-11-07T20:17Z",
+   "ultimo_intento": "2026-11-07T20:17Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-07",
-   "ultima_correcta": "2026-11-07T20:01Z",
-   "ultimo_intento": "2026-11-07T20:01Z"
+   "ultima_correcta": "2026-11-07T20:17Z",
+   "ultimo_intento": "2026-11-07T20:17Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-07T20:01Z",
-   "ultimo_intento": "2026-11-07T20:01Z"
+   "ultima_correcta": "2026-11-07T20:17Z",
+   "ultimo_intento": "2026-11-07T20:17Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-07T20:01Z",
-   "ultimo_intento": "2026-11-07T20:01Z"
+   "ultima_correcta": "2026-11-07T20:17Z",
+   "ultimo_intento": "2026-11-07T20:17Z"
   }
  }
 }
