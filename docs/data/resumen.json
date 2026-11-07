@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-07T15:44Z",
+ "generado": "2026-11-07T16:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -215,7 +215,11 @@
    980,
    985,
    990,
-   995
+   995,
+   1000,
+   1005,
+   1010,
+   1015
   ],
   "mw": [
    25229.0,
@@ -417,10 +421,14 @@
    28238.0,
    28020.0,
    27982.0,
-   27638.0
+   27638.0,
+   27691.0,
+   27738.0,
+   27476.0,
+   27174.0
   ],
-  "ultimo_minuto": 995,
-  "ultimo_mw": 27638.0
+  "ultimo_minuto": 1015,
+  "ultimo_mw": 27174.0
  },
  "prevista": {
   "fecha": "2026-11-07",
@@ -1556,14 +1564,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-07",
-   "ultima_correcta": "2026-11-07T15:44Z",
-   "ultimo_intento": "2026-11-07T15:44Z"
+   "ultima_correcta": "2026-11-07T16:01Z",
+   "ultimo_intento": "2026-11-07T16:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-07T15:44Z",
-   "ultimo_intento": "2026-11-07T15:44Z"
+   "ultima_correcta": "2026-11-07T16:01Z",
+   "ultimo_intento": "2026-11-07T16:01Z"
   }
  }
 }
