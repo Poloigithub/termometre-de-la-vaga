@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-10T12:16Z",
+ "generado": "2026-11-10T12:19Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -174,7 +174,8 @@
    775,
    780,
    785,
-   790
+   790,
+   795
   ],
   "mw": [
    24833.0,
@@ -335,10 +336,11 @@
    32224.0,
    32238.0,
    32346.0,
-   32525.0
+   32525.0,
+   32400.0
   ],
-  "ultimo_minuto": 790,
-  "ultimo_mw": 32525.0
+  "ultimo_minuto": 795,
+  "ultimo_mw": 32400.0
  },
  "prevista": {
   "fecha": "2026-11-10",
@@ -387,6 +389,32 @@
    }
   },
   "indicadores": null,
+  "cortes": [
+   {
+    "hora": 9,
+    "hora_pct": null,
+    "acumulado_pct": null,
+    "acumulado_gwh": null
+   },
+   {
+    "hora": 12,
+    "hora_pct": null,
+    "acumulado_pct": null,
+    "acumulado_gwh": null
+   },
+   {
+    "hora": 17,
+    "hora_pct": null,
+    "acumulado_pct": null,
+    "acumulado_gwh": null
+   },
+   {
+    "hora": 21,
+    "hora_pct": null,
+    "acumulado_pct": null,
+    "acumulado_gwh": null
+   }
+  ],
   "perfil": {
    "valor": [
     null,
@@ -1475,14 +1503,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-10",
-   "ultima_correcta": "2026-11-10T12:16Z",
-   "ultimo_intento": "2026-11-10T12:16Z"
+   "ultima_correcta": "2026-11-10T12:19Z",
+   "ultimo_intento": "2026-11-10T12:19Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-10T12:16Z",
-   "ultimo_intento": "2026-11-10T12:16Z"
+   "ultima_correcta": "2026-11-10T12:19Z",
+   "ultimo_intento": "2026-11-10T12:19Z"
   }
  }
 }
