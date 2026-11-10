@@ -105,6 +105,27 @@ def resumen_franja(perfil, inicio, fin, margen_empirico=None):
     }
 
 
+def cortes_del_dia(perfil, inicio, cortes):
+    """Situación a cada hora de corte: la hora que acaba entonces y lo acumulado desde inicio.
+
+    Un corte queda vacío (None) hasta que esa hora tiene dato.
+    """
+    salida = []
+    for corte in cortes:
+        tramo = perfil.loc[inicio:corte - 1]
+        tramo = tramo[tramo["desviacion_pct"].notna()]
+        if (corte - 1) not in tramo.index:
+            salida.append({"hora": corte, "hora_pct": None, "acumulado_pct": None, "acumulado_gwh": None})
+            continue
+        salida.append({
+            "hora": corte,
+            "hora_pct": round(float(tramo.loc[corte - 1, "desviacion_pct"]), 1),
+            "acumulado_pct": round(float(tramo["desviacion_pct"].mean()), 1),
+            "acumulado_gwh": round(float((tramo["valor"] - tramo["referencia"]).sum()) / 1000, 1),
+        })
+    return salida
+
+
 def indicadores(perfil, inicio, fin):
     """Cifras concretas del día frente a la referencia, solo con horas completas.
 

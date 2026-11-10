@@ -207,14 +207,15 @@ function pintarIndicadores(datos) {
     ["cifra_energia", `${conSigno(i.diferencia_gwh)} GWh`],
     ["cifra_potencia", `${conSigno(i.diferencia_gw, 2)} GW`],
     ["cifra_punta", r.horas_punta.desviacion_pct === null ? "—" : pct(r.horas_punta.desviacion_pct)],
-    ["cifra_peor", i.peor_hora ? `${pct(i.peor_hora.desviacion_pct)} (${tramo(i.peor_hora.hora)})` : "—"],
-    ["cifra_ultima", `${pct(i.ultima_hora.desviacion_pct)} (${tramo(i.ultima_hora.hora)})`],
+    ["cifra_peor", i.peor_hora ? pct(i.peor_hora.desviacion_pct) : "—", i.peor_hora && { t: tramo(i.peor_hora.hora) }],
+    ["cifra_ultima", pct(i.ultima_hora.desviacion_pct), { t: tramo(i.ultima_hora.hora) }],
   ];
-  document.getElementById("cifras").replaceChildren(...cifras.map(([clave, valor]) => {
+  pintarCortes(datos.electricidad.cortes ?? [], datos.franja.inicio);
+  document.getElementById("cifras").replaceChildren(...cifras.map(([clave, valor, extra]) => {
     const div = document.createElement("div");
     const dt = document.createElement("dt");
     const dd = document.createElement("dd");
-    dt.textContent = texto(clave);
+    dt.textContent = texto(clave, extra ?? {});
     dd.textContent = valor;
     div.append(dt, dd);
     return div;
@@ -229,6 +230,28 @@ function pintarIndicadores(datos) {
     xs: pct(r.desviacion_pct),
     gwh: numero(Math.abs(i.diferencia_gwh)),
   }));
+}
+
+function pintarCortes(cortes, inicio) {
+  const tabla = document.getElementById("tabla-cortes");
+  const cabecera = document.createElement("tr");
+  ["corte_a_las", "corte_hora", texto("corte_desde", { h: inicio }), "corte_gwh"]
+    .forEach((c) => celda(cabecera, texto(c), "th"));
+  const filas = cortes.map((c) => {
+    const f = document.createElement("tr");
+    celda(f, `${c.hora} h`, "th");
+    if (c.hora_pct === null) {
+      celda(f, texto("corte_pendiente"));
+      celda(f, "");
+      celda(f, "");
+    } else {
+      celda(f, pct(c.hora_pct));
+      celda(f, pct(c.acumulado_pct));
+      celda(f, `${conSigno(c.acumulado_gwh)}\u00a0GWh`);
+    }
+    return f;
+  });
+  tabla.replaceChildren(cabecera, ...filas);
 }
 
 async function copiarCita() {

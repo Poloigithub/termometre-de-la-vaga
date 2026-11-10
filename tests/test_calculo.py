@@ -6,7 +6,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from calculo import (  # noqa: E402
-    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, indicadores, media_estaciones, perfil_horario, por_horas,
+    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, cortes_del_dia, curva_del_dia, indicadores, media_estaciones, perfil_horario, por_horas,
     resumen_franja,
 )
 from comun import anotar, etiqueta_a_civil  # noqa: E402
@@ -151,3 +151,12 @@ def test_indicadores_energia_y_peor_hora():
 def test_indicadores_sin_datos():
     p = pd.DataFrame(index=range(24), columns=["valor", "referencia", "desviacion_pct"], dtype=float)
     assert indicadores(p, 7, 21) is None
+
+
+def test_cortes_hora_y_acumulado():
+    p = pd.DataFrame(index=range(24), columns=["valor", "referencia", "desviacion_pct"], dtype=float)
+    p.loc[7] = [900.0, 1000.0, -10.0]
+    p.loc[8] = [800.0, 1000.0, -20.0]
+    nueve, doce = cortes_del_dia(p, 7, [9, 12])
+    assert nueve == {"hora": 9, "hora_pct": -20.0, "acumulado_pct": -15.0, "acumulado_gwh": -0.3}
+    assert doce["hora_pct"] is None  # la hora de 11 a 12 aún no ha llegado
