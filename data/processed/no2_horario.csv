@@ -3793,6 +3793,13 @@ fecha,hora,estacion,nombre,grupo,no2_ugm3,fuente
 2026-10-28,23,12040010,Castelló - Grau,urbana,38.0,agencia_europea
 2026-10-28,23,12040015,Castelló - Patronat d'Esports,urbana,24.0,agencia_europea
 2026-10-28,23,12040020,Castelló - CEIP La Marina,urbana,21.0,agencia_europea
+2026-11-04,0,12005005,L'Alcora,contraste,5.0,agencia_europea
+2026-11-04,0,12009007,Almassora - CP Ochando,contraste,11.0,agencia_europea
+2026-11-04,0,12028001,Benicàssim,contraste,28.0,agencia_europea
+2026-11-04,0,12032001,Borriana,contraste,9.0,agencia_europea
+2026-11-04,0,12040010,Castelló - Grau,urbana,5.0,agencia_europea
+2026-11-04,0,12040015,Castelló - Patronat d'Esports,urbana,1.0,agencia_europea
+2026-11-04,0,12040020,Castelló - CEIP La Marina,urbana,0.0,agencia_europea
 2026-11-04,1,12005005,L'Alcora,contraste,4.0,agencia_europea
 2026-11-04,1,12009007,Almassora - CP Ochando,contraste,11.0,agencia_europea
 2026-11-04,1,12028001,Benicàssim,contraste,13.0,agencia_europea
