@@ -6,7 +6,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 from calculo import (  # noqa: E402
-    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, media_estaciones, perfil_horario, por_horas,
+    POR_DEBAJO, POR_ENCIMA, SIN_DATOS, SIN_DIFERENCIA, curva_del_dia, indicadores, media_estaciones, perfil_horario, por_horas,
     resumen_franja,
 )
 from comun import anotar, etiqueta_a_civil  # noqa: E402
@@ -134,3 +134,20 @@ def test_por_horas_media_y_huecos():
     h = por_horas(serie)
     assert h[0] == 100.0 and h[1] == 200.0
     assert len(h) == 24 and h[2] is None
+
+
+def test_indicadores_energia_y_peor_hora():
+    p = pd.DataFrame(index=range(24), columns=["valor", "referencia", "desviacion_pct"], dtype=float)
+    p.loc[7] = [900.0, 1000.0, -10.0]
+    p.loc[8] = [800.0, 1000.0, -20.0]
+    p.loc[22] = [950.0, 1000.0, -5.0]  # fuera de la franja: cuenta para la última hora, no para la energía
+    i = indicadores(p, 7, 21)
+    assert i["diferencia_gwh"] == -0.3
+    assert i["diferencia_gw"] == -0.15
+    assert i["peor_hora"] == {"hora": 8, "desviacion_pct": -20.0}
+    assert i["ultima_hora"] == {"hora": 22, "desviacion_pct": -5.0}
+
+
+def test_indicadores_sin_datos():
+    p = pd.DataFrame(index=range(24), columns=["valor", "referencia", "desviacion_pct"], dtype=float)
+    assert indicadores(p, 7, 21) is None

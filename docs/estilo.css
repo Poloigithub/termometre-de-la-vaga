@@ -85,3 +85,20 @@ th { font-weight: 600; }
 
 .estado li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 16px; padding: 6px 0; border-bottom: 1px solid var(--linea); font-size: 0.92rem; }
 .estado .fallo { color: var(--rojo); font-weight: 600; }
+
+.cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 12px 0 0; }
+.cifras div { padding: 10px 12px; border: 1px solid var(--linea); border-radius: 6px; }
+.cifras dt { font-size: 0.85rem; color: var(--tinta-2); }
+.cifras dd { margin: 2px 0 0; font-size: 1.45rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.cita { margin-top: 16px; padding: 12px 14px; border-left: 3px solid var(--rojo); background: var(--rojo-suave); }
+.cita p { margin: 0 0 10px; }
+.cita button {
+  padding: 6px 12px; border: 1px solid var(--tinta); border-radius: 6px;
+  background: var(--fondo); color: var(--tinta); font: inherit; font-size: 0.9rem; cursor: pointer;
+}
+
+.puntos { margin: 0 0 16px; padding-left: 20px; }
+.puntos li { margin-bottom: 8px; }
+.puntos #dias-referencia, .puntos #margenes { color: var(--tinta-2); }
+.enlaces { margin-bottom: 16px; }

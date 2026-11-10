@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from calculo import curva_del_dia, media_estaciones, perfil_horario, por_horas, resumen_franja
+from calculo import curva_del_dia, indicadores, media_estaciones, perfil_horario, por_horas, resumen_franja
 from comun import ESTADO, PROCESADO, RAIZ, cargar_config, hoy_local, leer_demanda, leer_prevista, ultimo_raw
 
 MAPA_PUNTA = "horas_punta"
@@ -53,6 +53,7 @@ def calcular_electricidad(cfg, calibracion):
     p.rename_axis("hora").to_csv(PROCESADO / "perfil_electricidad.csv")
     return {
         "resumen": resumenes(p, cfg, calibracion, "electricidad"),
+        "indicadores": indicadores(p, cfg["franja_resumen"]["inicio"], cfg["franja_resumen"]["fin"]),
         "perfil": serie_perfil(p),
         "dias": {c: limpio(t[c]) for c in t.columns},
     }

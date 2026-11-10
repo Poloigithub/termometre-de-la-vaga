@@ -48,13 +48,6 @@ function lista(id, elementos) {
   }));
 }
 
-function mediana(valores) {
-  const v = [...valores].sort((a, b) => a - b);
-  if (!v.length) return null;
-  const m = Math.floor(v.length / 2);
-  return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
-}
-
 function hora(minutos) {
   const m = String(minutos % 60).padStart(2, "0");
   return `${String(Math.floor(minutos / 60)).padStart(2, "0")}:${m}`;
@@ -196,18 +189,60 @@ function pintarTabla(id, perfil, factor, decimales) {
   tabla.replaceChildren(cabecera, ...filas);
 }
 
+function conSigno(x, decimales = 1) {
+  return `${x > 0 ? "+" : ""}${numero(x, decimales)}`;
+}
+
+function tramo(h) {
+  return `${h}–${h + 1} h`;
+}
+
+function pintarIndicadores(datos) {
+  const seccion = document.getElementById("indicadores");
+  const i = datos.electricidad.indicadores;
+  const r = datos.electricidad.resumen;
+  seccion.hidden = Boolean(datos.hoy) || !i || r.desviacion_pct === null;
+  if (seccion.hidden) return;
+  const cifras = [
+    ["cifra_energia", `${conSigno(i.diferencia_gwh)} GWh`],
+    ["cifra_potencia", `${conSigno(i.diferencia_gw, 2)} GW`],
+    ["cifra_punta", r.horas_punta.desviacion_pct === null ? "—" : pct(r.horas_punta.desviacion_pct)],
+    ["cifra_peor", i.peor_hora ? `${pct(i.peor_hora.desviacion_pct)} (${tramo(i.peor_hora.hora)})` : "—"],
+    ["cifra_ultima", `${pct(i.ultima_hora.desviacion_pct)} (${tramo(i.ultima_hora.hora)})`],
+  ];
+  document.getElementById("cifras").replaceChildren(...cifras.map(([clave, valor]) => {
+    const div = document.createElement("div");
+    const dt = document.createElement("dt");
+    const dd = document.createElement("dd");
+    dt.textContent = texto(clave);
+    dd.textContent = valor;
+    div.append(dt, dd);
+    return div;
+  }));
+  // Hasta qué hora llega la media: la franja puede estar a medias durante el día.
+  const p = datos.electricidad.perfil;
+  const horas = HORAS.filter((h) => h >= datos.franja.inicio && h < datos.franja.fin && p.desviacion_pct[h] !== null);
+  const hasta = Math.max(...horas) + 1;
+  poner("cita-texto", texto(`cita_${r.veredicto}`, {
+    hasta,
+    x: numero(Math.abs(r.desviacion_pct)),
+    xs: pct(r.desviacion_pct),
+    gwh: numero(Math.abs(i.diferencia_gwh)),
+  }));
+}
+
+async function copiarCita() {
+  const boton = document.getElementById("cita-copiar");
+  try {
+    await navigator.clipboard.writeText(document.getElementById("cita-texto").textContent);
+    boton.textContent = texto("copiado");
+  } catch (e) {
+    boton.textContent = texto("no_copiado");
+  }
+  setTimeout(() => { boton.textContent = texto("copiar"); }, 2000);
+}
+
 function pintarMeteo(datos) {
-  const dia = datos.dia_huelga;
-  const fila = (punto, variable, decimales, clave, extra = {}) => {
-    const dias = datos.meteo.puntos[punto]?.dias ?? {};
-    const refs = datos.dias_referencia.filter((d) => dias[d]).map((d) => dias[d][variable]);
-    if (!refs.length) return null;
-    const h = dias[dia] ? texto("meteo_huelga", { v: numero(dias[dia][variable], decimales) }) : "";
-    return texto(clave, { h, r: numero(mediana(refs), decimales), ...extra });
-  };
-  lista("meteo-electricidad", ["castello", "valencia"]
-    .map((p) => fila(p, "temperatura_c", 1, "meteo_temp", { p: texto(`punto_${p}`) }))
-    .filter(Boolean));
   lista("avisos-electricidad", datos.meteo.avisos.filter((a) => a.tipo === "temperatura").map((a) =>
     texto("aviso_temperatura", { d: numero(a.diferencia_c), p: texto(`punto_${a.punto}`) })));
 }
@@ -253,6 +288,7 @@ function pintar(datos) {
   // Cada bloque es independiente: un dato raro no debe dejar la página en blanco.
   const bloques = [
     () => pintarTitular(datos),
+    () => pintarIndicadores(datos),
     () => {
       const p = datos.electricidad.perfil;
       const hoy = datos.hoy ? hoyPorHoras(datos.hoy) : null;
@@ -296,6 +332,7 @@ async function iniciar() {
     boton.addEventListener("click", () => aplicarIdioma(idioma === "es" ? "va" : "es"));
     aplicarIdioma("es");
   }
+  document.getElementById("cita-copiar").addEventListener("click", copiarCita);
   try {
     const r = await fetch("data/resumen.json", { cache: "no-store" });
     if (!r.ok) throw new Error(r.status);

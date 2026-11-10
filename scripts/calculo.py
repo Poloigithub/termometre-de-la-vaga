@@ -103,3 +103,30 @@ def resumen_franja(perfil, inicio, fin, margen_empirico=None):
         "horas_fuera_banda": int((f["dentro_banda"] == False).sum()),  # noqa: E712
         "veredicto": veredicto,
     }
+
+
+def indicadores(perfil, inicio, fin):
+    """Cifras concretas del día frente a la referencia, solo con horas completas.
+
+    diferencia_gwh: energía de más (+) o de menos (−) entre inicio y fin.
+    diferencia_gw: lo mismo como potencia media.
+    peor_hora y ultima_hora: hora (inicio del tramo) y desviación en %.
+    """
+    con = perfil[perfil["desviacion_pct"].notna()]
+    franja = con[(con.index >= inicio) & (con.index < fin)]
+    if con.empty:
+        return None
+    ultima = con.index.max()
+    salida = {
+        "ultima_hora": {"hora": int(ultima), "desviacion_pct": round(float(con.loc[ultima, "desviacion_pct"]), 1)},
+        "diferencia_gwh": None, "diferencia_gw": None, "peor_hora": None,
+    }
+    if not franja.empty:
+        dif = franja["valor"] - franja["referencia"]
+        peor = franja["desviacion_pct"].idxmin()
+        salida.update(
+            diferencia_gwh=round(float(dif.sum()) / 1000, 1),
+            diferencia_gw=round(float(dif.mean()) / 1000, 2),
+            peor_hora={"hora": int(peor), "desviacion_pct": round(float(franja.loc[peor, "desviacion_pct"]), 1)},
+        )
+    return salida

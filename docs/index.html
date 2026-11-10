@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Termòmetre de la vaga</title>
-<meta name="description" content="La huelga general del 11 de noviembre de 2026, medida con datos públicos de demanda eléctrica. Metodología y datos abiertos.">
+<meta name="description" content="La huelga general del 11 de noviembre de 2026, medida con la demanda eléctrica de Red Eléctrica. Datos abiertos.">
 <meta property="og:title" content="Termòmetre de la vaga">
-<meta property="og:description" content="La huelga general del 11N medida con datos públicos. Método fijado antes de la huelga, datos abiertos y reproducibles.">
+<meta property="og:description" content="La huelga general del 11N medida con la demanda eléctrica de Red Eléctrica, frente a un miércoles normal.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="estilo.css">
@@ -20,7 +20,7 @@
   <header>
     <button id="idioma" type="button" hidden></button>
     <h1>Termòmetre de la vaga</h1>
-    <p class="entradilla" data-t="entradilla">La huelga general del miércoles 11 de noviembre de 2026, medida con datos públicos.</p>
+    <p class="entradilla" data-t="entradilla">Huelga general del 11 de noviembre de 2026: consumo eléctrico frente a un miércoles normal.</p>
   </header>
 
   <p id="fallo-carga" class="aviso" hidden data-t="fallo_carga">No se han podido cargar los datos. Los ficheros siguen disponibles en el repositorio.</p>
@@ -32,58 +32,42 @@
     <p id="titular-margen" class="margen"></p>
   </section>
 
+  <section id="indicadores" class="indicadores" hidden aria-labelledby="h-indicadores">
+    <h2 id="h-indicadores" data-t="h_indicadores">Las cifras del 11N, frente a un miércoles normal</h2>
+    <dl id="cifras" class="cifras"></dl>
+    <div class="cita">
+      <p id="cita-texto"></p>
+      <button id="cita-copiar" type="button" data-t="copiar">Copiar el dato</button>
+    </div>
+  </section>
+
   <section aria-labelledby="h-electricidad">
-    <h2 id="h-electricidad" data-t="h_electricidad">Electricidad</h2>
-    <p data-t="electricidad_ambito">Es la demanda de toda la España peninsular.</p>
+    <h2 id="h-electricidad" data-t="h_electricidad">Hora a hora</h2>
     <ul class="leyenda" id="leyenda-electricidad"></ul>
-    <div class="grafico"><canvas id="grafico-electricidad" role="img" aria-label="Demanda eléctrica por hora: 11N, referencia y banda de normalidad"></canvas></div>
-    <p id="nota-hoy" class="nota" hidden data-t="nota_hoy">La línea verde es el día de hoy. La banda se calcula con miércoles, así que un fin de semana o un festivo quedan por debajo sin que eso signifique nada. El 11 de noviembre esta línea dará paso a la de la huelga.</p>
-    <p id="nota-prevista" class="nota" hidden data-t="nota_prevista">La línea punteada es la demanda que Red Eléctrica preveía para ese día. Solo sirve de contexto: Red Eléctrica ya cuenta con los festivos en su previsión (el 12 de octubre acertó con un 2 % de error), así que el 11N puede contar ya con la huelga. Por eso no la usamos para el veredicto.</p>
-    <ul id="meteo-electricidad" class="meteo"></ul>
+    <div class="grafico"><canvas id="grafico-electricidad" role="img" aria-label="Demanda eléctrica por hora frente a un miércoles normal"></canvas></div>
+    <p id="nota-hoy" class="nota" hidden data-t="nota_hoy">Verde: hoy. La banda gris es un miércoles normal; un fin de semana queda por debajo sin que signifique nada. El 11N la línea pasa a rojo.</p>
+    <p id="nota-prevista" class="nota" hidden data-t="nota_prevista">Punteado: lo que Red Eléctrica preveía. Solo de contexto: su previsión ya cuenta con festivos y puede contar con la huelga.</p>
     <ul id="avisos-electricidad" class="avisos"></ul>
-    <p class="nota" data-t="nota_ceramica">La industria cerámica tiene hornos en continuo que no se apagan aunque la plantilla haga huelga, así que este indicador infravalora la participación.</p>
     <details>
       <summary data-t="ver_tabla">Ver los datos en tabla</summary>
       <div class="tabla-marco"><table id="tabla-electricidad"></table></div>
     </details>
   </section>
 
-  <section aria-labelledby="h-metodologia">
-    <h2 id="h-metodologia" data-t="h_metodologia">Metodología</h2>
-    <h3 data-t="m1_t">Qué se mide</h3>
-    <p data-t="m1">Comparamos el 11N con miércoles laborables normales a la misma hora. Nunca damos un valor suelto: siempre la diferencia con un día normal.</p>
-    <h3 data-t="m2_t">Con qué días se compara</h3>
-    <p data-t="m2">Tres miércoles antes de la huelga, dos después y el mismo miércoles del año anterior:</p>
-    <p id="dias-referencia" class="dias"></p>
-    <h3 data-t="m3_t">Cómo se calcula</h3>
-    <p data-t="m3">Para cada hora, la referencia es la mediana de esos días y la banda sombreada va de su mínimo a su máximo. La desviación es (valor del 11N − referencia) / referencia × 100. El resumen del día es la media entre las 7 y las 21 h, la franja de actividad laboral.</p>
-    <h3 data-t="m4_t">Cuándo decimos que hay diferencia</h3>
-    <p data-t="m4">Solo cuando el día se sale de la banda y además del margen de un día normal. Ese margen lo medimos antes de la huelga: comparamos muchos miércoles normales con las tres semanas anteriores y anotamos cuánto se desviaron.</p>
-    <p id="margenes" class="dias"></p>
-    <p data-t="m4b">Si el día cae dentro, decimos que no hay diferencia apreciable, aunque el porcentaje salga negativo. Y lo probamos: el festivo del 12 de octubre se sale claramente en electricidad.</p>
-    <h3 data-t="m5_t">Límites</h3>
-    <p data-t="m5">Cubre toda la península, no Castelló ni la Comunitat Valenciana. No ve los servicios ni el teletrabajo, y una caída pequeña no se distingue de un miércoles normal. También depende del tiempo y de la temporada; por eso mostramos la temperatura.</p>
-    <p data-t="m5c">No mide cuánta gente hizo huelga: mide la huella de la actividad.</p>
-    <h3 data-t="m6_t">Fuentes</h3>
-    <p data-t="m6">Demanda real peninsular de Red Eléctrica (visor de demanda y ESIOS). Meteorología de Open-Meteo.</p>
-    <p data-t="m6b">No usamos la serie horaria de la web de datos de Red Eléctrica (REData) porque llega con dos días de retraso y difiere de la anterior en las horas de sol. La misma serie se usa para todos los días.</p>
-  </section>
-
-  <section aria-labelledby="h-datos">
-    <h2 id="h-datos" data-t="h_datos">Datos</h2>
-    <p data-t="datos_intro">Todo se puede descargar y recalcular. Cada descarga queda guardada con su fecha en el historial público del repositorio.</p>
-    <ul class="enlaces">
-      <li><a href="data/electricidad_horaria.csv" data-t="d_elec">Demanda eléctrica por hora (CSV)</a></li>
-      <li><a href="data/meteo_horaria.csv" data-t="d_meteo">Meteorología por hora (CSV)</a></li>
-      <li><a href="data/perfil_electricidad.csv" data-t="d_perfil_e">Cálculo hora a hora (CSV)</a></li>
-      <li><a href="data/calibracion.json" data-t="d_calib">Calibración del margen (JSON)</a></li>
-      <li><a href="https://github.com/Poloigithub/termometre-de-la-vaga/tree/main/data/raw" data-t="d_raw">Respuestas originales de cada fuente</a></li>
-      <li><a href="https://github.com/Poloigithub/termometre-de-la-vaga" data-t="d_repo">Repositorio y código</a></li>
+  <section aria-labelledby="h-fuentes">
+    <h2 id="h-fuentes" data-t="h_fuentes">De dónde salen los datos</h2>
+    <ul class="puntos">
+      <li data-t="f1"><strong>Consumo:</strong> demanda real de la España peninsular que publica Red Eléctrica cada 5 minutos en <a href="https://demanda.ree.es/">demanda.ree.es</a>.</li>
+      <li><span data-t="f2"><strong>Miércoles normal:</strong> la mediana, hora a hora, de estos días:</span> <span id="dias-referencia"></span></li>
+      <li data-t="f3"><strong>Cálculo:</strong> (11N − miércoles normal) / miércoles normal. La cifra principal es la media de 7 a 21 h.</li>
+      <li><span data-t="f4"><strong>Cuándo hay caída:</strong> solo si el 11N se sale de lo que varía un miércoles cualquiera.</span> <span id="margenes"></span></li>
+      <li data-t="f5"><strong>Límites:</strong> es toda la península, no solo Castelló. Los hornos cerámicos trabajan en continuo y no se apagan con la huelga, así que la caída de la actividad es mayor de lo que muestra la luz.</li>
     </ul>
-  </section>
-
-  <section aria-labelledby="h-estado">
-    <h2 id="h-estado" data-t="h_estado">Estado de los datos</h2>
+    <ul class="enlaces">
+      <li><a href="data/electricidad_horaria.csv" data-t="d_elec">Consumo por hora (CSV)</a></li>
+      <li><a href="data/perfil_electricidad.csv" data-t="d_perfil_e">Cálculo hora a hora (CSV)</a></li>
+      <li><a href="https://github.com/Poloigithub/termometre-de-la-vaga" data-t="d_repo">Código y descargas originales</a></li>
+    </ul>
     <ul id="estado" class="estado"></ul>
     <p id="generado" class="nota"></p>
   </section>
