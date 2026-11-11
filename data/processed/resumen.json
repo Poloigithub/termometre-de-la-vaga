@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T20:01Z",
+ "generado": "2026-11-11T21:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -62,8 +62,8 @@
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 20,
-    "desviacion_pct": -2.8
+    "hora": 21,
+    "desviacion_pct": -3.3
    },
    "diferencia_gwh": -22.1,
    "diferencia_gw": -1.58,
@@ -127,7 +127,7 @@
     30808.9,
     31460.7,
     31931.8,
-    null,
+    30728.7,
     null,
     null
    ],
@@ -231,7 +231,7 @@
     -2.19,
     -2.62,
     -2.82,
-    null,
+    -3.28,
     null,
     null
    ],
@@ -415,7 +415,7 @@
     30808.9,
     31460.7,
     31931.8,
-    null,
+    30728.7,
     null,
     null
    ]
@@ -423,18 +423,18 @@
  },
  "no2": {
   "resumen": {
-   "desviacion_pct": 90.6,
+   "desviacion_pct": 91.5,
    "margen_inf_pct": -68.1,
    "margen_sup_pct": 257.2,
-   "horas": 10,
-   "horas_fuera_banda": 5,
+   "horas": 11,
+   "horas_fuera_banda": 6,
    "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": 15.7,
+    "desviacion_pct": 32.6,
     "margen_inf_pct": -79.1,
     "margen_sup_pct": 380.2,
-    "horas": 4,
-    "horas_fuera_banda": 1,
+    "horas": 5,
+    "horas_fuera_banda": 2,
     "veredicto": "sin_diferencia"
    }
   },
@@ -458,7 +458,7 @@
     12.0,
     8.33,
     14.0,
-    null,
+    16.0,
     null,
     null,
     null,
@@ -562,7 +562,7 @@
     160.0,
     77.84,
     100.0,
-    null,
+    100.0,
     null,
     null,
     null,
@@ -641,7 +641,7 @@
    1,
    2,
    2,
-   0,
+   1,
    0,
    0,
    0,
@@ -653,17 +653,17 @@
     "nombre": "Castelló - Grau",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 94.5,
-     "margen_inf_pct": -53.1,
-     "margen_sup_pct": 112.9,
-     "horas": 9,
+     "desviacion_pct": 95.1,
+     "margen_inf_pct": -50.3,
+     "margen_sup_pct": 114.1,
+     "horas": 10,
      "horas_fuera_banda": 4,
      "veredicto": "sin_diferencia",
      "horas_punta": {
-      "desviacion_pct": 14.7,
-      "margen_inf_pct": -42.2,
-      "margen_sup_pct": 51.9,
-      "horas": 4,
+      "desviacion_pct": 31.8,
+      "margen_inf_pct": -38.7,
+      "margen_sup_pct": 66.5,
+      "horas": 5,
       "horas_fuera_banda": 2,
       "veredicto": "sin_diferencia"
      }
@@ -688,7 +688,7 @@
       16.0,
       12.0,
       10.0,
-      null,
+      16.0,
       null,
       null,
       null,
@@ -792,7 +792,7 @@
       null,
       118.18,
       100.0,
-      null,
+      100.0,
       null,
       null,
       null,
@@ -857,7 +857,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 17
+     "2026-11-11": 18
     }
    },
    "12040015": {
@@ -1285,17 +1285,17 @@
     "nombre": "Almassora - CP Ochando",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 46.8,
-     "margen_inf_pct": -28.7,
-     "margen_sup_pct": 19.6,
-     "horas": 7,
+     "desviacion_pct": 81.1,
+     "margen_inf_pct": -30.4,
+     "margen_sup_pct": 114.4,
+     "horas": 12,
      "horas_fuera_banda": 6,
-     "veredicto": "por_encima",
+     "veredicto": "sin_diferencia",
      "horas_punta": {
-      "desviacion_pct": -13.7,
-      "margen_inf_pct": -38.4,
-      "margen_sup_pct": 32.3,
-      "horas": 3,
+      "desviacion_pct": 30.5,
+      "margen_inf_pct": -37.5,
+      "margen_sup_pct": 70.2,
+      "horas": 5,
       "horas_fuera_banda": 2,
       "veredicto": "sin_diferencia"
      }
@@ -1316,11 +1316,11 @@
       24.0,
       27.0,
       14.0,
-      null,
-      null,
-      null,
-      null,
-      null,
+      18.0,
+      18.0,
+      17.0,
+      35.0,
+      27.0,
       null,
       null,
       null,
@@ -1420,11 +1420,11 @@
       65.52,
       217.65,
       75.0,
-      null,
-      null,
-      null,
-      null,
-      null,
+      200.0,
+      140.0,
+      112.5,
+      191.67,
+      1.89,
       null,
       null,
       null,
@@ -1489,25 +1489,25 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 13
+     "2026-11-11": 18
     }
    },
    "12028001": {
     "nombre": "Benicàssim",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 171.4,
-     "margen_inf_pct": -21.0,
-     "margen_sup_pct": 21.7,
-     "horas": 8,
-     "horas_fuera_banda": 8,
+     "desviacion_pct": 175.1,
+     "margen_inf_pct": -27.0,
+     "margen_sup_pct": 35.3,
+     "horas": 13,
+     "horas_fuera_banda": 11,
      "veredicto": "por_encima",
      "horas_punta": {
-      "desviacion_pct": 55.6,
-      "margen_inf_pct": -9.2,
-      "margen_sup_pct": 25.5,
-      "horas": 3,
-      "horas_fuera_banda": 3,
+      "desviacion_pct": 58.6,
+      "margen_inf_pct": -31.8,
+      "margen_sup_pct": 43.6,
+      "horas": 6,
+      "horas_fuera_banda": 4,
       "veredicto": "por_encima"
      }
     },
@@ -1528,11 +1528,11 @@
       28.0,
       24.0,
       24.0,
-      null,
-      null,
-      null,
-      null,
-      null,
+      22.0,
+      24.0,
+      22.0,
+      20.0,
+      23.0,
       null,
       null,
       null,
@@ -1632,11 +1632,11 @@
       250.0,
       220.0,
       380.0,
-      null,
-      null,
-      null,
-      null,
-      null,
+      340.0,
+      380.0,
+      175.0,
+      5.26,
+      4.55,
       null,
       null,
       null,
@@ -1700,24 +1700,24 @@
      "2026-10-21": 17,
      "2026-10-28": 20,
      "2026-11-04": 24,
-     "2026-11-11": 14
+     "2026-11-11": 19
     }
    },
    "12032001": {
     "nombre": "Borriana",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 137.0,
-     "margen_inf_pct": -33.8,
-     "margen_sup_pct": 84.5,
-     "horas": 7,
+     "desviacion_pct": 108.9,
+     "margen_inf_pct": -44.0,
+     "margen_sup_pct": 98.7,
+     "horas": 9,
      "horas_fuera_banda": 6,
      "veredicto": "por_encima",
      "horas_punta": {
-      "desviacion_pct": 28.4,
-      "margen_inf_pct": -25.5,
-      "margen_sup_pct": 108.1,
-      "horas": 3,
+      "desviacion_pct": 21.4,
+      "margen_inf_pct": -47.3,
+      "margen_sup_pct": 124.3,
+      "horas": 5,
       "horas_fuera_banda": 2,
       "veredicto": "sin_diferencia"
      }
@@ -1740,10 +1740,10 @@
       11.0,
       15.0,
       11.0,
-      null,
-      null,
-      null,
-      null,
+      9.0,
+      15.0,
+      18.0,
+      14.0,
       null,
       null,
       null,
@@ -1846,8 +1846,8 @@
       120.0,
       null,
       null,
-      null,
-      null,
+      56.52,
+      -34.88,
       null,
       null,
       null,
@@ -1911,25 +1911,25 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 21,
-     "2026-11-11": 15
+     "2026-11-11": 19
     }
    },
    "12005005": {
     "nombre": "L'Alcora",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 56.6,
-     "margen_inf_pct": -29.8,
-     "margen_sup_pct": 30.9,
-     "horas": 9,
-     "horas_fuera_banda": 7,
+     "desviacion_pct": 73.5,
+     "margen_inf_pct": -31.1,
+     "margen_sup_pct": 46.2,
+     "horas": 13,
+     "horas_fuera_banda": 11,
      "veredicto": "por_encima",
      "horas_punta": {
-      "desviacion_pct": 74.1,
-      "margen_inf_pct": -16.4,
-      "margen_sup_pct": 16.4,
-      "horas": 3,
-      "horas_fuera_banda": 3,
+      "desviacion_pct": 75.0,
+      "margen_inf_pct": -25.9,
+      "margen_sup_pct": 53.2,
+      "horas": 6,
+      "horas_fuera_banda": 6,
       "veredicto": "por_encima"
      }
     },
@@ -1951,10 +1951,10 @@
       14.0,
       23.0,
       21.0,
-      null,
-      null,
-      null,
-      null,
+      27.0,
+      38.0,
+      27.0,
+      12.0,
       null,
       null,
       null,
@@ -2055,10 +2055,10 @@
       7.69,
       187.5,
       162.5,
-      null,
-      null,
-      null,
-      null,
+      217.65,
+      261.9,
+      10.2,
+      -44.19,
       null,
       null,
       null,
@@ -2122,7 +2122,7 @@
      "2026-10-21": 9,
      "2026-10-28": 11,
      "2026-11-04": 24,
-     "2026-11-11": 15
+     "2026-11-11": 19
     }
    }
   }
@@ -2641,8 +2641,8 @@
        20.5,
        19.6,
        19.2,
-       null,
-       null,
+       18.6,
+       17.9,
        null
       ],
       "viento_kmh": [
@@ -2667,8 +2667,8 @@
        7.6,
        4.9,
        2.1,
-       null,
-       null,
+       3.1,
+       5.4,
        null
       ],
       "lluvia_mm": [
@@ -2693,8 +2693,8 @@
        0.1,
        0.1,
        0.1,
-       null,
-       null,
+       0.4,
+       0.3,
        null
       ]
      }
@@ -3072,8 +3072,8 @@
        20.6,
        19.8,
        19.0,
-       null,
-       null,
+       18.5,
+       17.8,
        null
       ],
       "viento_kmh": [
@@ -3098,8 +3098,8 @@
        3.1,
        0.8,
        3.6,
-       null,
-       null,
+       4.0,
+       5.8,
        null
       ],
       "lluvia_mm": [
@@ -3124,8 +3124,8 @@
        0.1,
        0.2,
        0.3,
-       null,
-       null,
+       0.2,
+       0.7,
        null
       ]
      }
@@ -3137,15 +3137,15 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-11T20:01Z",
-   "ultimo_intento": "2026-11-11T20:01Z"
+   "ultima_correcta": "2026-11-11T21:01Z",
+   "ultimo_intento": "2026-11-11T21:01Z"
   },
   "eea_modificado": {
-   "12005005": "Wed, 11 Nov 2026 17:01:12 GMT",
-   "12009007": "Wed, 11 Nov 2026 15:07:27 GMT",
-   "12028001": "Wed, 11 Nov 2026 15:48:34 GMT",
-   "12032001": "Wed, 11 Nov 2026 17:01:17 GMT",
-   "12040010": "Wed, 11 Nov 2026 18:13:34 GMT",
+   "12005005": "Wed, 11 Nov 2026 20:12:52 GMT",
+   "12009007": "Wed, 11 Nov 2026 20:12:57 GMT",
+   "12028001": "Wed, 11 Nov 2026 20:13:02 GMT",
+   "12032001": "Wed, 11 Nov 2026 20:13:07 GMT",
+   "12040010": "Wed, 11 Nov 2026 20:13:15 GMT",
    "12040015": "Wed, 11 Nov 2026 18:13:36 GMT",
    "12040020": "Wed, 11 Nov 2026 18:13:37 GMT"
   },
@@ -3157,25 +3157,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-11T16:26:17.854424",
-   "ultima_correcta": "2026-11-11T20:01Z",
-   "ultimo_intento": "2026-11-11T20:01Z"
+   "ultima_correcta": "2026-11-11T21:01Z",
+   "ultimo_intento": "2026-11-11T21:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T20:01Z",
-   "ultimo_intento": "2026-11-11T20:01Z"
+   "ultima_correcta": "2026-11-11T21:01Z",
+   "ultimo_intento": "2026-11-11T21:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-11T20:01Z",
-   "ultimo_intento": "2026-11-11T20:01Z"
+   "ultima_correcta": "2026-11-11T21:01Z",
+   "ultimo_intento": "2026-11-11T21:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T20:01Z",
-   "ultimo_intento": "2026-11-11T20:01Z"
+   "ultima_correcta": "2026-11-11T21:01Z",
+   "ultimo_intento": "2026-11-11T21:01Z"
   }
  }
 }
