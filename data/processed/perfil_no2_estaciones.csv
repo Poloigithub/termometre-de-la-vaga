@@ -24,7 +24,7 @@ hora,valor,referencia,banda_min,banda_max,dias_referencia,desviacion_pct,banda_i
 22,,32.0,2.0,36.0,4,,-93.75,12.5,,12040010,Castelló - Grau
 23,,34.0,2.0,41.0,4,,-94.11764705882352,20.588235294117645,,12040010,Castelló - Grau
 0,,16.0,7.0,29.0,3,,-56.25,81.25,,12040015,Castelló - Patronat d'Esports
-1,,7.5,4.0,23.0,4,,-46.666666666666664,206.66666666666669,,12040015,Castelló - Patronat d'Esports
+1,9.0,7.5,4.0,23.0,4,20.0,-46.666666666666664,206.66666666666669,True,12040015,Castelló - Patronat d'Esports
 2,,12.0,3.0,25.0,4,,-75.0,108.33333333333333,,12040015,Castelló - Patronat d'Esports
 3,,9.5,8.0,19.0,4,,-15.789473684210526,100.0,,12040015,Castelló - Patronat d'Esports
 4,,7.5,5.0,16.0,4,,-33.33333333333333,113.33333333333333,,12040015,Castelló - Patronat d'Esports
@@ -48,7 +48,7 @@ hora,valor,referencia,banda_min,banda_max,dias_referencia,desviacion_pct,banda_i
 22,,23.0,14.0,39.0,4,,-39.130434782608695,69.56521739130434,,12040015,Castelló - Patronat d'Esports
 23,,22.5,16.0,24.0,4,,-28.888888888888886,6.666666666666667,,12040015,Castelló - Patronat d'Esports
 0,,0.0,0.0,12.0,3,,,,,12040020,Castelló - CEIP La Marina
-1,,2.0,0.0,5.0,3,,,,,12040020,Castelló - CEIP La Marina
+1,2.0,2.0,0.0,5.0,3,,,,,12040020,Castelló - CEIP La Marina
 2,,3.0,0.0,5.0,3,,,,,12040020,Castelló - CEIP La Marina
 3,,7.0,0.0,8.0,3,,-100.0,14.285714285714285,,12040020,Castelló - CEIP La Marina
 4,,1.0,0.0,7.0,3,,,,,12040020,Castelló - CEIP La Marina
