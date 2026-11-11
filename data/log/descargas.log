@@ -1,1 +1,2 @@
 2026-11-04T09:01Z visor 2026-11-04: https://demanda.ree.es/WSvisionaMovilesPeninsulaRest/resources/demandaGeneracionPeninsula: http 200, 39 bytes
+2026-11-11T08:07Z gva_ultimos: RuntimeError: https://dadesobertes.gva.es/api/3/action/resource_show: ConnectTimeout

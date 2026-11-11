@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T07:47Z",
+ "generado": "2026-11-11T08:07Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,28 +45,28 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": -8.7,
+   "desviacion_pct": -8.3,
    "margen_inf_pct": -8.2,
    "margen_sup_pct": 11.1,
-   "horas": 1,
-   "horas_fuera_banda": 1,
+   "horas": 2,
+   "horas_fuera_banda": 2,
    "veredicto": "por_debajo",
    "horas_punta": {
-    "desviacion_pct": -8.7,
+    "desviacion_pct": -8.3,
     "margen_inf_pct": -7.6,
     "margen_sup_pct": 12.4,
-    "horas": 1,
-    "horas_fuera_banda": 1,
+    "horas": 2,
+    "horas_fuera_banda": 2,
     "veredicto": "por_debajo"
    }
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 7,
-    "desviacion_pct": -8.7
+    "hora": 8,
+    "desviacion_pct": -7.9
    },
-   "diferencia_gwh": -2.5,
-   "diferencia_gw": -2.49,
+   "diferencia_gwh": -4.9,
+   "diferencia_gw": -2.46,
    "peor_hora": {
     "hora": 7,
     "desviacion_pct": -8.7
@@ -81,9 +81,9 @@
    },
    {
     "hora": 9,
-    "hora_pct": null,
-    "acumulado_pct": null,
-    "acumulado_gwh": null
+    "hora_pct": -7.9,
+    "acumulado_pct": -8.3,
+    "acumulado_gwh": -4.9
    },
    {
     "hora": 12,
@@ -114,7 +114,7 @@
     20817.8,
     22964.8,
     26080.9,
-    null,
+    28052.7,
     null,
     null,
     null,
@@ -218,7 +218,7 @@
     -4.52,
     -6.99,
     -8.72,
-    null,
+    -7.94,
     null,
     null,
     null,
@@ -402,7 +402,7 @@
     20817.8,
     22964.8,
     26080.9,
-    null,
+    28052.7,
     null,
     null,
     null,
@@ -2293,7 +2293,7 @@
      },
      "2026-11-11": {
       "temperatura_c": 16.5,
-      "viento_kmh": 4.0,
+      "viento_kmh": 4.3,
       "lluvia_mm": 0.0
      }
     },
@@ -2629,7 +2629,7 @@
        16.9,
        17.1,
        15.9,
-       null,
+       16.4,
        null,
        null,
        null,
@@ -2655,7 +2655,7 @@
        3.8,
        3.3,
        4.8,
-       null,
+       4.9,
        null,
        null,
        null,
@@ -2681,7 +2681,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -2723,8 +2723,8 @@
       "lluvia_mm": 1.5
      },
      "2026-11-11": {
-      "temperatura_c": 18.0,
-      "viento_kmh": 11.2,
+      "temperatura_c": 18.3,
+      "viento_kmh": 11.1,
       "lluvia_mm": 0.0
      }
     },
@@ -3060,7 +3060,7 @@
        17.7,
        17.9,
        18.2,
-       null,
+       18.9,
        null,
        null,
        null,
@@ -3086,7 +3086,7 @@
        9.2,
        10.7,
        11.8,
-       null,
+       10.7,
        null,
        null,
        null,
@@ -3112,7 +3112,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -3132,19 +3132,13 @@
     }
    }
   },
-  "avisos": [
-   {
-    "tipo": "viento",
-    "punto": "castello",
-    "diferencia_kmh": -4.1
-   }
-  ]
+  "avisos": []
  },
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-11T07:47Z",
-   "ultimo_intento": "2026-11-11T07:47Z"
+   "ultima_correcta": "2026-11-11T08:01Z",
+   "ultimo_intento": "2026-11-11T08:01Z"
   },
   "eea_modificado": {
    "12005005": "Wed, 11 Nov 2026 06:12:49 GMT",
@@ -3161,27 +3155,27 @@
    "ultimo_intento": "2026-11-01T06:57Z"
   },
   "gva_ultimos": {
-   "error": null,
+   "error": "RuntimeError",
    "modificado": "2026-11-10T16:23:20.700961",
    "ultima_correcta": "2026-11-11T07:47Z",
-   "ultimo_intento": "2026-11-11T07:47Z"
+   "ultimo_intento": "2026-11-11T08:07Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T07:47Z",
-   "ultimo_intento": "2026-11-11T07:47Z"
+   "ultima_correcta": "2026-11-11T08:07Z",
+   "ultimo_intento": "2026-11-11T08:07Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-11T07:47Z",
-   "ultimo_intento": "2026-11-11T07:47Z"
+   "ultima_correcta": "2026-11-11T08:01Z",
+   "ultimo_intento": "2026-11-11T08:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T07:47Z",
-   "ultimo_intento": "2026-11-11T07:47Z"
+   "ultima_correcta": "2026-11-11T08:01Z",
+   "ultimo_intento": "2026-11-11T08:01Z"
   }
  }
 }
