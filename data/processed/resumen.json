@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-10T23:01Z",
+ "generado": "2026-11-11T00:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -20,7 +20,7 @@
    23875.5,
    22576.3,
    21730.1,
-   null,
+   21556.0,
    null,
    null,
    null,
@@ -60,7 +60,15 @@
     "veredicto": "sin_datos"
    }
   },
-  "indicadores": null,
+  "indicadores": {
+   "ultima_hora": {
+    "hora": 0,
+    "desviacion_pct": -1.2
+   },
+   "diferencia_gwh": null,
+   "diferencia_gw": null,
+   "peor_hora": null
+  },
   "cortes": [
    {
     "hora": 9,
@@ -89,7 +97,7 @@
   ],
   "perfil": {
    "valor": [
-    null,
+    23507.1,
     null,
     null,
     null,
@@ -193,7 +201,7 @@
     26900.2
    ],
    "desviacion_pct": [
-    null,
+    -1.2,
     null,
     null,
     null,
@@ -375,6 +383,32 @@
     32842.5,
     29581.8,
     26900.2
+   ],
+   "2026-11-11": [
+    23507.1,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
    ]
   }
  },
@@ -2565,8 +2599,8 @@
      },
      "2026-11-11": {
       "temperatura_c": [
-       17.9,
-       null,
+       18.6,
+       18.1,
        null,
        null,
        null,
@@ -2591,8 +2625,8 @@
        null
       ],
       "viento_kmh": [
-       6.1,
-       null,
+       5.0,
+       5.2,
        null,
        null,
        null,
@@ -2618,7 +2652,7 @@
       ],
       "lluvia_mm": [
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -2991,8 +3025,8 @@
      },
      "2026-11-11": {
       "temperatura_c": [
-       18.5,
-       null,
+       18.6,
+       18.4,
        null,
        null,
        null,
@@ -3017,8 +3051,8 @@
        null
       ],
       "viento_kmh": [
-       6.3,
-       null,
+       5.2,
+       5.5,
        null,
        null,
        null,
@@ -3044,7 +3078,7 @@
       ],
       "lluvia_mm": [
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -3077,17 +3111,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-10T23:01Z",
-   "ultimo_intento": "2026-11-10T23:01Z"
+   "ultima_correcta": "2026-11-11T00:01Z",
+   "ultimo_intento": "2026-11-11T00:01Z"
   },
   "eea_modificado": {
-   "12005005": "Tue, 10 Nov 2026 21:09:00 GMT",
-   "12009007": "Tue, 10 Nov 2026 21:09:04 GMT",
-   "12028001": "Tue, 10 Nov 2026 21:09:09 GMT",
-   "12032001": "Tue, 10 Nov 2026 21:09:15 GMT",
-   "12040010": "Tue, 10 Nov 2026 21:09:25 GMT",
+   "12005005": "Tue, 10 Nov 2026 23:13:45 GMT",
+   "12009007": "Tue, 10 Nov 2026 23:13:49 GMT",
+   "12028001": "Tue, 10 Nov 2026 23:13:54 GMT",
+   "12032001": "Tue, 10 Nov 2026 23:14:00 GMT",
+   "12040010": "Tue, 10 Nov 2026 23:14:09 GMT",
    "12040015": "Tue, 10 Nov 2026 22:05:41 GMT",
-   "12040020": "Tue, 10 Nov 2026 21:09:36 GMT"
+   "12040020": "Tue, 10 Nov 2026 23:14:20 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3097,25 +3131,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-10T16:23:20.700961",
-   "ultima_correcta": "2026-11-10T23:01Z",
-   "ultimo_intento": "2026-11-10T23:01Z"
+   "ultima_correcta": "2026-11-11T00:01Z",
+   "ultimo_intento": "2026-11-11T00:01Z"
   },
   "open_meteo": {
    "error": null,
-   "hoy": "2026-11-10",
-   "ultima_correcta": "2026-11-10T23:01Z",
-   "ultimo_intento": "2026-11-10T23:01Z"
+   "hoy": "2026-11-11",
+   "ultima_correcta": "2026-11-11T00:01Z",
+   "ultimo_intento": "2026-11-11T00:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-10T23:01Z",
-   "ultimo_intento": "2026-11-10T23:01Z"
+   "ultima_correcta": "2026-11-11T00:01Z",
+   "ultimo_intento": "2026-11-11T00:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-10T23:01Z",
-   "ultimo_intento": "2026-11-10T23:01Z"
+   "ultima_correcta": "2026-11-11T00:01Z",
+   "ultimo_intento": "2026-11-11T00:01Z"
   }
  }
 }
