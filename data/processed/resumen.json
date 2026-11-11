@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T21:01Z",
+ "generado": "2026-11-11T22:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -62,8 +62,8 @@
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 21,
-    "desviacion_pct": -3.3
+    "hora": 22,
+    "desviacion_pct": -2.6
    },
    "diferencia_gwh": -22.1,
    "diferencia_gw": -1.58,
@@ -128,7 +128,7 @@
     31460.7,
     31931.8,
     30728.7,
-    null,
+    27999.8,
     null
    ],
    "referencia": [
@@ -232,7 +232,7 @@
     -2.62,
     -2.82,
     -3.28,
-    null,
+    -2.6,
     null
    ],
    "banda_inf_pct": [
@@ -416,25 +416,25 @@
     31460.7,
     31931.8,
     30728.7,
-    null,
+    27999.8,
     null
    ]
   }
  },
  "no2": {
   "resumen": {
-   "desviacion_pct": 91.5,
+   "desviacion_pct": 68.1,
    "margen_inf_pct": -68.1,
    "margen_sup_pct": 257.2,
-   "horas": 11,
-   "horas_fuera_banda": 6,
+   "horas": 13,
+   "horas_fuera_banda": 5,
    "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": 32.6,
+    "desviacion_pct": 10.4,
     "margen_inf_pct": -79.1,
     "margen_sup_pct": 380.2,
-    "horas": 5,
-    "horas_fuera_banda": 2,
+    "horas": 6,
+    "horas_fuera_banda": 1,
     "veredicto": "sin_diferencia"
    }
   },
@@ -458,9 +458,9 @@
     12.0,
     8.33,
     14.0,
-    16.0,
-    null,
-    null,
+    13.33,
+    10.5,
+    14.5,
     null,
     null,
     null
@@ -562,9 +562,9 @@
     160.0,
     77.84,
     100.0,
-    100.0,
-    null,
-    null,
+    28.89,
+    -29.29,
+    -20.03,
     null,
     null,
     null
@@ -641,9 +641,9 @@
    1,
    2,
    2,
-   1,
-   0,
-   0,
+   3,
+   2,
+   2,
    0,
    0,
    0
@@ -864,17 +864,17 @@
     "nombre": "Castelló - Patronat d'Esports",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 68.7,
-     "margen_inf_pct": -34.9,
-     "margen_sup_pct": 37.8,
-     "horas": 9,
+     "desviacion_pct": 50.0,
+     "margen_inf_pct": -40.9,
+     "margen_sup_pct": 39.4,
+     "horas": 12,
      "horas_fuera_banda": 6,
      "veredicto": "por_encima",
      "horas_punta": {
-      "desviacion_pct": 23.4,
-      "margen_inf_pct": -30.6,
-      "margen_sup_pct": 47.8,
-      "horas": 4,
+      "desviacion_pct": 13.0,
+      "margen_inf_pct": -46.0,
+      "margen_sup_pct": 51.0,
+      "horas": 6,
       "horas_fuera_banda": 1,
       "veredicto": "sin_diferencia"
      }
@@ -899,9 +899,9 @@
       13.0,
       11.0,
       15.0,
-      null,
-      null,
-      null,
+      16.0,
+      14.0,
+      19.0,
       null,
       null,
       null
@@ -1003,9 +1003,9 @@
       160.0,
       37.5,
       100.0,
-      null,
-      null,
-      null,
+      6.67,
+      -22.22,
+      -2.56,
       null,
       null,
       null
@@ -1068,25 +1068,25 @@
      "2026-10-21": 22,
      "2026-10-28": 24,
      "2026-11-04": 21,
-     "2026-11-11": 17
+     "2026-11-11": 20
     }
    },
    "12040020": {
     "nombre": "Castelló - CEIP La Marina",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 34.7,
-     "margen_inf_pct": -53.6,
-     "margen_sup_pct": 53.2,
-     "horas": 5,
-     "horas_fuera_banda": 3,
+     "desviacion_pct": 10.0,
+     "margen_inf_pct": -42.9,
+     "margen_sup_pct": 49.6,
+     "horas": 8,
+     "horas_fuera_banda": 5,
      "veredicto": "sin_diferencia",
      "horas_punta": {
-      "desviacion_pct": -21.3,
-      "margen_inf_pct": -39.4,
-      "margen_sup_pct": 27.4,
-      "horas": 3,
-      "horas_fuera_banda": 1,
+      "desviacion_pct": -24.0,
+      "margen_inf_pct": -31.1,
+      "margen_sup_pct": 31.3,
+      "horas": 5,
+      "horas_fuera_banda": 3,
       "veredicto": "sin_diferencia"
      }
     },
@@ -1110,9 +1110,9 @@
       7.0,
       2.0,
       17.0,
-      null,
-      null,
-      null,
+      8.0,
+      7.0,
+      10.0,
       null,
       null,
       null
@@ -1214,9 +1214,9 @@
       null,
       null,
       null,
-      null,
-      null,
-      null,
+      -20.0,
+      -36.36,
+      -37.5,
       null,
       null,
       null
@@ -1278,7 +1278,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 17
+     "2026-11-11": 20
     }
    },
    "12009007": {
@@ -2643,7 +2643,7 @@
        19.2,
        18.6,
        17.9,
-       null
+       17.1
       ],
       "viento_kmh": [
        5.0,
@@ -2669,7 +2669,7 @@
        2.1,
        3.1,
        5.4,
-       null
+       5.2
       ],
       "lluvia_mm": [
        0.0,
@@ -2695,7 +2695,7 @@
        0.1,
        0.4,
        0.3,
-       null
+       1.8
       ]
      }
     }
@@ -3074,7 +3074,7 @@
        19.0,
        18.5,
        17.8,
-       null
+       16.8
       ],
       "viento_kmh": [
        5.2,
@@ -3100,7 +3100,7 @@
        3.6,
        4.0,
        5.8,
-       null
+       4.9
       ],
       "lluvia_mm": [
        0.0,
@@ -3126,7 +3126,7 @@
        0.3,
        0.2,
        0.7,
-       null
+       2.8
       ]
      }
     }
@@ -3137,8 +3137,8 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-11T21:01Z",
-   "ultimo_intento": "2026-11-11T21:01Z"
+   "ultima_correcta": "2026-11-11T22:01Z",
+   "ultimo_intento": "2026-11-11T22:01Z"
   },
   "eea_modificado": {
    "12005005": "Wed, 11 Nov 2026 20:12:52 GMT",
@@ -3146,8 +3146,8 @@
    "12028001": "Wed, 11 Nov 2026 20:13:02 GMT",
    "12032001": "Wed, 11 Nov 2026 20:13:07 GMT",
    "12040010": "Wed, 11 Nov 2026 20:13:15 GMT",
-   "12040015": "Wed, 11 Nov 2026 18:13:36 GMT",
-   "12040020": "Wed, 11 Nov 2026 18:13:37 GMT"
+   "12040015": "Wed, 11 Nov 2026 21:05:35 GMT",
+   "12040020": "Wed, 11 Nov 2026 21:05:36 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3157,25 +3157,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-11T16:26:17.854424",
-   "ultima_correcta": "2026-11-11T21:01Z",
-   "ultimo_intento": "2026-11-11T21:01Z"
+   "ultima_correcta": "2026-11-11T22:01Z",
+   "ultimo_intento": "2026-11-11T22:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T21:01Z",
-   "ultimo_intento": "2026-11-11T21:01Z"
+   "ultima_correcta": "2026-11-11T22:01Z",
+   "ultimo_intento": "2026-11-11T22:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-11T21:01Z",
-   "ultimo_intento": "2026-11-11T21:01Z"
+   "ultima_correcta": "2026-11-11T22:01Z",
+   "ultimo_intento": "2026-11-11T22:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T21:01Z",
-   "ultimo_intento": "2026-11-11T21:01Z"
+   "ultima_correcta": "2026-11-11T22:01Z",
+   "ultimo_intento": "2026-11-11T22:01Z"
   }
  }
 }
