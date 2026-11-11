@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T16:16Z",
+ "generado": "2026-11-11T17:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -46,27 +46,27 @@
  "electricidad": {
   "resumen": {
    "desviacion_pct": -5.7,
-   "margen_inf_pct": -9.2,
+   "margen_inf_pct": -8.9,
    "margen_sup_pct": 11.1,
-   "horas": 10,
+   "horas": 11,
    "horas_fuera_banda": 3,
    "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": -8.1,
+    "desviacion_pct": -7.4,
     "margen_inf_pct": -7.6,
     "margen_sup_pct": 12.4,
-    "horas": 3,
+    "horas": 4,
     "horas_fuera_banda": 3,
-    "veredicto": "por_debajo"
+    "veredicto": "sin_diferencia"
    }
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 16,
-    "desviacion_pct": -5.8
+    "hora": 17,
+    "desviacion_pct": -5.1
    },
-   "diferencia_gwh": -18.0,
-   "diferencia_gw": -1.8,
+   "diferencia_gwh": -19.6,
+   "diferencia_gw": -1.79,
    "peor_hora": {
     "hora": 10,
     "desviacion_pct": -8.8
@@ -123,7 +123,7 @@
     32015.2,
     30688.4,
     30051.8,
-    null,
+    30004.2,
     null,
     null,
     null,
@@ -227,7 +227,7 @@
     -1.25,
     -4.22,
     -5.84,
-    null,
+    -5.08,
     null,
     null,
     null,
@@ -411,7 +411,7 @@
     32015.2,
     30688.4,
     30051.8,
-    null,
+    30004.2,
     null,
     null,
     null,
@@ -423,11 +423,11 @@
  },
  "no2": {
   "resumen": {
-   "desviacion_pct": 81.2,
+   "desviacion_pct": 91.0,
    "margen_inf_pct": -68.1,
    "margen_sup_pct": 257.2,
-   "horas": 7,
-   "horas_fuera_banda": 3,
+   "horas": 8,
+   "horas_fuera_banda": 4,
    "veredicto": "sin_diferencia",
    "horas_punta": {
     "desviacion_pct": -12.4,
@@ -454,8 +454,8 @@
     19.33,
     19.67,
     12.0,
-    null,
-    null,
+    11.0,
+    13.0,
     null,
     null,
     null,
@@ -559,7 +559,7 @@
     159.52,
     209.09,
     null,
-    null,
+    160.0,
     null,
     null,
     null,
@@ -638,7 +638,7 @@
    2,
    1,
    0,
-   0,
+   1,
    0,
    0,
    0,
@@ -864,11 +864,11 @@
     "nombre": "Castelló - Patronat d'Esports",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 53.5,
-     "margen_inf_pct": -25.3,
-     "margen_sup_pct": 29.2,
-     "horas": 6,
-     "horas_fuera_banda": 4,
+     "desviacion_pct": 68.7,
+     "margen_inf_pct": -27.4,
+     "margen_sup_pct": 25.1,
+     "horas": 7,
+     "horas_fuera_banda": 5,
      "veredicto": "por_encima",
      "horas_punta": {
       "desviacion_pct": -2.2,
@@ -894,9 +894,9 @@
       25.0,
       21.0,
       14.0,
-      null,
-      null,
-      null,
+      12.0,
+      11.0,
+      13.0,
       null,
       null,
       null,
@@ -1000,7 +1000,7 @@
       133.33,
       null,
       null,
-      null,
+      160.0,
       null,
       null,
       null,
@@ -1068,7 +1068,7 @@
      "2026-10-21": 22,
      "2026-10-28": 24,
      "2026-11-04": 21,
-     "2026-11-11": 12
+     "2026-11-11": 15
     }
    },
    "12040020": {
@@ -1918,11 +1918,11 @@
     "nombre": "L'Alcora",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 25.3,
-     "margen_inf_pct": -21.1,
-     "margen_sup_pct": 21.1,
-     "horas": 6,
-     "horas_fuera_banda": 5,
+     "desviacion_pct": 56.6,
+     "margen_inf_pct": -29.8,
+     "margen_sup_pct": 30.9,
+     "horas": 9,
+     "horas_fuera_banda": 7,
      "veredicto": "por_encima",
      "horas_punta": {
       "desviacion_pct": 74.1,
@@ -1948,9 +1948,9 @@
       24.0,
       19.0,
       10.0,
-      null,
-      null,
-      null,
+      14.0,
+      23.0,
+      21.0,
       null,
       null,
       null,
@@ -2052,9 +2052,9 @@
       -15.79,
       2.7,
       -57.45,
-      null,
-      null,
-      null,
+      7.69,
+      187.5,
+      162.5,
       null,
       null,
       null,
@@ -2122,7 +2122,7 @@
      "2026-10-21": 9,
      "2026-10-28": 11,
      "2026-11-04": 24,
-     "2026-11-11": 12
+     "2026-11-11": 15
     }
    }
   }
@@ -2638,7 +2638,7 @@
        22.9,
        22.2,
        21.3,
-       null,
+       20.4,
        null,
        null,
        null,
@@ -2664,7 +2664,7 @@
        4.8,
        8.3,
        6.8,
-       null,
+       6.1,
        null,
        null,
        null,
@@ -2690,7 +2690,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -2724,8 +2724,8 @@
      },
      "2026-11-11": {
       "temperatura_c": 21.3,
-      "viento_kmh": 8.0,
-      "lluvia_mm": 0.1
+      "viento_kmh": 7.5,
+      "lluvia_mm": 0.2
      }
     },
     "horario": {
@@ -3069,7 +3069,7 @@
        23.9,
        22.9,
        21.6,
-       null,
+       20.7,
        null,
        null,
        null,
@@ -3095,7 +3095,7 @@
        5.4,
        9.0,
        5.1,
-       null,
+       2.2,
        null,
        null,
        null,
@@ -3121,7 +3121,7 @@
        0.0,
        0.0,
        0.1,
-       null,
+       0.1,
        null,
        null,
        null,
@@ -3137,16 +3137,16 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-11T16:16Z",
-   "ultimo_intento": "2026-11-11T16:16Z"
+   "ultima_correcta": "2026-11-11T17:01Z",
+   "ultimo_intento": "2026-11-11T17:01Z"
   },
   "eea_modificado": {
-   "12005005": "Wed, 11 Nov 2026 12:58:28 GMT",
+   "12005005": "Wed, 11 Nov 2026 16:21:09 GMT",
    "12009007": "Wed, 11 Nov 2026 15:07:27 GMT",
    "12028001": "Wed, 11 Nov 2026 15:48:34 GMT",
    "12032001": "Wed, 11 Nov 2026 15:11:54 GMT",
    "12040010": "Wed, 11 Nov 2026 15:07:33 GMT",
-   "12040015": "Wed, 11 Nov 2026 12:59:02 GMT",
+   "12040015": "Wed, 11 Nov 2026 16:21:15 GMT",
    "12040020": "Wed, 11 Nov 2026 15:07:39 GMT"
   },
   "gva_historico": {
@@ -3156,26 +3156,26 @@
   },
   "gva_ultimos": {
    "error": null,
-   "modificado": "2026-11-10T16:23:20.700961",
-   "ultima_correcta": "2026-11-11T16:16Z",
-   "ultimo_intento": "2026-11-11T16:16Z"
+   "modificado": "2026-11-11T16:26:17.854424",
+   "ultima_correcta": "2026-11-11T17:01Z",
+   "ultimo_intento": "2026-11-11T17:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T16:16Z",
-   "ultimo_intento": "2026-11-11T16:16Z"
+   "ultima_correcta": "2026-11-11T17:01Z",
+   "ultimo_intento": "2026-11-11T17:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-11T16:16Z",
-   "ultimo_intento": "2026-11-11T16:16Z"
+   "ultima_correcta": "2026-11-11T17:01Z",
+   "ultimo_intento": "2026-11-11T17:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T16:16Z",
-   "ultimo_intento": "2026-11-11T16:16Z"
+   "ultima_correcta": "2026-11-11T17:01Z",
+   "ultimo_intento": "2026-11-11T17:01Z"
   }
  }
 }
