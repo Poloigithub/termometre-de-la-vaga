@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T04:03Z",
+ "generado": "2026-11-11T05:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -62,8 +62,8 @@
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 4,
-    "desviacion_pct": -3.4
+    "hora": 5,
+    "desviacion_pct": -4.5
    },
    "diferencia_gwh": null,
    "diferencia_gw": null,
@@ -108,7 +108,7 @@
     21345.4,
     20806.9,
     20457.8,
-    null,
+    20817.8,
     null,
     null,
     null,
@@ -212,7 +212,7 @@
     -1.26,
     -1.89,
     -3.39,
-    null,
+    -4.52,
     null,
     null,
     null,
@@ -396,7 +396,7 @@
     21345.4,
     20806.9,
     20457.8,
-    null,
+    20817.8,
     null,
     null,
     null,
@@ -868,7 +868,7 @@
        17.3,
        17.1,
        17.4,
-       null,
+       17.3,
        null,
        null,
        null,
@@ -894,7 +894,7 @@
        6.1,
        7.7,
        5.5,
-       null,
+       3.9,
        null,
        null,
        null,
@@ -920,7 +920,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -1294,7 +1294,7 @@
        17.4,
        17.8,
        18.0,
-       null,
+       18.5,
        null,
        null,
        null,
@@ -1320,7 +1320,7 @@
        6.1,
        8.1,
        8.6,
-       null,
+       10.5,
        null,
        null,
        null,
@@ -1346,7 +1346,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -1375,14 +1375,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T04:03Z",
-   "ultimo_intento": "2026-11-11T04:03Z"
+   "ultima_correcta": "2026-11-11T05:01Z",
+   "ultimo_intento": "2026-11-11T05:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T04:03Z",
-   "ultimo_intento": "2026-11-11T04:03Z"
+   "ultima_correcta": "2026-11-11T05:01Z",
+   "ultimo_intento": "2026-11-11T05:01Z"
   }
  }
 }

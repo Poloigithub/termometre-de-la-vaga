@@ -3955,5 +3955,21 @@ fecha,hora,estacion,nombre,grupo,no2_ugm3,fuente
 2026-11-04,23,12040010,Castelló - Grau,urbana,41.0,agencia_europea
 2026-11-04,23,12040015,Castelló - Patronat d'Esports,urbana,23.0,agencia_europea
 2026-11-04,23,12040020,Castelló - CEIP La Marina,urbana,18.0,agencia_europea
+2026-11-11,1,12005005,L'Alcora,contraste,1.0,agencia_europea
+2026-11-11,1,12009007,Almassora - CP Ochando,contraste,14.0,agencia_europea
+2026-11-11,1,12028001,Benicàssim,contraste,13.0,agencia_europea
+2026-11-11,1,12032001,Borriana,contraste,12.0,agencia_europea
+2026-11-11,1,12040010,Castelló - Grau,urbana,9.0,agencia_europea
 2026-11-11,1,12040015,Castelló - Patronat d'Esports,urbana,9.0,agencia_europea
 2026-11-11,1,12040020,Castelló - CEIP La Marina,urbana,2.0,agencia_europea
+2026-11-11,2,12005005,L'Alcora,contraste,2.0,agencia_europea
+2026-11-11,2,12009007,Almassora - CP Ochando,contraste,8.0,agencia_europea
+2026-11-11,2,12028001,Benicàssim,contraste,16.0,agencia_europea
+2026-11-11,2,12032001,Borriana,contraste,6.0,agencia_europea
+2026-11-11,2,12040010,Castelló - Grau,urbana,4.0,agencia_europea
+2026-11-11,2,12040015,Castelló - Patronat d'Esports,urbana,5.0,agencia_europea
+2026-11-11,2,12040020,Castelló - CEIP La Marina,urbana,5.0,agencia_europea
+2026-11-11,3,12005005,L'Alcora,contraste,3.0,agencia_europea
+2026-11-11,3,12032001,Borriana,contraste,4.0,agencia_europea
+2026-11-11,3,12040015,Castelló - Patronat d'Esports,urbana,3.0,agencia_europea
+2026-11-11,3,12040020,Castelló - CEIP La Marina,urbana,1.0,agencia_europea
