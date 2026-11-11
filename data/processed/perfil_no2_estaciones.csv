@@ -13,10 +13,10 @@ hora,valor,referencia,banda_min,banda_max,dias_referencia,desviacion_pct,banda_i
 11,23.0,10.5,5.0,25.0,4,119.04761904761905,-52.38095238095239,138.0952380952381,True,12040010,Castelló - Grau
 12,30.0,10.5,3.0,23.0,4,185.71428571428572,-71.42857142857143,119.04761904761905,False,12040010,Castelló - Grau
 13,17.0,5.5,2.0,17.0,4,209.0909090909091,-63.63636363636363,209.0909090909091,True,12040010,Castelló - Grau
-14,,4.5,2.0,13.0,4,,,,,12040010,Castelló - Grau
-15,,4.5,1.0,10.0,4,,,,,12040010,Castelló - Grau
-16,,5.5,1.0,10.0,4,,-81.81818181818183,81.81818181818183,,12040010,Castelló - Grau
-17,,5.0,3.0,9.0,4,,-40.0,80.0,,12040010,Castelló - Grau
+14,20.0,4.5,2.0,13.0,4,,,,,12040010,Castelló - Grau
+15,16.0,4.5,1.0,10.0,4,,,,,12040010,Castelló - Grau
+16,12.0,5.5,1.0,10.0,4,118.18181818181819,-81.81818181818183,81.81818181818183,False,12040010,Castelló - Grau
+17,10.0,5.0,3.0,9.0,4,100.0,-40.0,80.0,False,12040010,Castelló - Grau
 18,,8.0,6.0,18.0,4,,-25.0,125.0,,12040010,Castelló - Grau
 19,,15.5,7.0,23.0,4,,-54.83870967741935,48.38709677419355,,12040010,Castelló - Grau
 20,,17.5,3.0,32.0,4,,-82.85714285714286,82.85714285714286,,12040010,Castelló - Grau
@@ -39,8 +39,8 @@ hora,valor,referencia,banda_min,banda_max,dias_referencia,desviacion_pct,banda_i
 13,12.0,4.5,4.0,6.0,4,,,,,12040015,Castelló - Patronat d'Esports
 14,11.0,4.0,4.0,5.0,4,,,,,12040015,Castelló - Patronat d'Esports
 15,13.0,5.0,3.0,5.0,4,160.0,-40.0,0.0,False,12040015,Castelló - Patronat d'Esports
-16,,8.0,3.0,10.0,4,,-62.5,25.0,,12040015,Castelló - Patronat d'Esports
-17,,7.5,3.0,18.0,4,,-60.0,140.0,,12040015,Castelló - Patronat d'Esports
+16,11.0,8.0,3.0,10.0,4,37.5,-62.5,25.0,False,12040015,Castelló - Patronat d'Esports
+17,15.0,7.5,3.0,18.0,4,100.0,-60.0,140.0,True,12040015,Castelló - Patronat d'Esports
 18,,15.0,2.0,28.0,4,,-86.66666666666667,86.66666666666667,,12040015,Castelló - Patronat d'Esports
 19,,18.0,6.0,23.0,4,,-66.66666666666666,27.77777777777778,,12040015,Castelló - Patronat d'Esports
 20,,19.5,15.0,23.0,4,,-23.076923076923077,17.94871794871795,,12040015,Castelló - Patronat d'Esports
@@ -61,10 +61,10 @@ hora,valor,referencia,banda_min,banda_max,dias_referencia,desviacion_pct,banda_i
 11,14.0,7.0,0.0,12.0,3,100.0,-100.0,71.42857142857143,False,12040020,Castelló - CEIP La Marina
 12,15.0,3.0,0.0,13.0,3,,,,,12040020,Castelló - CEIP La Marina
 13,7.0,1.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
-14,,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
-15,,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
-16,,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
-17,,2.0,1.0,7.0,3,,,,,12040020,Castelló - CEIP La Marina
+14,12.0,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
+15,7.0,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
+16,2.0,0.0,0.0,1.0,3,,,,,12040020,Castelló - CEIP La Marina
+17,17.0,2.0,1.0,7.0,3,,,,,12040020,Castelló - CEIP La Marina
 18,,10.0,9.0,12.0,3,,-10.0,20.0,,12040020,Castelló - CEIP La Marina
 19,,11.0,8.0,17.0,3,,-27.27272727272727,54.54545454545454,,12040020,Castelló - CEIP La Marina
 20,,16.0,10.0,25.0,3,,-37.5,56.25,,12040020,Castelló - CEIP La Marina
