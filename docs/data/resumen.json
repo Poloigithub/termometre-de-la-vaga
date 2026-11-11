@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T03:01Z",
+ "generado": "2026-11-11T04:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -62,8 +62,8 @@
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 3,
-    "desviacion_pct": -1.9
+    "hora": 4,
+    "desviacion_pct": -3.4
    },
    "diferencia_gwh": null,
    "diferencia_gw": null,
@@ -101,7 +101,7 @@
     22282.2,
     21345.4,
     20806.9,
-    null,
+    20457.8,
     null,
     null,
     null,
@@ -205,7 +205,7 @@
     -0.52,
     -1.26,
     -1.89,
-    null,
+    -3.39,
     null,
     null,
     null,
@@ -389,7 +389,7 @@
     22282.2,
     21345.4,
     20806.9,
-    null,
+    20457.8,
     null,
     null,
     null,
@@ -857,10 +857,10 @@
      "2026-11-11": {
       "temperatura_c": [
        18.6,
-       18.1,
-       17.7,
+       18.5,
+       17.9,
        17.3,
-       17.4,
+       17.1,
        null,
        null,
        null,
@@ -883,10 +883,10 @@
       ],
       "viento_kmh": [
        5.0,
-       5.2,
-       5.6,
-       7.4,
-       8.4,
+       4.5,
+       4.8,
+       6.1,
+       7.7,
        null,
        null,
        null,
@@ -1283,10 +1283,10 @@
      "2026-11-11": {
       "temperatura_c": [
        18.6,
-       18.4,
        18.1,
-       18.0,
-       18.1,
+       17.8,
+       17.4,
+       17.8,
        null,
        null,
        null,
@@ -1309,10 +1309,10 @@
       ],
       "viento_kmh": [
        5.2,
-       5.5,
-       6.2,
-       8.4,
-       8.3,
+       5.2,
+       5.2,
+       6.1,
+       8.1,
        null,
        null,
        null,
@@ -1369,14 +1369,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T03:01Z",
-   "ultimo_intento": "2026-11-11T03:01Z"
+   "ultima_correcta": "2026-11-11T04:01Z",
+   "ultimo_intento": "2026-11-11T04:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T03:01Z",
-   "ultimo_intento": "2026-11-11T03:01Z"
+   "ultima_correcta": "2026-11-11T04:01Z",
+   "ultimo_intento": "2026-11-11T04:01Z"
   }
  }
 }
