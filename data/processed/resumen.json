@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T06:01Z",
+ "generado": "2026-11-11T07:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,29 +45,32 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": null,
-   "margen_inf_pct": null,
-   "margen_sup_pct": null,
-   "horas": 0,
-   "horas_fuera_banda": 0,
-   "veredicto": "sin_datos",
+   "desviacion_pct": -8.7,
+   "margen_inf_pct": -8.2,
+   "margen_sup_pct": 11.1,
+   "horas": 1,
+   "horas_fuera_banda": 1,
+   "veredicto": "por_debajo",
    "horas_punta": {
-    "desviacion_pct": null,
-    "margen_inf_pct": null,
-    "margen_sup_pct": null,
-    "horas": 0,
-    "horas_fuera_banda": 0,
-    "veredicto": "sin_datos"
+    "desviacion_pct": -8.7,
+    "margen_inf_pct": -7.6,
+    "margen_sup_pct": 12.4,
+    "horas": 1,
+    "horas_fuera_banda": 1,
+    "veredicto": "por_debajo"
    }
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 6,
-    "desviacion_pct": -7.0
+    "hora": 7,
+    "desviacion_pct": -8.7
    },
-   "diferencia_gwh": null,
-   "diferencia_gw": null,
-   "peor_hora": null
+   "diferencia_gwh": -2.5,
+   "diferencia_gw": -2.49,
+   "peor_hora": {
+    "hora": 7,
+    "desviacion_pct": -8.7
+   }
   },
   "cortes": [
    {
@@ -110,7 +113,7 @@
     20457.8,
     20817.8,
     22964.8,
-    null,
+    26080.9,
     null,
     null,
     null,
@@ -214,7 +217,7 @@
     -3.39,
     -4.52,
     -6.99,
-    null,
+    -8.72,
     null,
     null,
     null,
@@ -398,7 +401,7 @@
     20457.8,
     20817.8,
     22964.8,
-    null,
+    26080.9,
     null,
     null,
     null,
@@ -440,9 +443,9 @@
     null,
     6.67,
     4.67,
-    2.0,
-    null,
-    null,
+    2.33,
+    2.33,
+    3.0,
     null,
     null,
     null,
@@ -544,9 +547,9 @@
     null,
     -5.38,
     -63.78,
-    -77.07,
-    null,
-    null,
+    -77.57,
+    -65.71,
+    -62.5,
     null,
     null,
     null,
@@ -623,9 +626,9 @@
    0,
    2,
    2,
+   3,
    2,
-   0,
-   0,
+   2,
    0,
    0,
    0,
@@ -670,8 +673,8 @@
       null,
       9.0,
       4.0,
-      null,
-      null,
+      3.0,
+      3.0,
       null,
       null,
       null,
@@ -774,8 +777,8 @@
       null,
       -30.77,
       -69.23,
-      null,
-      null,
+      -78.57,
+      -71.43,
       null,
       null,
       null,
@@ -854,7 +857,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 2
+     "2026-11-11": 4
     }
    },
    "12040015": {
@@ -882,8 +885,8 @@
       9.0,
       5.0,
       3.0,
-      null,
-      null,
+      3.0,
+      3.0,
       null,
       null,
       null,
@@ -986,8 +989,8 @@
       20.0,
       -58.33,
       -68.42,
-      null,
-      null,
+      -60.0,
+      -62.5,
       null,
       null,
       null,
@@ -1065,7 +1068,7 @@
      "2026-10-21": 22,
      "2026-10-28": 24,
      "2026-11-04": 21,
-     "2026-11-11": 3
+     "2026-11-11": 5
     }
    },
    "12040020": {
@@ -1093,8 +1096,8 @@
       2.0,
       5.0,
       1.0,
-      null,
-      null,
+      1.0,
+      3.0,
       null,
       null,
       null,
@@ -1198,7 +1201,7 @@
       null,
       -85.71,
       null,
-      null,
+      -62.5,
       null,
       null,
       null,
@@ -1275,7 +1278,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 3
+     "2026-11-11": 5
     }
    },
    "12009007": {
@@ -1302,8 +1305,8 @@
       null,
       14.0,
       8.0,
-      null,
-      null,
+      4.0,
+      5.0,
       null,
       null,
       null,
@@ -1406,8 +1409,8 @@
       null,
       -28.21,
       -68.0,
-      null,
-      null,
+      -87.1,
+      -86.11,
       null,
       null,
       null,
@@ -1486,7 +1489,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 24,
-     "2026-11-11": 2
+     "2026-11-11": 4
     }
    },
    "12028001": {
@@ -1513,8 +1516,8 @@
       null,
       13.0,
       16.0,
-      null,
-      null,
+      8.0,
+      9.0,
       null,
       null,
       null,
@@ -1617,8 +1620,8 @@
       null,
       8.33,
       88.24,
-      null,
-      null,
+      23.08,
+      -41.94,
       null,
       null,
       null,
@@ -1697,7 +1700,7 @@
      "2026-10-21": 17,
      "2026-10-28": 20,
      "2026-11-04": 24,
-     "2026-11-11": 2
+     "2026-11-11": 4
     }
    },
    "12032001": {
@@ -1725,8 +1728,8 @@
       12.0,
       6.0,
       4.0,
-      null,
-      null,
+      5.0,
+      5.0,
       null,
       null,
       null,
@@ -1829,8 +1832,8 @@
       41.18,
       -45.45,
       -73.33,
-      null,
-      null,
+      -69.7,
+      -71.43,
       null,
       null,
       null,
@@ -1908,7 +1911,7 @@
      "2026-10-21": 24,
      "2026-10-28": 24,
      "2026-11-04": 21,
-     "2026-11-11": 3
+     "2026-11-11": 5
     }
    },
    "12005005": {
@@ -1936,8 +1939,8 @@
       1.0,
       2.0,
       3.0,
-      null,
-      null,
+      1.0,
+      22.0,
       null,
       null,
       null,
@@ -2040,8 +2043,8 @@
       -87.5,
       -73.33,
       -60.0,
-      null,
-      null,
+      -88.24,
+      69.23,
       null,
       null,
       null,
@@ -2119,7 +2122,7 @@
      "2026-10-21": 9,
      "2026-10-28": 11,
      "2026-11-04": 24,
-     "2026-11-11": 3
+     "2026-11-11": 5
     }
    }
   }
@@ -2286,6 +2289,11 @@
      "2026-11-04": {
       "temperatura_c": 14.5,
       "viento_kmh": 9.2,
+      "lluvia_mm": 0.0
+     },
+     "2026-11-11": {
+      "temperatura_c": 16.5,
+      "viento_kmh": 4.0,
       "lluvia_mm": 0.0
      }
     },
@@ -2619,8 +2627,8 @@
        16.9,
        17.0,
        16.9,
-       null,
-       null,
+       17.1,
+       15.9,
        null,
        null,
        null,
@@ -2645,8 +2653,8 @@
        7.0,
        5.5,
        3.8,
-       null,
-       null,
+       3.3,
+       4.8,
        null,
        null,
        null,
@@ -2671,8 +2679,8 @@
        0.0,
        0.0,
        0.0,
-       null,
-       null,
+       0.0,
+       0.0,
        null,
        null,
        null,
@@ -2713,6 +2721,11 @@
       "temperatura_c": 15.1,
       "viento_kmh": 9.3,
       "lluvia_mm": 1.5
+     },
+     "2026-11-11": {
+      "temperatura_c": 18.0,
+      "viento_kmh": 11.2,
+      "lluvia_mm": 0.0
      }
     },
     "horario": {
@@ -3045,8 +3058,8 @@
        17.4,
        17.7,
        17.7,
-       null,
-       null,
+       17.9,
+       18.2,
        null,
        null,
        null,
@@ -3071,8 +3084,8 @@
        6.2,
        6.9,
        9.2,
-       null,
-       null,
+       10.7,
+       11.8,
        null,
        null,
        null,
@@ -3097,8 +3110,8 @@
        0.0,
        0.0,
        0.0,
-       null,
-       null,
+       0.0,
+       0.0,
        null,
        null,
        null,
@@ -3119,22 +3132,28 @@
     }
    }
   },
-  "avisos": []
+  "avisos": [
+   {
+    "tipo": "viento",
+    "punto": "castello",
+    "diferencia_kmh": -4.1
+   }
+  ]
  },
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-11T06:01Z",
-   "ultimo_intento": "2026-11-11T06:01Z"
+   "ultima_correcta": "2026-11-11T07:01Z",
+   "ultimo_intento": "2026-11-11T07:01Z"
   },
   "eea_modificado": {
-   "12005005": "Wed, 11 Nov 2026 04:08:15 GMT",
-   "12009007": "Wed, 11 Nov 2026 04:08:20 GMT",
-   "12028001": "Wed, 11 Nov 2026 04:08:25 GMT",
-   "12032001": "Wed, 11 Nov 2026 04:08:30 GMT",
-   "12040010": "Wed, 11 Nov 2026 04:08:40 GMT",
-   "12040015": "Wed, 11 Nov 2026 04:08:46 GMT",
-   "12040020": "Wed, 11 Nov 2026 04:08:52 GMT"
+   "12005005": "Wed, 11 Nov 2026 06:12:49 GMT",
+   "12009007": "Wed, 11 Nov 2026 06:12:54 GMT",
+   "12028001": "Wed, 11 Nov 2026 06:12:59 GMT",
+   "12032001": "Wed, 11 Nov 2026 06:13:04 GMT",
+   "12040010": "Wed, 11 Nov 2026 06:13:14 GMT",
+   "12040015": "Wed, 11 Nov 2026 06:13:21 GMT",
+   "12040020": "Wed, 11 Nov 2026 06:13:26 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3144,25 +3163,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-10T16:23:20.700961",
-   "ultima_correcta": "2026-11-11T06:01Z",
-   "ultimo_intento": "2026-11-11T06:01Z"
+   "ultima_correcta": "2026-11-11T07:01Z",
+   "ultimo_intento": "2026-11-11T07:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T06:01Z",
-   "ultimo_intento": "2026-11-11T06:01Z"
+   "ultima_correcta": "2026-11-11T07:01Z",
+   "ultimo_intento": "2026-11-11T07:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-11T06:01Z",
-   "ultimo_intento": "2026-11-11T06:01Z"
+   "ultima_correcta": "2026-11-11T07:01Z",
+   "ultimo_intento": "2026-11-11T07:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T06:01Z",
-   "ultimo_intento": "2026-11-11T06:01Z"
+   "ultima_correcta": "2026-11-11T07:01Z",
+   "ultimo_intento": "2026-11-11T07:01Z"
   }
  }
 }
