@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T08:07Z",
+ "generado": "2026-11-11T09:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,27 +45,27 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": -8.3,
+   "desviacion_pct": -8.1,
    "margen_inf_pct": -8.2,
    "margen_sup_pct": 11.1,
-   "horas": 2,
-   "horas_fuera_banda": 2,
-   "veredicto": "por_debajo",
+   "horas": 3,
+   "horas_fuera_banda": 3,
+   "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": -8.3,
+    "desviacion_pct": -8.1,
     "margen_inf_pct": -7.6,
     "margen_sup_pct": 12.4,
-    "horas": 2,
-    "horas_fuera_banda": 2,
+    "horas": 3,
+    "horas_fuera_banda": 3,
     "veredicto": "por_debajo"
    }
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 8,
-    "desviacion_pct": -7.9
+    "hora": 9,
+    "desviacion_pct": -7.7
    },
-   "diferencia_gwh": -4.9,
+   "diferencia_gwh": -7.4,
    "diferencia_gw": -2.46,
    "peor_hora": {
     "hora": 7,
@@ -115,7 +115,7 @@
     22964.8,
     26080.9,
     28052.7,
-    null,
+    29387.5,
     null,
     null,
     null,
@@ -219,7 +219,7 @@
     -6.99,
     -8.72,
     -7.94,
-    null,
+    -7.73,
     null,
     null,
     null,
@@ -403,7 +403,7 @@
     22964.8,
     26080.9,
     28052.7,
-    null,
+    29387.5,
     null,
     null,
     null,
@@ -542,8 +542,8 @@
       "lluvia_mm": 0.0
      },
      "2026-11-11": {
-      "temperatura_c": 16.5,
-      "viento_kmh": 4.3,
+      "temperatura_c": 17.1,
+      "viento_kmh": 4.0,
       "lluvia_mm": 0.0
      }
     },
@@ -880,7 +880,7 @@
        17.1,
        15.9,
        16.4,
-       null,
+       18.8,
        null,
        null,
        null,
@@ -906,7 +906,7 @@
        3.3,
        4.8,
        4.9,
-       null,
+       2.9,
        null,
        null,
        null,
@@ -932,7 +932,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -973,8 +973,8 @@
       "lluvia_mm": 1.5
      },
      "2026-11-11": {
-      "temperatura_c": 18.3,
-      "viento_kmh": 11.1,
+      "temperatura_c": 18.8,
+      "viento_kmh": 10.4,
       "lluvia_mm": 0.0
      }
     },
@@ -1311,7 +1311,7 @@
        17.9,
        18.2,
        18.9,
-       null,
+       20.2,
        null,
        null,
        null,
@@ -1337,7 +1337,7 @@
        10.7,
        11.8,
        10.7,
-       null,
+       8.4,
        null,
        null,
        null,
@@ -1363,7 +1363,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -1382,20 +1382,26 @@
     }
    }
   },
-  "avisos": []
+  "avisos": [
+   {
+    "tipo": "viento",
+    "punto": "castello",
+    "diferencia_kmh": -4.2
+   }
+  ]
  },
  "estado": {
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T08:07Z",
-   "ultimo_intento": "2026-11-11T08:07Z"
+   "ultima_correcta": "2026-11-11T09:01Z",
+   "ultimo_intento": "2026-11-11T09:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T08:01Z",
-   "ultimo_intento": "2026-11-11T08:01Z"
+   "ultima_correcta": "2026-11-11T09:01Z",
+   "ultimo_intento": "2026-11-11T09:01Z"
   }
  }
 }
