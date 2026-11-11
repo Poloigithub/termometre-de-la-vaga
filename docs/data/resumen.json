@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-11T19:01Z",
+ "generado": "2026-11-11T20:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,11 +45,11 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": -5.2,
+   "desviacion_pct": -5.0,
    "margen_inf_pct": -8.2,
    "margen_sup_pct": 11.1,
-   "horas": 13,
-   "horas_fuera_banda": 3,
+   "horas": 14,
+   "horas_fuera_banda": 4,
    "veredicto": "sin_diferencia",
    "horas_punta": {
     "desviacion_pct": -5.7,
@@ -62,11 +62,11 @@
   },
   "indicadores": {
    "ultima_hora": {
-    "hora": 19,
-    "desviacion_pct": -2.6
+    "hora": 20,
+    "desviacion_pct": -2.8
    },
-   "diferencia_gwh": -21.2,
-   "diferencia_gw": -1.63,
+   "diferencia_gwh": -22.1,
+   "diferencia_gw": -1.58,
    "peor_hora": {
     "hora": 10,
     "desviacion_pct": -8.8
@@ -99,9 +99,9 @@
    },
    {
     "hora": 21,
-    "hora_pct": null,
-    "acumulado_pct": null,
-    "acumulado_gwh": null
+    "hora_pct": -2.8,
+    "acumulado_pct": -5.0,
+    "acumulado_gwh": -22.1
    }
   ],
   "perfil": {
@@ -126,7 +126,7 @@
     30004.2,
     30808.9,
     31460.7,
-    null,
+    31931.8,
     null,
     null,
     null
@@ -230,7 +230,7 @@
     -5.08,
     -2.19,
     -2.62,
-    null,
+    -2.82,
     null,
     null,
     null
@@ -414,7 +414,7 @@
     30004.2,
     30808.9,
     31460.7,
-    null,
+    31931.8,
     null,
     null,
     null
@@ -1388,14 +1388,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-11",
-   "ultima_correcta": "2026-11-11T19:01Z",
-   "ultimo_intento": "2026-11-11T19:01Z"
+   "ultima_correcta": "2026-11-11T20:01Z",
+   "ultimo_intento": "2026-11-11T20:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-11T19:01Z",
-   "ultimo_intento": "2026-11-11T19:01Z"
+   "ultima_correcta": "2026-11-11T20:01Z",
+   "ultimo_intento": "2026-11-11T20:01Z"
   }
  }
 }
