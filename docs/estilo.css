@@ -107,3 +107,5 @@ th { font-weight: 600; }
 .cortes th, .cortes td { padding: 8px 4px; }
 .cortes tr:first-child th { font-size: 0.82rem; font-weight: 600; color: var(--tinta-2); }
 .cortes td { font-weight: 600; }
+
+[hidden] { display: none !important; }

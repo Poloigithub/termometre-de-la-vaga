@@ -28,7 +28,7 @@ calibracion:
 
 franja_resumen: {inicio: 7, fin: 21}        # [inicio, fin), hora local
 horas_punta: [[7, 10], [17, 20]]
-cortes: [9, 12, 17, 21]                    # datos a esa hora: la hora anterior y lo acumulado desde el inicio de la franja
+cortes: [7, 9, 12, 17, 21]                    # datos a esa hora: la hora anterior y lo acumulado desde el inicio de la franja
 minimo_dias_referencia: 2                   # con menos no hay banda ni veredicto
 muestras_minimas_hora: 10                   # de 12 muestras de 5 minutos
 

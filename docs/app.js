@@ -201,8 +201,15 @@ function pintarIndicadores(datos) {
   const seccion = document.getElementById("indicadores");
   const i = datos.electricidad.indicadores;
   const r = datos.electricidad.resumen;
-  seccion.hidden = Boolean(datos.hoy) || !i || r.desviacion_pct === null;
+  // La tabla de cortes sale con el primer corte (7 h); las cifras y la cita, con la franja.
+  const cortes = datos.electricidad.cortes ?? [];
+  seccion.hidden = Boolean(datos.hoy) || !cortes.some((c) => c.hora_pct !== null);
   if (seccion.hidden) return;
+  pintarCortes(cortes, datos.franja.inicio);
+  const conFranja = Boolean(i) && r.desviacion_pct !== null;
+  document.getElementById("cifras").hidden = !conFranja;
+  document.querySelector("#indicadores .cita").hidden = !conFranja;
+  if (!conFranja) return;
   const cifras = [
     ["cifra_energia", `${conSigno(i.diferencia_gwh)} GWh`],
     ["cifra_potencia", `${conSigno(i.diferencia_gw, 2)} GW`],
@@ -210,7 +217,6 @@ function pintarIndicadores(datos) {
     ["cifra_peor", i.peor_hora ? pct(i.peor_hora.desviacion_pct) : "—", i.peor_hora && { t: tramo(i.peor_hora.hora) }],
     ["cifra_ultima", pct(i.ultima_hora.desviacion_pct), { t: tramo(i.ultima_hora.hora) }],
   ];
-  pintarCortes(datos.electricidad.cortes ?? [], datos.franja.inicio);
   document.getElementById("cifras").replaceChildren(...cifras.map(([clave, valor, extra]) => {
     const div = document.createElement("div");
     const dt = document.createElement("dt");
@@ -246,8 +252,8 @@ function pintarCortes(cortes, inicio) {
       celda(f, "");
     } else {
       celda(f, pct(c.hora_pct));
-      celda(f, pct(c.acumulado_pct));
-      celda(f, `${conSigno(c.acumulado_gwh)}\u00a0GWh`);
+      celda(f, c.acumulado_pct === null ? "—" : pct(c.acumulado_pct));
+      celda(f, c.acumulado_gwh === null ? "—" : `${conSigno(c.acumulado_gwh)}\u00a0GWh`);
     }
     return f;
   });

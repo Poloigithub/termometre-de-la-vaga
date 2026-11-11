@@ -160,3 +160,10 @@ def test_cortes_hora_y_acumulado():
     nueve, doce = cortes_del_dia(p, 7, [9, 12])
     assert nueve == {"hora": 9, "hora_pct": -20.0, "acumulado_pct": -15.0, "acumulado_gwh": -0.3}
     assert doce["hora_pct"] is None  # la hora de 11 a 12 aún no ha llegado
+
+
+def test_corte_antes_de_la_franja_sin_acumulado():
+    p = pd.DataFrame(index=range(24), columns=["valor", "referencia", "desviacion_pct"], dtype=float)
+    p.loc[6] = [950.0, 1000.0, -5.0]
+    (siete,) = cortes_del_dia(p, 7, [7])
+    assert siete == {"hora": 7, "hora_pct": -5.0, "acumulado_pct": None, "acumulado_gwh": None}

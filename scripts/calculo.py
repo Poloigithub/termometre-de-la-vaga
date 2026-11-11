@@ -108,20 +108,22 @@ def resumen_franja(perfil, inicio, fin, margen_empirico=None):
 def cortes_del_dia(perfil, inicio, cortes):
     """Situación a cada hora de corte: la hora que acaba entonces y lo acumulado desde inicio.
 
-    Un corte queda vacío (None) hasta que esa hora tiene dato.
+    Un corte queda vacío (None) hasta que esa hora tiene dato. Un corte que no pasa de
+    inicio (el de las 7, que enseña el turno de las 6) no tiene acumulado.
     """
     salida = []
     for corte in cortes:
-        tramo = perfil.loc[inicio:corte - 1]
-        tramo = tramo[tramo["desviacion_pct"].notna()]
-        if (corte - 1) not in tramo.index:
+        hora = corte - 1
+        if hora not in perfil.index or pd.isna(perfil.loc[hora, "desviacion_pct"]):
             salida.append({"hora": corte, "hora_pct": None, "acumulado_pct": None, "acumulado_gwh": None})
             continue
+        tramo = perfil.loc[inicio:hora]
+        tramo = tramo[tramo["desviacion_pct"].notna()]
         salida.append({
             "hora": corte,
-            "hora_pct": round(float(tramo.loc[corte - 1, "desviacion_pct"]), 1),
-            "acumulado_pct": round(float(tramo["desviacion_pct"].mean()), 1),
-            "acumulado_gwh": round(float((tramo["valor"] - tramo["referencia"]).sum()) / 1000, 1),
+            "hora_pct": round(float(perfil.loc[hora, "desviacion_pct"]), 1),
+            "acumulado_pct": round(float(tramo["desviacion_pct"].mean()), 1) if len(tramo) else None,
+            "acumulado_gwh": round(float((tramo["valor"] - tramo["referencia"]).sum()) / 1000, 1) if len(tramo) else None,
         })
     return salida
 
