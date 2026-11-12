@@ -109,8 +109,8 @@
    "dia": "2026-10-28",
    "electricidad": 1.3,
    "electricidad_punta": 2.0,
-   "no2_urbano": 21.6,
-   "no2_urbano_punta": 61.4
+   "no2_urbano": 20.0,
+   "no2_urbano_punta": 58.7
   }
  ],
  "electricidad": {
