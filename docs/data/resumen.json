@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T23:07Z",
+ "generado": "2026-11-13T23:39Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -1386,16 +1386,16 @@
  },
  "estado": {
   "open_meteo": {
-   "error": "Sin datos de 2026-11-11",
+   "error": null,
    "hoy": "2026-11-13",
-   "ultima_correcta": "2026-11-13T21:01Z",
-   "ultimo_intento": "2026-11-13T23:07Z"
+   "ultima_correcta": "2026-11-13T23:39Z",
+   "ultimo_intento": "2026-11-13T23:39Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-13T23:01Z",
-   "ultimo_intento": "2026-11-13T23:01Z"
+   "ultima_correcta": "2026-11-13T23:39Z",
+   "ultimo_intento": "2026-11-13T23:39Z"
   }
  }
 }
