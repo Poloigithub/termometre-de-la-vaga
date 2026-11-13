@@ -2,3 +2,4 @@
 2026-11-11T08:07Z gva_ultimos: RuntimeError: https://dadesobertes.gva.es/api/3/action/resource_show: ConnectTimeout
 2026-11-13T05:07Z meteo castello 2026-11-11: https://api.open-meteo.com/v1/forecast: ReadTimeout
 2026-11-13T06:07Z meteo castello 2026-11-11: https://api.open-meteo.com/v1/forecast: ReadTimeout
+2026-11-13T08:07Z meteo castello 2026-11-11: https://api.open-meteo.com/v1/forecast: ReadTimeout
