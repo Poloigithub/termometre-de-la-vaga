@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T08:09Z",
+ "generado": "2026-11-13T09:09Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -1389,13 +1389,13 @@
    "error": "Sin datos de 2026-11-11",
    "hoy": "2026-11-13",
    "ultima_correcta": "2026-11-13T07:01Z",
-   "ultimo_intento": "2026-11-13T08:09Z"
+   "ultimo_intento": "2026-11-13T09:09Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-13T08:01Z",
-   "ultimo_intento": "2026-11-13T08:01Z"
+   "ultima_correcta": "2026-11-13T09:01Z",
+   "ultimo_intento": "2026-11-13T09:01Z"
   }
  }
 }
