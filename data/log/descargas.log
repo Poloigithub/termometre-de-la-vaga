@@ -1,2 +1,3 @@
 2026-11-04T09:01Z visor 2026-11-04: https://demanda.ree.es/WSvisionaMovilesPeninsulaRest/resources/demandaGeneracionPeninsula: http 200, 39 bytes
 2026-11-11T08:07Z gva_ultimos: RuntimeError: https://dadesobertes.gva.es/api/3/action/resource_show: ConnectTimeout
+2026-11-13T05:07Z meteo castello 2026-11-11: https://api.open-meteo.com/v1/forecast: ReadTimeout
