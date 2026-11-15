@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-15T22:01Z",
+ "generado": "2026-11-15T22:56Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -3137,11 +3137,11 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-15T22:01Z",
-   "ultimo_intento": "2026-11-15T22:01Z"
+   "ultima_correcta": "2026-11-15T22:56Z",
+   "ultimo_intento": "2026-11-15T22:56Z"
   },
   "eea_modificado": {
-   "12005005": "Sun, 15 Nov 2026 20:06:57 GMT",
+   "12005005": "Sun, 15 Nov 2026 22:07:17 GMT",
    "12009007": "Sun, 15 Nov 2026 22:00:18 GMT",
    "12028001": "Sun, 15 Nov 2026 22:00:24 GMT",
    "12032001": "Sun, 15 Nov 2026 22:00:30 GMT",
@@ -3156,26 +3156,26 @@
   },
   "gva_ultimos": {
    "error": null,
-   "modificado": "2026-11-14T16:15:38.380322",
-   "ultima_correcta": "2026-11-15T22:01Z",
-   "ultimo_intento": "2026-11-15T22:01Z"
+   "modificado": "2026-11-15T22:53:39.905508",
+   "ultima_correcta": "2026-11-15T22:56Z",
+   "ultimo_intento": "2026-11-15T22:56Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-15",
-   "ultima_correcta": "2026-11-15T22:01Z",
-   "ultimo_intento": "2026-11-15T22:01Z"
+   "ultima_correcta": "2026-11-15T22:56Z",
+   "ultimo_intento": "2026-11-15T22:56Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-15T22:01Z",
-   "ultimo_intento": "2026-11-15T22:01Z"
+   "ultima_correcta": "2026-11-15T22:56Z",
+   "ultimo_intento": "2026-11-15T22:56Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-15T22:01Z",
-   "ultimo_intento": "2026-11-15T22:01Z"
+   "ultima_correcta": "2026-11-15T22:56Z",
+   "ultimo_intento": "2026-11-15T22:56Z"
   }
  }
 }
