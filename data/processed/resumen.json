@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T02:01Z",
+ "generado": "2026-11-17T03:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -3137,17 +3137,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-17T02:01Z",
-   "ultimo_intento": "2026-11-17T02:01Z"
+   "ultima_correcta": "2026-11-17T03:01Z",
+   "ultimo_intento": "2026-11-17T03:01Z"
   },
   "eea_modificado": {
-   "12005005": "Tue, 17 Nov 2026 00:16:34 GMT",
-   "12009007": "Tue, 17 Nov 2026 00:16:40 GMT",
-   "12028001": "Tue, 17 Nov 2026 00:16:45 GMT",
-   "12032001": "Tue, 17 Nov 2026 00:16:51 GMT",
-   "12040010": "Tue, 17 Nov 2026 00:17:02 GMT",
-   "12040015": "Tue, 17 Nov 2026 00:17:09 GMT",
-   "12040020": "Tue, 17 Nov 2026 00:17:15 GMT"
+   "12005005": "Tue, 17 Nov 2026 02:08:11 GMT",
+   "12009007": "Tue, 17 Nov 2026 02:08:18 GMT",
+   "12028001": "Tue, 17 Nov 2026 02:08:23 GMT",
+   "12032001": "Tue, 17 Nov 2026 02:08:28 GMT",
+   "12040010": "Tue, 17 Nov 2026 02:08:37 GMT",
+   "12040015": "Tue, 17 Nov 2026 02:08:42 GMT",
+   "12040020": "Tue, 17 Nov 2026 02:08:47 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3157,25 +3157,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-16T22:44:09.613570",
-   "ultima_correcta": "2026-11-17T02:01Z",
-   "ultimo_intento": "2026-11-17T02:01Z"
+   "ultima_correcta": "2026-11-17T03:01Z",
+   "ultimo_intento": "2026-11-17T03:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-17",
-   "ultima_correcta": "2026-11-17T02:01Z",
-   "ultimo_intento": "2026-11-17T02:01Z"
+   "ultima_correcta": "2026-11-17T03:01Z",
+   "ultimo_intento": "2026-11-17T03:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-17T02:01Z",
-   "ultimo_intento": "2026-11-17T02:01Z"
+   "ultima_correcta": "2026-11-17T03:01Z",
+   "ultimo_intento": "2026-11-17T03:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-17T02:01Z",
-   "ultimo_intento": "2026-11-17T02:01Z"
+   "ultima_correcta": "2026-11-17T03:01Z",
+   "ultimo_intento": "2026-11-17T03:01Z"
   }
  }
 }
