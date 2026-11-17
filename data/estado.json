@@ -1,17 +1,17 @@
 {
   "agencia_europea": {
     "error": null,
-    "ultima_correcta": "2026-11-16T23:01Z",
-    "ultimo_intento": "2026-11-16T23:01Z"
+    "ultima_correcta": "2026-11-17T00:01Z",
+    "ultimo_intento": "2026-11-17T00:01Z"
   },
   "eea_modificado": {
-    "12005005": "Mon, 16 Nov 2026 21:08:18 GMT",
-    "12009007": "Mon, 16 Nov 2026 21:08:23 GMT",
-    "12028001": "Mon, 16 Nov 2026 21:08:28 GMT",
-    "12032001": "Mon, 16 Nov 2026 21:08:34 GMT",
-    "12040010": "Mon, 16 Nov 2026 21:08:43 GMT",
-    "12040015": "Mon, 16 Nov 2026 21:08:50 GMT",
-    "12040020": "Mon, 16 Nov 2026 21:08:56 GMT"
+    "12005005": "Mon, 16 Nov 2026 23:13:55 GMT",
+    "12009007": "Mon, 16 Nov 2026 23:13:59 GMT",
+    "12028001": "Mon, 16 Nov 2026 23:14:04 GMT",
+    "12032001": "Mon, 16 Nov 2026 23:14:10 GMT",
+    "12040010": "Mon, 16 Nov 2026 23:14:19 GMT",
+    "12040015": "Mon, 16 Nov 2026 23:14:25 GMT",
+    "12040020": "Mon, 16 Nov 2026 23:14:31 GMT"
   },
   "gva_historico": {
     "error": null,
@@ -21,24 +21,24 @@
   "gva_ultimos": {
     "error": null,
     "modificado": "2026-11-16T22:44:09.613570",
-    "ultima_correcta": "2026-11-16T23:01Z",
-    "ultimo_intento": "2026-11-16T23:01Z"
+    "ultima_correcta": "2026-11-17T00:01Z",
+    "ultimo_intento": "2026-11-17T00:01Z"
   },
   "open_meteo": {
-    "error": "Sin datos de 2026-11-11",
-    "hoy": "2026-11-16",
-    "ultima_correcta": "2026-11-16T22:15Z",
-    "ultimo_intento": "2026-11-16T23:07Z"
+    "error": null,
+    "hoy": "2026-11-17",
+    "ultima_correcta": "2026-11-17T00:01Z",
+    "ultimo_intento": "2026-11-17T00:01Z"
   },
   "prevista_ree": {
     "error": null,
-    "ultima_correcta": "2026-11-16T23:01Z",
-    "ultimo_intento": "2026-11-16T23:01Z"
+    "ultima_correcta": "2026-11-17T00:01Z",
+    "ultimo_intento": "2026-11-17T00:01Z"
   },
   "visor_ree": {
     "error": null,
     "pendientes": 1,
-    "ultima_correcta": "2026-11-16T23:01Z",
-    "ultimo_intento": "2026-11-16T23:01Z"
+    "ultima_correcta": "2026-11-17T00:01Z",
+    "ultimo_intento": "2026-11-17T00:01Z"
   }
 }
