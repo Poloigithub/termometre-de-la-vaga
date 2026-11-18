@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T04:01Z",
+ "generado": "2026-11-18T04:30Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -978,10 +978,10 @@
       "temperatura_c": [
        19.4,
        19.5,
-       19.3,
+       19.4,
+       19.2,
        18.9,
-       18.4,
-       18.1,
+       18.5,
        null,
        null,
        null,
@@ -1003,11 +1003,11 @@
       ],
       "viento_kmh": [
        12.3,
-       10.9,
-       8.4,
-       5.9,
-       5.9,
-       5.0,
+       12.6,
+       9.9,
+       6.9,
+       7.0,
+       6.8,
        null,
        null,
        null,
@@ -1488,10 +1488,10 @@
      "2026-11-18": {
       "temperatura_c": [
        20.5,
-       20.5,
-       20.6,
+       20.7,
+       20.7,
        20.8,
-       20.9,
+       21.0,
        21.2,
        null,
        null,
@@ -1514,11 +1514,11 @@
       ],
       "viento_kmh": [
        14.8,
-       13.5,
+       14.2,
        13.5,
        12.6,
-       12.5,
-       15.6,
+       12.9,
+       15.5,
        null,
        null,
        null,
@@ -1574,14 +1574,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-18",
-   "ultima_correcta": "2026-11-18T04:01Z",
-   "ultimo_intento": "2026-11-18T04:01Z"
+   "ultima_correcta": "2026-11-18T04:30Z",
+   "ultimo_intento": "2026-11-18T04:30Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-18T04:01Z",
-   "ultimo_intento": "2026-11-18T04:01Z"
+   "ultima_correcta": "2026-11-18T04:30Z",
+   "ultimo_intento": "2026-11-18T04:30Z"
   }
  }
 }
