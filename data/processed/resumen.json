@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T15:04Z",
+ "generado": "2026-11-18T16:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,7 +45,7 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": -5.3,
+   "desviacion_pct": -5.4,
    "margen_inf_pct": -8.2,
    "margen_sup_pct": 11.1,
    "horas": 14,
@@ -65,8 +65,8 @@
     "hora": 23,
     "desviacion_pct": -1.4
    },
-   "diferencia_gwh": -23.6,
-   "diferencia_gw": -1.69,
+   "diferencia_gwh": -23.8,
+   "diferencia_gw": -1.7,
    "peor_hora": {
     "hora": 7,
     "desviacion_pct": -9.5
@@ -93,15 +93,15 @@
    },
    {
     "hora": 17,
-    "hora_pct": -5.8,
+    "hora_pct": -6.3,
     "acumulado_pct": -6.2,
-    "acumulado_gwh": -19.6
+    "acumulado_gwh": -19.7
    },
    {
     "hora": 21,
     "hora_pct": -2.8,
-    "acumulado_pct": -5.3,
-    "acumulado_gwh": -23.6
+    "acumulado_pct": -5.4,
+    "acumulado_gwh": -23.8
    }
   ],
   "perfil": {
@@ -148,7 +148,7 @@
     33178.2,
     33033.2,
     32357.4,
-    31915.45,
+    32081.2,
     31608.9,
     31499.5,
     32305.5,
@@ -226,7 +226,7 @@
     -2.9,
     -3.08,
     -5.16,
-    -5.84,
+    -6.33,
     -5.08,
     -2.19,
     -2.62,
@@ -252,7 +252,7 @@
     -14.71,
     -13.88,
     -11.83,
-    -8.9,
+    -9.38,
     -5.5,
     -3.16,
     -5.51,
@@ -278,7 +278,7 @@
     3.36,
     3.15,
     4.22,
-    3.82,
+    3.28,
     1.7,
     3.23,
     2.96,
@@ -436,7 +436,7 @@
     33372.2,
     33033.2,
     32357.4,
-    null,
+    32081.2,
     null,
     null,
     null,
@@ -2330,8 +2330,8 @@
       "lluvia_mm": 0.8
      },
      "2026-11-18": {
-      "temperatura_c": 22.9,
-      "viento_kmh": 10.6,
+      "temperatura_c": 23.2,
+      "viento_kmh": 10.7,
       "lluvia_mm": 0.0
      }
     },
@@ -2755,7 +2755,7 @@
        26.5,
        27.8,
        26.9,
-       null,
+       25.7,
        null,
        null,
        null,
@@ -2781,7 +2781,7 @@
        8.9,
        15.2,
        14.8,
-       null,
+       11.5,
        null,
        null,
        null,
@@ -2807,7 +2807,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -2846,8 +2846,8 @@
       "lluvia_mm": 2.8
      },
      "2026-11-18": {
-      "temperatura_c": 23.7,
-      "viento_kmh": 14.9,
+      "temperatura_c": 23.8,
+      "viento_kmh": 15.1,
       "lluvia_mm": 0.0
      }
     },
@@ -3271,7 +3271,7 @@
        25.9,
        25.9,
        25.7,
-       null,
+       25.0,
        null,
        null,
        null,
@@ -3297,7 +3297,7 @@
        18.8,
        17.2,
        17.9,
-       null,
+       16.4,
        null,
        null,
        null,
@@ -3323,7 +3323,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -3340,8 +3340,8 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-18T15:01Z",
-   "ultimo_intento": "2026-11-18T15:01Z"
+   "ultima_correcta": "2026-11-18T16:01Z",
+   "ultimo_intento": "2026-11-18T16:01Z"
   },
   "eea_modificado": {
    "12005005": "Wed, 18 Nov 2026 14:07:21 GMT",
@@ -3359,26 +3359,26 @@
   },
   "gva_ultimos": {
    "error": null,
-   "modificado": "2026-11-17T15:15:39.090055",
-   "ultima_correcta": "2026-11-18T15:01Z",
-   "ultimo_intento": "2026-11-18T15:01Z"
+   "modificado": "2026-11-18T15:48:52.206908",
+   "ultima_correcta": "2026-11-18T16:01Z",
+   "ultimo_intento": "2026-11-18T16:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-18",
-   "ultima_correcta": "2026-11-18T15:04Z",
-   "ultimo_intento": "2026-11-18T15:04Z"
+   "ultima_correcta": "2026-11-18T16:01Z",
+   "ultimo_intento": "2026-11-18T16:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-18T15:01Z",
-   "ultimo_intento": "2026-11-18T15:01Z"
+   "ultima_correcta": "2026-11-18T16:01Z",
+   "ultimo_intento": "2026-11-18T16:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-18T15:01Z",
-   "ultimo_intento": "2026-11-18T15:01Z"
+   "ultima_correcta": "2026-11-18T16:01Z",
+   "ultimo_intento": "2026-11-18T16:01Z"
   }
  }
 }
