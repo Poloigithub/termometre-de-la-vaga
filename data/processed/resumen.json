@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T01:04Z",
+ "generado": "2026-11-18T02:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -134,7 +134,7 @@
    "referencia": [
     24028.0,
     22542.2,
-    21616.7,
+    21666.7,
     21207.25,
     21174.7,
     21803.05,
@@ -186,7 +186,7 @@
    "banda_max": [
     25568.2,
     24303.2,
-    22047.0,
+    23310.7,
     21714.9,
     21719.8,
     22443.5,
@@ -212,7 +212,7 @@
    "desviacion_pct": [
     -2.17,
     -1.15,
-    -1.26,
+    -1.48,
     -1.89,
     -3.39,
     -4.52,
@@ -238,7 +238,7 @@
    "banda_inf_pct": [
     -2.21,
     -1.85,
-    -1.37,
+    -1.6,
     -1.06,
     -1.18,
     -1.45,
@@ -264,7 +264,7 @@
    "banda_sup_pct": [
     6.41,
     7.81,
-    1.99,
+    7.59,
     2.39,
     2.57,
     2.94,
@@ -422,7 +422,7 @@
    "2026-11-18": [
     25568.2,
     24303.2,
-    null,
+    23310.7,
     null,
     null,
     null,
@@ -2729,7 +2729,7 @@
        19.4,
        19.5,
        19.3,
-       null,
+       18.9,
        null,
        null,
        null,
@@ -2755,7 +2755,7 @@
        12.3,
        10.9,
        8.4,
-       null,
+       5.9,
        null,
        null,
        null,
@@ -2781,7 +2781,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -3240,7 +3240,7 @@
        20.5,
        20.5,
        20.6,
-       null,
+       20.8,
        null,
        null,
        null,
@@ -3266,7 +3266,7 @@
        14.8,
        13.5,
        13.5,
-       null,
+       12.6,
        null,
        null,
        null,
@@ -3292,7 +3292,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -3323,17 +3323,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-18T01:01Z",
-   "ultimo_intento": "2026-11-18T01:01Z"
+   "ultima_correcta": "2026-11-18T02:01Z",
+   "ultimo_intento": "2026-11-18T02:01Z"
   },
   "eea_modificado": {
-   "12005005": "Tue, 17 Nov 2026 23:06:44 GMT",
-   "12009007": "Tue, 17 Nov 2026 23:06:49 GMT",
-   "12028001": "Tue, 17 Nov 2026 23:06:53 GMT",
-   "12032001": "Tue, 17 Nov 2026 23:06:59 GMT",
-   "12040010": "Tue, 17 Nov 2026 23:07:08 GMT",
-   "12040015": "Tue, 17 Nov 2026 23:07:15 GMT",
-   "12040020": "Tue, 17 Nov 2026 23:07:20 GMT"
+   "12005005": "Wed, 18 Nov 2026 01:58:08 GMT",
+   "12009007": "Wed, 18 Nov 2026 01:58:13 GMT",
+   "12028001": "Wed, 18 Nov 2026 01:58:19 GMT",
+   "12032001": "Wed, 18 Nov 2026 01:58:23 GMT",
+   "12040010": "Wed, 18 Nov 2026 01:58:31 GMT",
+   "12040015": "Wed, 18 Nov 2026 01:03:33 GMT",
+   "12040020": "Wed, 18 Nov 2026 01:03:39 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3343,25 +3343,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-17T15:15:39.090055",
-   "ultima_correcta": "2026-11-18T01:01Z",
-   "ultimo_intento": "2026-11-18T01:01Z"
+   "ultima_correcta": "2026-11-18T02:01Z",
+   "ultimo_intento": "2026-11-18T02:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-18",
-   "ultima_correcta": "2026-11-18T01:04Z",
-   "ultimo_intento": "2026-11-18T01:04Z"
+   "ultima_correcta": "2026-11-18T02:01Z",
+   "ultimo_intento": "2026-11-18T02:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-18T01:01Z",
-   "ultimo_intento": "2026-11-18T01:01Z"
+   "ultima_correcta": "2026-11-18T02:01Z",
+   "ultimo_intento": "2026-11-18T02:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-18T01:01Z",
-   "ultimo_intento": "2026-11-18T01:01Z"
+   "ultima_correcta": "2026-11-18T02:01Z",
+   "ultimo_intento": "2026-11-18T02:01Z"
   }
  }
 }
