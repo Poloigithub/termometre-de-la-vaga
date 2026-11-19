@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T19:01Z",
+ "generado": "2026-11-19T20:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -449,14 +449,14 @@
  },
  "no2": {
   "resumen": {
-   "desviacion_pct": 69.9,
+   "desviacion_pct": 70.8,
    "margen_inf_pct": -68.1,
    "margen_sup_pct": 257.2,
    "horas": 13,
    "horas_fuera_banda": 5,
    "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": 11.9,
+    "desviacion_pct": 13.8,
     "margen_inf_pct": -79.1,
     "margen_sup_pct": 380.2,
     "horas": 6,
@@ -511,7 +511,7 @@
     3.83,
     5.33,
     12.67,
-    15.5,
+    13.33,
     17.5,
     18.5,
     23.33,
@@ -589,7 +589,7 @@
     100.76,
     83.33,
     20.0,
-    -10.29,
+    0.94,
     -2.02,
     3.1,
     -45.45,
@@ -615,7 +615,7 @@
     -65.91,
     -53.33,
     -41.67,
-    -50.7,
+    -45.89,
     -47.14,
     -60.15,
     -47.96,
@@ -641,7 +641,7 @@
     74.24,
     90.0,
     61.67,
-    39.31,
+    57.77,
     53.39,
     36.29,
     39.72,
@@ -891,16 +891,16 @@
     "nombre": "Castelló - Patronat d'Esports",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 55.4,
-     "margen_inf_pct": -46.6,
-     "margen_sup_pct": 34.8,
+     "desviacion_pct": 58.0,
+     "margen_inf_pct": -45.5,
+     "margen_sup_pct": 39.0,
      "horas": 13,
      "horas_fuera_banda": 6,
      "veredicto": "por_encima",
      "horas_punta": {
-      "desviacion_pct": 5.3,
-      "margen_inf_pct": -63.3,
-      "margen_sup_pct": 38.9,
+      "desviacion_pct": 10.9,
+      "margen_inf_pct": -60.9,
+      "margen_sup_pct": 48.1,
       "horas": 6,
       "horas_fuera_banda": 0,
       "veredicto": "sin_diferencia"
@@ -953,7 +953,7 @@
       6.0,
       9.0,
       20.0,
-      20.0,
+      13.5,
       19.0,
       21.0,
       15.0,
@@ -1031,7 +1031,7 @@
       83.33,
       66.67,
       -20.0,
-      -30.0,
+      3.7,
       0.0,
       -14.29,
       -46.67,
@@ -1057,7 +1057,7 @@
       -50.0,
       -66.67,
       -90.0,
-      -70.0,
+      -55.56,
       -21.05,
       -47.62,
       -6.67,
@@ -1083,7 +1083,7 @@
       66.67,
       100.0,
       40.0,
-      15.0,
+      70.37,
       21.05,
       4.76,
       106.67,
@@ -1096,7 +1096,7 @@
      "2026-10-28": 12,
      "2026-11-04": 18,
      "2026-11-11": 24,
-     "2026-11-18": 13
+     "2026-11-18": 14
     }
    },
    "12040020": {
@@ -3340,17 +3340,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T19:01Z"
+   "ultima_correcta": "2026-11-19T20:01Z",
+   "ultimo_intento": "2026-11-19T20:01Z"
   },
   "eea_modificado": {
-   "12005005": "Thu, 19 Nov 2026 17:22:10 GMT",
+   "12005005": "Thu, 19 Nov 2026 19:15:53 GMT",
    "12009007": "Thu, 19 Nov 2026 18:08:40 GMT",
-   "12028001": "Thu, 19 Nov 2026 17:22:16 GMT",
-   "12032001": "Thu, 19 Nov 2026 17:22:21 GMT",
+   "12028001": "Thu, 19 Nov 2026 19:15:59 GMT",
+   "12032001": "Thu, 19 Nov 2026 19:16:04 GMT",
    "12040010": "Thu, 19 Nov 2026 18:08:46 GMT",
-   "12040015": "Thu, 19 Nov 2026 17:22:36 GMT",
-   "12040020": "Thu, 19 Nov 2026 18:08:53 GMT"
+   "12040015": "Thu, 19 Nov 2026 19:16:16 GMT",
+   "12040020": "Thu, 19 Nov 2026 19:16:20 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3360,25 +3360,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-19T14:49:03.546410",
-   "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T19:01Z"
+   "ultima_correcta": "2026-11-19T20:01Z",
+   "ultimo_intento": "2026-11-19T20:01Z"
   },
   "open_meteo": {
-   "error": null,
+   "error": "Sin datos de 2026-11-18",
    "hoy": "2026-11-19",
    "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T19:01Z"
+   "ultimo_intento": "2026-11-19T20:01Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T19:01Z"
+   "ultima_correcta": "2026-11-19T20:01Z",
+   "ultimo_intento": "2026-11-19T20:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 2,
-   "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T19:01Z"
+   "ultima_correcta": "2026-11-19T20:01Z",
+   "ultimo_intento": "2026-11-19T20:01Z"
   }
  }
 }
