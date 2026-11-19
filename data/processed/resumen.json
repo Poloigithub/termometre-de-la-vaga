@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T20:01Z",
+ "generado": "2026-11-19T21:03Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -449,14 +449,14 @@
  },
  "no2": {
   "resumen": {
-   "desviacion_pct": 70.8,
+   "desviacion_pct": 72.1,
    "margen_inf_pct": -68.1,
    "margen_sup_pct": 257.2,
    "horas": 13,
    "horas_fuera_banda": 5,
    "veredicto": "sin_diferencia",
    "horas_punta": {
-    "desviacion_pct": 13.8,
+    "desviacion_pct": 17.4,
     "margen_inf_pct": -79.1,
     "margen_sup_pct": 380.2,
     "horas": 6,
@@ -505,14 +505,14 @@
     15.0,
     9.17,
     6.5,
-    3.83,
+    4.33,
     2.83,
     3.17,
     3.83,
     5.33,
     12.67,
-    13.33,
-    17.5,
+    11.33,
+    14.83,
     18.5,
     23.33,
     25.67
@@ -537,7 +537,7 @@
     1.33,
     2.33,
     5.67,
-    7.0,
+    5.0,
     9.33,
     7.33,
     9.67,
@@ -583,14 +583,14 @@
     88.89,
     121.6,
     193.69,
-    174.55,
+    141.43,
     null,
     160.0,
     100.76,
     83.33,
     20.0,
-    0.94,
-    -2.02,
+    22.77,
+    26.02,
     3.1,
     -45.45,
     -76.27
@@ -609,14 +609,14 @@
     -50.0,
     -64.96,
     -59.72,
-    -41.82,
+    -45.71,
     null,
     -40.0,
     -65.91,
     -53.33,
     -41.67,
-    -45.89,
-    -47.14,
+    -56.96,
+    -41.6,
     -60.15,
     -47.96,
     -45.23
@@ -635,14 +635,14 @@
     103.7,
     88.68,
     119.07,
-    114.55,
+    81.43,
     null,
     0.0,
     74.24,
     90.0,
     61.67,
-    57.77,
-    53.39,
+    86.14,
+    94.79,
     36.29,
     39.72,
     17.9
@@ -679,16 +679,16 @@
     "nombre": "Castelló - Grau",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 85.7,
-     "margen_inf_pct": -57.7,
-     "margen_sup_pct": 104.6,
+     "desviacion_pct": 91.3,
+     "margen_inf_pct": -56.0,
+     "margen_sup_pct": 113.1,
      "horas": 12,
      "horas_fuera_banda": 3,
      "veredicto": "sin_diferencia",
      "horas_punta": {
-      "desviacion_pct": 33.6,
-      "margen_inf_pct": -48.4,
-      "margen_sup_pct": 66.9,
+      "desviacion_pct": 42.8,
+      "margen_inf_pct": -45.4,
+      "margen_sup_pct": 77.0,
       "horas": 6,
       "horas_fuera_banda": 1,
       "veredicto": "sin_diferencia"
@@ -735,14 +735,14 @@
       18.0,
       13.0,
       8.0,
-      5.5,
+      7.0,
       4.5,
       4.5,
       5.5,
       5.0,
       8.0,
-      15.5,
-      17.5,
+      11.0,
+      11.0,
       19.5,
       32.0,
       34.0
@@ -813,14 +813,14 @@
       116.67,
       76.92,
       275.0,
-      209.09,
+      142.86,
       null,
       null,
       118.18,
       100.0,
       100.0,
-      35.48,
-      31.43,
+      90.91,
+      109.09,
       43.59,
       -37.5,
       -70.59
@@ -839,14 +839,14 @@
       -50.0,
       -61.54,
       -62.5,
-      -63.64,
+      -71.43,
       null,
       null,
       -81.82,
       -40.0,
       -25.0,
-      -54.84,
-      -82.86,
+      -36.36,
+      -72.73,
       -79.49,
       -93.75,
       -94.12
@@ -865,14 +865,14 @@
       200.0,
       92.31,
       187.5,
-      209.09,
+      142.86,
       null,
       null,
       81.82,
       80.0,
       125.0,
-      48.39,
-      82.86,
+      109.09,
+      190.91,
       64.1,
       12.5,
       20.59
@@ -884,7 +884,7 @@
      "2026-10-28": 24,
      "2026-11-04": 24,
      "2026-11-11": 24,
-     "2026-11-18": 10
+     "2026-11-18": 13
     }
    },
    "12040015": {
@@ -1103,18 +1103,18 @@
     "nombre": "Castelló - CEIP La Marina",
     "grupo": "urbana",
     "resumen": {
-     "desviacion_pct": 33.2,
-     "margen_inf_pct": -48.9,
-     "margen_sup_pct": 63.9,
+     "desviacion_pct": 35.0,
+     "margen_inf_pct": -54.0,
+     "margen_sup_pct": 68.4,
      "horas": 9,
-     "horas_fuera_banda": 6,
+     "horas_fuera_banda": 5,
      "veredicto": "sin_diferencia",
      "horas_punta": {
-      "desviacion_pct": -20.4,
-      "margen_inf_pct": -29.5,
-      "margen_sup_pct": 35.1,
+      "desviacion_pct": -18.4,
+      "margen_inf_pct": -39.8,
+      "margen_sup_pct": 40.0,
       "horas": 5,
-      "horas_fuera_banda": 3,
+      "horas_fuera_banda": 2,
       "veredicto": "sin_diferencia"
      }
     },
@@ -1165,8 +1165,8 @@
       0.0,
       2.0,
       10.0,
-      11.0,
-      16.0,
+      9.5,
+      14.5,
       15.0,
       23.0,
       21.0
@@ -1191,7 +1191,7 @@
       0.0,
       1.0,
       9.0,
-      8.0,
+      2.0,
       10.0,
       7.0,
       13.0,
@@ -1243,8 +1243,8 @@
       null,
       null,
       -20.0,
-      -36.36,
-      -37.5,
+      -26.32,
+      -31.03,
       -20.0,
       -52.17,
       -80.95
@@ -1269,8 +1269,8 @@
       null,
       null,
       -10.0,
-      -27.27,
-      -37.5,
+      -78.95,
+      -31.03,
       -53.33,
       -43.48,
       -14.29
@@ -1295,8 +1295,8 @@
       null,
       null,
       20.0,
-      54.55,
-      56.25,
+      78.95,
+      72.41,
       40.0,
       0.0,
       28.57
@@ -1307,7 +1307,7 @@
      "2026-10-28": 24,
      "2026-11-04": 24,
      "2026-11-11": 24,
-     "2026-11-18": 11
+     "2026-11-18": 13
     }
    },
    "12009007": {
@@ -3340,17 +3340,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-19T20:01Z",
-   "ultimo_intento": "2026-11-19T20:01Z"
+   "ultima_correcta": "2026-11-19T21:01Z",
+   "ultimo_intento": "2026-11-19T21:01Z"
   },
   "eea_modificado": {
    "12005005": "Thu, 19 Nov 2026 19:15:53 GMT",
-   "12009007": "Thu, 19 Nov 2026 18:08:40 GMT",
+   "12009007": "Thu, 19 Nov 2026 20:15:53 GMT",
    "12028001": "Thu, 19 Nov 2026 19:15:59 GMT",
    "12032001": "Thu, 19 Nov 2026 19:16:04 GMT",
-   "12040010": "Thu, 19 Nov 2026 18:08:46 GMT",
+   "12040010": "Thu, 19 Nov 2026 20:15:58 GMT",
    "12040015": "Thu, 19 Nov 2026 19:16:16 GMT",
-   "12040020": "Thu, 19 Nov 2026 19:16:20 GMT"
+   "12040020": "Thu, 19 Nov 2026 20:16:05 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3360,25 +3360,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-19T14:49:03.546410",
-   "ultima_correcta": "2026-11-19T20:01Z",
-   "ultimo_intento": "2026-11-19T20:01Z"
+   "ultima_correcta": "2026-11-19T21:01Z",
+   "ultimo_intento": "2026-11-19T21:01Z"
   },
   "open_meteo": {
-   "error": "Sin datos de 2026-11-18",
+   "error": null,
    "hoy": "2026-11-19",
-   "ultima_correcta": "2026-11-19T19:01Z",
-   "ultimo_intento": "2026-11-19T20:01Z"
+   "ultima_correcta": "2026-11-19T21:02Z",
+   "ultimo_intento": "2026-11-19T21:02Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-19T20:01Z",
-   "ultimo_intento": "2026-11-19T20:01Z"
+   "ultima_correcta": "2026-11-19T21:01Z",
+   "ultimo_intento": "2026-11-19T21:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 2,
-   "ultima_correcta": "2026-11-19T20:01Z",
-   "ultimo_intento": "2026-11-19T20:01Z"
+   "ultima_correcta": "2026-11-19T21:01Z",
+   "ultimo_intento": "2026-11-19T21:01Z"
   }
  }
 }
