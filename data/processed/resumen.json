@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T14:01Z",
+ "generado": "2026-11-19T15:03Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -1314,9 +1314,9 @@
     "nombre": "Almassora - CP Ochando",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 69.5,
-     "margen_inf_pct": -37.7,
-     "margen_sup_pct": 110.6,
+     "desviacion_pct": 68.2,
+     "margen_inf_pct": -38.2,
+     "margen_sup_pct": 109.8,
      "horas": 14,
      "horas_fuera_banda": 6,
      "veredicto": "sin_diferencia",
@@ -1370,7 +1370,7 @@
       29.0,
       14.0,
       9.0,
-      8.0,
+      9.0,
       6.0,
       7.5,
       8.0,
@@ -1448,7 +1448,7 @@
       10.34,
       71.43,
       200.0,
-      75.0,
+      55.56,
       200.0,
       140.0,
       112.5,
@@ -1474,7 +1474,7 @@
       -55.17,
       -14.29,
       -44.44,
-      -37.5,
+      -44.44,
       -33.33,
       -33.33,
       -25.0,
@@ -1500,7 +1500,7 @@
       0.0,
       14.29,
       11.11,
-      12.5,
+      0.0,
       266.67,
       326.67,
       387.5,
@@ -1519,16 +1519,16 @@
      "2026-10-28": 24,
      "2026-11-04": 24,
      "2026-11-11": 24,
-     "2026-11-18": 12
+     "2026-11-18": 13
     }
    },
    "12028001": {
     "nombre": "Benicàssim",
     "grupo": "contraste",
     "resumen": {
-     "desviacion_pct": 173.0,
-     "margen_inf_pct": -28.6,
-     "margen_sup_pct": 53.2,
+     "desviacion_pct": 171.6,
+     "margen_inf_pct": -28.9,
+     "margen_sup_pct": 53.5,
      "horas": 14,
      "horas_fuera_banda": 11,
      "veredicto": "por_encima",
@@ -1582,7 +1582,7 @@
       13.0,
       11.0,
       8.5,
-      7.5,
+      8.0,
       5.0,
       5.0,
       5.0,
@@ -1634,7 +1634,7 @@
       23.0,
       21.0,
       15.0,
-      11.0,
+      12.0,
       6.0,
       7.0,
       8.0,
@@ -1660,7 +1660,7 @@
       130.77,
       181.82,
       229.41,
-      220.0,
+      200.0,
       380.0,
       340.0,
       380.0,
@@ -1686,7 +1686,7 @@
       -30.77,
       -18.18,
       -41.18,
-      -46.67,
+      -50.0,
       -20.0,
       -20.0,
       0.0,
@@ -1712,7 +1712,7 @@
       76.92,
       90.91,
       76.47,
-      46.67,
+      50.0,
       20.0,
       40.0,
       60.0,
@@ -1731,7 +1731,7 @@
      "2026-10-28": 20,
      "2026-11-04": 24,
      "2026-11-11": 24,
-     "2026-11-18": 12
+     "2026-11-18": 13
     }
    },
    "12032001": {
@@ -3340,17 +3340,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-19T14:01Z",
-   "ultimo_intento": "2026-11-19T14:01Z"
+   "ultima_correcta": "2026-11-19T15:01Z",
+   "ultimo_intento": "2026-11-19T15:01Z"
   },
   "eea_modificado": {
    "12005005": "Thu, 19 Nov 2026 13:10:19 GMT",
-   "12009007": "Thu, 19 Nov 2026 12:13:27 GMT",
+   "12009007": "Thu, 19 Nov 2026 14:15:58 GMT",
    "12028001": "Thu, 19 Nov 2026 13:10:25 GMT",
    "12032001": "Thu, 19 Nov 2026 13:10:30 GMT",
-   "12040010": "Thu, 19 Nov 2026 12:13:31 GMT",
+   "12040010": "Thu, 19 Nov 2026 14:16:02 GMT",
    "12040015": "Thu, 19 Nov 2026 13:10:45 GMT",
-   "12040020": "Thu, 19 Nov 2026 13:10:49 GMT"
+   "12040020": "Thu, 19 Nov 2026 14:16:05 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3359,26 +3359,26 @@
   },
   "gva_ultimos": {
    "error": null,
-   "modificado": "2026-11-18T15:48:52.206908",
-   "ultima_correcta": "2026-11-19T14:01Z",
-   "ultimo_intento": "2026-11-19T14:01Z"
+   "modificado": "2026-11-19T14:49:03.546410",
+   "ultima_correcta": "2026-11-19T15:01Z",
+   "ultimo_intento": "2026-11-19T15:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-19",
-   "ultima_correcta": "2026-11-19T14:01Z",
-   "ultimo_intento": "2026-11-19T14:01Z"
+   "ultima_correcta": "2026-11-19T15:02Z",
+   "ultimo_intento": "2026-11-19T15:02Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-19T14:01Z",
-   "ultimo_intento": "2026-11-19T14:01Z"
+   "ultima_correcta": "2026-11-19T15:01Z",
+   "ultimo_intento": "2026-11-19T15:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 2,
-   "ultima_correcta": "2026-11-19T14:01Z",
-   "ultimo_intento": "2026-11-19T14:01Z"
+   "ultima_correcta": "2026-11-19T15:01Z",
+   "ultimo_intento": "2026-11-19T15:01Z"
   }
  }
 }
