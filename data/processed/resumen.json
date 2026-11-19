@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T13:01Z",
+ "generado": "2026-11-19T13:24Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -3340,17 +3340,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-19T13:01Z",
-   "ultimo_intento": "2026-11-19T13:01Z"
+   "ultima_correcta": "2026-11-19T13:24Z",
+   "ultimo_intento": "2026-11-19T13:24Z"
   },
   "eea_modificado": {
-   "12005005": "Thu, 19 Nov 2026 11:15:52 GMT",
+   "12005005": "Thu, 19 Nov 2026 13:10:19 GMT",
    "12009007": "Thu, 19 Nov 2026 12:13:27 GMT",
-   "12028001": "Thu, 19 Nov 2026 11:15:58 GMT",
-   "12032001": "Thu, 19 Nov 2026 11:16:04 GMT",
+   "12028001": "Thu, 19 Nov 2026 13:10:25 GMT",
+   "12032001": "Thu, 19 Nov 2026 13:10:30 GMT",
    "12040010": "Thu, 19 Nov 2026 12:13:31 GMT",
-   "12040015": "Thu, 19 Nov 2026 11:16:18 GMT",
-   "12040020": "Thu, 19 Nov 2026 11:16:23 GMT"
+   "12040015": "Thu, 19 Nov 2026 13:10:45 GMT",
+   "12040020": "Thu, 19 Nov 2026 13:10:49 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3360,25 +3360,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-18T15:48:52.206908",
-   "ultima_correcta": "2026-11-19T13:01Z",
-   "ultimo_intento": "2026-11-19T13:01Z"
+   "ultima_correcta": "2026-11-19T13:24Z",
+   "ultimo_intento": "2026-11-19T13:24Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-19",
-   "ultima_correcta": "2026-11-19T13:01Z",
-   "ultimo_intento": "2026-11-19T13:01Z"
+   "ultima_correcta": "2026-11-19T13:24Z",
+   "ultimo_intento": "2026-11-19T13:24Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-19T13:01Z",
-   "ultimo_intento": "2026-11-19T13:01Z"
+   "ultima_correcta": "2026-11-19T13:24Z",
+   "ultimo_intento": "2026-11-19T13:24Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 2,
-   "ultima_correcta": "2026-11-19T13:01Z",
-   "ultimo_intento": "2026-11-19T13:01Z"
+   "ultima_correcta": "2026-11-19T13:24Z",
+   "ultimo_intento": "2026-11-19T13:24Z"
   }
  }
 }
