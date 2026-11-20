@@ -4188,8 +4188,9 @@ fecha,hora,estacion,nombre,grupo,no2_ugm3,fuente
 2026-11-18,12,12040010,Castelló - Grau,urbana,8.0,agencia_europea
 2026-11-18,12,12040015,Castelló - Patronat d'Esports,urbana,6.0,agencia_europea
 2026-11-18,12,12040020,Castelló - CEIP La Marina,urbana,8.0,agencia_europea
-2026-11-18,13,12009007,Almassora - CP Ochando,contraste,9.0,generalitat_provisional
-2026-11-18,13,12028001,Benicàssim,contraste,12.0,generalitat_provisional
+2026-11-18,13,12009007,Almassora - CP Ochando,contraste,9.0,agencia_europea
+2026-11-18,13,12028001,Benicàssim,contraste,12.0,agencia_europea
+2026-11-18,13,12032001,Borriana,contraste,5.0,agencia_europea
 2026-11-18,13,12040010,Castelló - Grau,urbana,7.0,agencia_europea
 2026-11-18,13,12040015,Castelló - Patronat d'Esports,urbana,6.0,agencia_europea
 2026-11-18,13,12040020,Castelló - CEIP La Marina,urbana,7.0,agencia_europea
@@ -4202,4 +4203,9 @@ fecha,hora,estacion,nombre,grupo,no2_ugm3,fuente
 2026-11-18,21,12040010,Castelló - Grau,urbana,18.0,agencia_europea
 2026-11-18,21,12040015,Castelló - Patronat d'Esports,urbana,6.0,agencia_europea
 2026-11-18,21,12040020,Castelló - CEIP La Marina,urbana,2.0,agencia_europea
+2026-11-18,22,12040010,Castelló - Grau,urbana,16.0,agencia_europea
 2026-11-18,22,12040015,Castelló - Patronat d'Esports,urbana,5.0,agencia_europea
+2026-11-18,22,12040020,Castelló - CEIP La Marina,urbana,0.0,agencia_europea
+2026-11-18,23,12040010,Castelló - Grau,urbana,9.0,agencia_europea
+2026-11-18,23,12040015,Castelló - Patronat d'Esports,urbana,4.0,agencia_europea
+2026-11-18,23,12040020,Castelló - CEIP La Marina,urbana,2.0,agencia_europea
