@@ -1,17 +1,17 @@
 {
   "agencia_europea": {
     "error": null,
-    "ultima_correcta": "2026-11-20T15:01Z",
-    "ultimo_intento": "2026-11-20T15:01Z"
+    "ultima_correcta": "2026-11-20T16:01Z",
+    "ultimo_intento": "2026-11-20T16:01Z"
   },
   "eea_modificado": {
-    "12005005": "Fri, 20 Nov 2026 13:21:31 GMT",
-    "12009007": "Fri, 20 Nov 2026 13:21:36 GMT",
-    "12028001": "Fri, 20 Nov 2026 13:21:41 GMT",
-    "12032001": "Fri, 20 Nov 2026 13:21:46 GMT",
-    "12040010": "Fri, 20 Nov 2026 13:21:56 GMT",
-    "12040015": "Fri, 20 Nov 2026 13:22:00 GMT",
-    "12040020": "Fri, 20 Nov 2026 13:22:04 GMT"
+    "12005005": "Fri, 20 Nov 2026 15:18:08 GMT",
+    "12009007": "Fri, 20 Nov 2026 15:18:13 GMT",
+    "12028001": "Fri, 20 Nov 2026 15:18:18 GMT",
+    "12032001": "Fri, 20 Nov 2026 15:18:24 GMT",
+    "12040010": "Fri, 20 Nov 2026 15:18:34 GMT",
+    "12040015": "Fri, 20 Nov 2026 15:18:38 GMT",
+    "12040020": "Fri, 20 Nov 2026 15:18:42 GMT"
   },
   "gva_historico": {
     "error": null,
@@ -20,25 +20,25 @@
   },
   "gva_ultimos": {
     "error": null,
-    "modificado": "2026-11-19T14:49:03.546410",
-    "ultima_correcta": "2026-11-20T15:01Z",
-    "ultimo_intento": "2026-11-20T15:01Z"
+    "modificado": "2026-11-20T15:09:58.856643",
+    "ultima_correcta": "2026-11-20T16:01Z",
+    "ultimo_intento": "2026-11-20T16:01Z"
   },
   "open_meteo": {
     "error": null,
     "hoy": "2026-11-20",
-    "ultima_correcta": "2026-11-20T15:01Z",
-    "ultimo_intento": "2026-11-20T15:01Z"
+    "ultima_correcta": "2026-11-20T16:01Z",
+    "ultimo_intento": "2026-11-20T16:01Z"
   },
   "prevista_ree": {
     "error": null,
-    "ultima_correcta": "2026-11-20T15:01Z",
-    "ultimo_intento": "2026-11-20T15:01Z"
+    "ultima_correcta": "2026-11-20T16:01Z",
+    "ultimo_intento": "2026-11-20T16:01Z"
   },
   "visor_ree": {
     "error": null,
     "pendientes": 1,
-    "ultima_correcta": "2026-11-20T15:01Z",
-    "ultimo_intento": "2026-11-20T15:01Z"
+    "ultima_correcta": "2026-11-20T16:01Z",
+    "ultimo_intento": "2026-11-20T16:01Z"
   }
 }
