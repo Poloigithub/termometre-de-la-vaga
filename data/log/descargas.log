@@ -42,3 +42,4 @@
 2026-11-21T18:03Z meteo valencia 2026-11-18: https://api.open-meteo.com/v1/forecast: http 429, 86 bytes
 2026-11-23T02:07Z meteo castello 2026-11-18: https://api.open-meteo.com/v1/forecast: ReadTimeout
 2026-11-23T03:07Z meteo castello 2026-11-18: https://api.open-meteo.com/v1/forecast: ReadTimeout
+2026-11-23T05:07Z meteo castello 2026-11-18: https://api.open-meteo.com/v1/forecast: ReadTimeout
