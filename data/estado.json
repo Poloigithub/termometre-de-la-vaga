@@ -1,17 +1,17 @@
 {
   "agencia_europea": {
     "error": null,
-    "ultima_correcta": "2026-11-23T06:01Z",
-    "ultimo_intento": "2026-11-23T06:01Z"
+    "ultima_correcta": "2026-11-23T07:01Z",
+    "ultimo_intento": "2026-11-23T07:01Z"
   },
   "eea_modificado": {
-    "12005005": "Mon, 23 Nov 2026 04:03:02 GMT",
-    "12009007": "Mon, 23 Nov 2026 04:03:06 GMT",
-    "12028001": "Mon, 23 Nov 2026 04:03:11 GMT",
-    "12032001": "Mon, 23 Nov 2026 04:03:17 GMT",
-    "12040010": "Mon, 23 Nov 2026 04:03:28 GMT",
-    "12040015": "Mon, 23 Nov 2026 04:03:34 GMT",
-    "12040020": "Mon, 23 Nov 2026 04:03:40 GMT"
+    "12005005": "Mon, 23 Nov 2026 06:06:32 GMT",
+    "12009007": "Mon, 23 Nov 2026 06:06:37 GMT",
+    "12028001": "Mon, 23 Nov 2026 06:06:42 GMT",
+    "12032001": "Mon, 23 Nov 2026 06:06:48 GMT",
+    "12040010": "Mon, 23 Nov 2026 06:06:58 GMT",
+    "12040015": "Mon, 23 Nov 2026 06:07:05 GMT",
+    "12040020": "Mon, 23 Nov 2026 06:07:10 GMT"
   },
   "gva_historico": {
     "error": null,
@@ -21,24 +21,24 @@
   "gva_ultimos": {
     "error": null,
     "modificado": "2026-11-22T18:52:29.455137",
-    "ultima_correcta": "2026-11-23T06:01Z",
-    "ultimo_intento": "2026-11-23T06:01Z"
+    "ultima_correcta": "2026-11-23T07:01Z",
+    "ultimo_intento": "2026-11-23T07:01Z"
   },
   "open_meteo": {
-    "error": "Sin datos de 2026-11-18",
+    "error": null,
     "hoy": "2026-11-23",
-    "ultima_correcta": "2026-11-23T04:01Z",
-    "ultimo_intento": "2026-11-23T06:07Z"
+    "ultima_correcta": "2026-11-23T07:01Z",
+    "ultimo_intento": "2026-11-23T07:01Z"
   },
   "prevista_ree": {
     "error": null,
-    "ultima_correcta": "2026-11-23T06:01Z",
-    "ultimo_intento": "2026-11-23T06:01Z"
+    "ultima_correcta": "2026-11-23T07:01Z",
+    "ultimo_intento": "2026-11-23T07:01Z"
   },
   "visor_ree": {
     "error": null,
     "pendientes": 1,
-    "ultima_correcta": "2026-11-23T06:01Z",
-    "ultimo_intento": "2026-11-23T06:01Z"
+    "ultima_correcta": "2026-11-23T07:01Z",
+    "ultimo_intento": "2026-11-23T07:01Z"
   }
 }
