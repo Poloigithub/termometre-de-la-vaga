@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T22:01Z",
+ "generado": "2026-11-24T23:04Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -1058,6 +1058,86 @@
        0.0,
        0.0
       ]
+     },
+     "2026-11-25": {
+      "temperatura_c": [
+       10.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "viento_kmh": [
+       6.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "lluvia_mm": [
+       0.0,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
      }
     }
    },
@@ -1574,6 +1654,86 @@
        0.0,
        0.0
       ]
+     },
+     "2026-11-25": {
+      "temperatura_c": [
+       14.7,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "viento_kmh": [
+       10.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "lluvia_mm": [
+       0.0,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
      }
     }
    }
@@ -1584,14 +1744,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-24",
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:04Z",
+   "ultimo_intento": "2026-11-24T23:04Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:01Z",
+   "ultimo_intento": "2026-11-24T23:01Z"
   }
  }
 }

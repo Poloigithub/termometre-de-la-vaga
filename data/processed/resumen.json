@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T22:01Z",
+ "generado": "2026-11-24T23:04Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -2815,6 +2815,86 @@
        0.0,
        0.0
       ]
+     },
+     "2026-11-25": {
+      "temperatura_c": [
+       10.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "viento_kmh": [
+       6.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "lluvia_mm": [
+       0.0,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
      }
     }
    },
@@ -3331,6 +3411,86 @@
        0.0,
        0.0
       ]
+     },
+     "2026-11-25": {
+      "temperatura_c": [
+       14.7,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "viento_kmh": [
+       10.9,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ],
+      "lluvia_mm": [
+       0.0,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null,
+       null
+      ]
      }
     }
    }
@@ -3340,17 +3500,17 @@
  "estado": {
   "agencia_europea": {
    "error": null,
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:01Z",
+   "ultimo_intento": "2026-11-24T23:01Z"
   },
   "eea_modificado": {
-   "12005005": "Tue, 24 Nov 2026 16:13:01 GMT",
-   "12009007": "Tue, 24 Nov 2026 14:12:51 GMT",
-   "12028001": "Tue, 24 Nov 2026 14:12:55 GMT",
-   "12032001": "Tue, 24 Nov 2026 16:13:05 GMT",
-   "12040010": "Tue, 24 Nov 2026 14:13:09 GMT",
-   "12040015": "Tue, 24 Nov 2026 14:13:16 GMT",
-   "12040020": "Tue, 24 Nov 2026 14:06:31 GMT"
+   "12005005": "Tue, 24 Nov 2026 22:12:11 GMT",
+   "12009007": "Tue, 24 Nov 2026 22:12:16 GMT",
+   "12028001": "Tue, 24 Nov 2026 22:12:21 GMT",
+   "12032001": "Tue, 24 Nov 2026 22:12:27 GMT",
+   "12040010": "Tue, 24 Nov 2026 22:12:37 GMT",
+   "12040015": "Tue, 24 Nov 2026 22:12:44 GMT",
+   "12040020": "Tue, 24 Nov 2026 22:12:50 GMT"
   },
   "gva_historico": {
    "error": null,
@@ -3360,25 +3520,25 @@
   "gva_ultimos": {
    "error": null,
    "modificado": "2026-11-24T15:22:06.892330",
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:01Z",
+   "ultimo_intento": "2026-11-24T23:01Z"
   },
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-24",
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:04Z",
+   "ultimo_intento": "2026-11-24T23:04Z"
   },
   "prevista_ree": {
    "error": null,
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:01Z",
+   "ultimo_intento": "2026-11-24T23:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-24T22:01Z",
-   "ultimo_intento": "2026-11-24T22:01Z"
+   "ultima_correcta": "2026-11-24T23:01Z",
+   "ultimo_intento": "2026-11-24T23:01Z"
   }
  }
 }
