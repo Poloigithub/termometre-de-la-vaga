@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T08:04Z",
+ "generado": "2026-11-25T09:01Z",
  "dia_huelga": "2026-11-11",
  "dias_referencia": [
   "2026-10-21",
@@ -45,8 +45,8 @@
  },
  "electricidad": {
   "resumen": {
-   "desviacion_pct": -5.6,
-   "margen_inf_pct": -8.4,
+   "desviacion_pct": -5.7,
+   "margen_inf_pct": -8.5,
    "margen_sup_pct": 11.1,
    "horas": 14,
    "horas_fuera_banda": 4,
@@ -65,8 +65,8 @@
     "hora": 23,
     "desviacion_pct": -1.8
    },
-   "diferencia_gwh": -25.2,
-   "diferencia_gw": -1.8,
+   "diferencia_gwh": -25.3,
+   "diferencia_gw": -1.81,
    "peor_hora": {
     "hora": 7,
     "desviacion_pct": -9.6
@@ -88,20 +88,20 @@
    {
     "hora": 12,
     "hora_pct": -6.0,
-    "acumulado_pct": -8.4,
-    "acumulado_gwh": -13.2
+    "acumulado_pct": -8.5,
+    "acumulado_gwh": -13.3
    },
    {
     "hora": 17,
     "hora_pct": -6.3,
     "acumulado_pct": -6.4,
-    "acumulado_gwh": -20.2
+    "acumulado_gwh": -20.3
    },
    {
     "hora": 21,
     "hora_pct": -3.6,
-    "acumulado_pct": -5.6,
-    "acumulado_gwh": -25.2
+    "acumulado_pct": -5.7,
+    "acumulado_gwh": -25.3
    }
   ],
   "perfil": {
@@ -141,7 +141,7 @@
     24988.25,
     28853.35,
     30947.5,
-    32136.4,
+    32257.7,
     32792.4,
     32522.8,
     32687.2,
@@ -193,7 +193,7 @@
     27330.9,
     31661.4,
     33765.8,
-    33265.8,
+    34946.8,
     34147.5,
     34034.4,
     33967.7,
@@ -219,7 +219,7 @@
     -8.1,
     -9.61,
     -9.35,
-    -8.55,
+    -8.9,
     -8.48,
     -6.01,
     -4.12,
@@ -245,7 +245,7 @@
     -3.06,
     -2.95,
     -2.36,
-    -6.73,
+    -7.08,
     -10.4,
     -12.38,
     -14.02,
@@ -271,7 +271,7 @@
     9.38,
     9.73,
     9.11,
-    3.51,
+    8.34,
     4.13,
     4.65,
     3.92,
@@ -455,7 +455,7 @@
     27330.9,
     31661.4,
     33765.8,
-    null,
+    34946.8,
     null,
     null,
     null,
@@ -604,8 +604,8 @@
       "lluvia_mm": 0.0
      },
      "2026-11-25": {
-      "temperatura_c": 10.4,
-      "viento_kmh": 8.6,
+      "temperatura_c": 10.9,
+      "viento_kmh": 8.4,
       "lluvia_mm": 0.0
      }
     },
@@ -1102,7 +1102,7 @@
        9.5,
        10.2,
        11.6,
-       null,
+       12.5,
        null,
        null,
        null,
@@ -1128,7 +1128,7 @@
        6.2,
        8.3,
        11.2,
-       null,
+       8.0,
        null,
        null,
        null,
@@ -1154,7 +1154,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -1205,8 +1205,8 @@
       "lluvia_mm": 0.0
      },
      "2026-11-25": {
-      "temperatura_c": 13.2,
-      "viento_kmh": 15.0,
+      "temperatura_c": 13.6,
+      "viento_kmh": 15.8,
       "lluvia_mm": 0.0
      }
     },
@@ -1703,7 +1703,7 @@
        13.0,
        13.1,
        13.6,
-       null,
+       14.6,
        null,
        null,
        null,
@@ -1729,7 +1729,7 @@
        14.3,
        15.2,
        15.6,
-       null,
+       18.0,
        null,
        null,
        null,
@@ -1755,7 +1755,7 @@
        0.0,
        0.0,
        0.0,
-       null,
+       0.0,
        null,
        null,
        null,
@@ -1780,14 +1780,14 @@
   "open_meteo": {
    "error": null,
    "hoy": "2026-11-25",
-   "ultima_correcta": "2026-11-25T08:04Z",
-   "ultimo_intento": "2026-11-25T08:04Z"
+   "ultima_correcta": "2026-11-25T09:01Z",
+   "ultimo_intento": "2026-11-25T09:01Z"
   },
   "visor_ree": {
    "error": null,
    "pendientes": 1,
-   "ultima_correcta": "2026-11-25T08:01Z",
-   "ultimo_intento": "2026-11-25T08:01Z"
+   "ultima_correcta": "2026-11-25T09:01Z",
+   "ultimo_intento": "2026-11-25T09:01Z"
   }
  }
 }
